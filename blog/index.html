@@ -1,1 +1,211 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO Blog & Insights | Layyah SEO Expert</title>
+<meta name="description" content="Practical SEO guides for Layyah, Kot Sultan, Chowk Azam, D.G. Khan and Punjab businesses — on-page SEO, Google Business Profile, and off-page link building.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-deep:#07231a;
+    --bg-panel:#0d2f22;
+    --bg-panel-2:#0f3626;
+    --gold:#c9a227;
+    --gold-bright:#e8c766;
+    --cream:#f3ead9;
+    --muted:#9fb8ac;
+    --line:rgba(201,162,39,0.25);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--bg-deep);
+    color:var(--cream);
+    font-family:'Work Sans',sans-serif;
+    line-height:1.6;
+  }
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3{font-family:'Fraunces',serif;font-weight:600;letter-spacing:-0.01em;}
+  .eyebrow{
+    font-family:'JetBrains Mono',monospace;
+    font-size:0.72rem;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:var(--gold);
+  }
+  .container{max-width:1120px;margin:0 auto;padding:0 24px;}
+
+  /* NAV */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(7,35,26,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  nav{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;max-width:1120px;margin:0 auto;}
+  .logo{font-family:'Fraunces',serif;font-weight:700;font-size:1.25rem;color:var(--cream);}
+  .logo span{color:var(--gold);}
+  .nav-links{display:flex;align-items:center;gap:32px;}
+  .nav-links a{font-size:0.95rem;color:var(--muted);transition:color .2s;}
+  .nav-links a:hover, .nav-links a.active{color:var(--gold-bright);}
+  .dropdown{position:relative;}
+  .dropdown-menu{
+    position:absolute;top:130%;left:50%;transform:translateX(-50%);
+    background:var(--bg-panel-2);
+    border:1px solid var(--line);
+    border-radius:10px;
+    min-width:280px;
+    padding:10px;
+    opacity:0;visibility:hidden;
+    transform:translateX(-50%) translateY(8px);
+    transition:all .2s ease;
+    box-shadow:0 20px 40px rgba(0,0,0,0.4);
+  }
+  .dropdown:hover .dropdown-menu{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0);}
+  .dropdown-menu a{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:10px 12px;border-radius:6px;font-size:0.9rem;color:var(--cream);
+  }
+  .dropdown-menu a:hover{background:rgba(201,162,39,0.12);color:var(--gold-bright);}
+  .nav-cta{
+    background:var(--gold);color:var(--bg-deep);
+    padding:10px 20px;border-radius:8px;font-weight:600;font-size:0.9rem;
+  }
+  .nav-cta:hover{background:var(--gold-bright);}
+
+  /* HERO */
+  .hero{padding:80px 0 56px;border-bottom:1px solid var(--line);}
+  .hero h1{font-size:clamp(2.1rem,4.5vw,3.2rem);margin:16px 0 20px;max-width:760px;}
+  .hero p{color:var(--muted);max-width:620px;font-size:1.05rem;}
+
+  /* POST GRID */
+  .posts{padding:64px 0 100px;}
+  .post-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:28px;margin-top:36px;}
+  .post-card{
+    background:var(--bg-panel);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:28px;
+    display:flex;flex-direction:column;
+    transition:transform .25s ease, border-color .25s ease;
+  }
+  .post-card:hover{transform:translateY(-4px);border-color:var(--gold);}
+  .post-meta{display:flex;align-items:center;gap:10px;margin-bottom:16px;}
+  .ping{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(201,162,39,0.18);}
+  .post-meta span{font-family:'JetBrains Mono',monospace;font-size:0.72rem;color:var(--muted);letter-spacing:0.05em;}
+  .post-card h2{font-size:1.35rem;margin-bottom:12px;color:var(--cream);}
+  .post-card p{color:var(--muted);font-size:0.95rem;flex-grow:1;margin-bottom:18px;}
+  .read-more{font-family:'JetBrains Mono',monospace;font-size:0.8rem;color:var(--gold);letter-spacing:0.04em;}
+  .post-card:hover .read-more{color:var(--gold-bright);}
+
+  /* FOOTER / CONTACT */
+  footer{background:var(--bg-panel);border-top:1px solid var(--line);padding:56px 0 32px;}
+  .footer-grid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px;margin-bottom:32px;}
+  .footer-col h3{font-size:1rem;color:var(--gold);margin-bottom:14px;font-family:'JetBrains Mono',monospace;letter-spacing:0.05em;text-transform:uppercase;font-weight:500;}
+  .footer-col p, .footer-col a{color:var(--muted);font-size:0.92rem;display:block;margin-bottom:8px;}
+  .footer-col a:hover{color:var(--gold-bright);}
+  .footer-bottom{border-top:1px solid var(--line);padding-top:24px;text-align:center;color:var(--muted);font-size:0.85rem;}
+
+  @media(max-width:820px){
+    .nav-links{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="../index.html" class="logo">Layyah <span>SEO</span> Expert</a>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <div class="dropdown">
+        <a href="#">Services ▾</a>
+        <div class="dropdown-menu">
+          <a href="../services/on-page-seo.html">On-Page SEO →</a>
+          <a href="../services/technical-seo.html">Technical SEO →</a>
+          <a href="../services/off-page-seo-link-building.html">Off-Page SEO & Link Building →</a>
+          <a href="../services/local-seo-google-business-profile.html">Local SEO & Google Business Profile →</a>
+          <a href="../services/keyword-research-strategy.html">Keyword Research & Strategy →</a>
+          <a href="../services/content-strategy-copywriting.html">Content Strategy & Copywriting →</a>
+          <a href="../services/ecommerce-seo.html">E-commerce SEO →</a>
+          <a href="../services/seo-audits-competitor-analysis.html">SEO Audits & Competitor Analysis →</a>
+          <a href="../services/analytics-tracking-reporting.html">Analytics, Tracking & Reporting →</a>
+        </div>
+      </div>
+      <a href="index.html" class="active">Blog</a>
+      <a href="../index.html#contact" class="nav-cta">Get Free Audit</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <span class="eyebrow">Signal Log</span>
+    <h1>Straight-talk SEO guides for Layyah & Punjab businesses</h1>
+    <p>No fluff, no recycled listicles — just the on-page, local, and off-page tactics we actually use to move rankings for clients in Layyah, Kot Sultan, Chowk Azam, D.G. Khan, Muzaffargarh, and beyond.</p>
+  </div>
+</section>
+
+<section class="posts">
+  <div class="container">
+    <div class="post-grid">
+
+      <a href="on-page-seo-checklist-2026.html" style="text-decoration:none;">
+        <div class="post-card">
+          <div class="post-meta"><span class="ping"></span><span>ON-PAGE SEO · 8 MIN READ</span></div>
+          <h2>The 2026 On-Page SEO Checklist for Layyah Businesses</h2>
+          <p>Titles, headers, internal links, schema, and Core Web Vitals — the exact on-page checklist we run before touching a single backlink.</p>
+          <span class="read-more">Read the guide →</span>
+        </div>
+      </a>
+
+      <a href="google-business-profile-optimization-guide.html" style="text-decoration:none;">
+        <div class="post-card">
+          <div class="post-meta"><span class="ping"></span><span>LOCAL SEO · 7 MIN READ</span></div>
+          <h2>Google Business Profile Optimization for Local Punjab Companies</h2>
+          <p>How to claim, verify, and optimize your GBP listing so you show up in the Layyah map pack — categories, photos, service areas, and reviews.</p>
+          <span class="read-more">Read the guide →</span>
+        </div>
+      </a>
+
+      <a href="why-off-page-seo-still-wins.html" style="text-decoration:none;">
+        <div class="post-card">
+          <div class="post-meta"><span class="ping"></span><span>OFF-PAGE SEO · 9 MIN READ</span></div>
+          <h2>Why Off-Page SEO Still Decides Rankings in 2026</h2>
+          <p>Backlinks, digital PR, and citations are still the strongest trust signal Google has — here's how to build them without getting penalized.</p>
+          <span class="read-more">Read the guide →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <a href="https://wa.me/923277350830">WhatsApp: 0327-7350830</a>
+        <a href="mailto:seozaheer14@gmail.com">seozaheer14@gmail.com</a>
+      </div>
+      <div class="footer-col">
+        <h3>Service Areas</h3>
+        <p>Layyah · Kot Sultan · Chowk Azam</p>
+        <p>Fateh Pur · D.G. Khan · Muzaffargarh</p>
+        <p>Multan · Bhakkar · Remote / Nationwide</p>
+      </div>
+      <div class="footer-col">
+        <h3>Explore</h3>
+        <a href="../index.html">Home</a>
+        <a href="index.html">Blog</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Layyah SEO Expert. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
