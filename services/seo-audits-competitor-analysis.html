@@ -3,298 +3,127 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SEO Audits & Competitor Analysis in Layyah | Layyah SEO Expert</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<title>SEO Audit & Competitor Analysis Services | Zaheer SEO Expert</title>
+<meta name="description" content="Professional SEO audit and competitor analysis services in Layyah, Punjab. Identify technical issues, on-page gaps, content opportunities, backlink weaknesses and competitor strategies with a clear SEO action plan.">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#152219;
-  --bg-alt:#1c3024;
-  --panel:#1a2b21;
-  --gold:#cba135;
-  --gold-soft:#e3c674;
-  --clay:#a65c32;
-  --cream:#f3ecd8;
-  --cream-dim:#c9c2ab;
-  --sage:#5c7b67;
-  --line:rgba(243,236,216,0.14);
-  --line-strong:rgba(243,236,216,0.28);
-}
-*{box-sizing:border-box;margin:0;padding:0;}
-html{scroll-behavior:smooth;}
-body{
-  background:var(--bg);
-  color:var(--cream);
-  font-family:'Work Sans',sans-serif;
-  line-height:1.6;
-  overflow-x:hidden;
-}
-a{color:inherit;text-decoration:none;}
-.wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
-h1,h2,h3{font-family:'Fraunces',serif;font-weight:700;letter-spacing:-0.01em;}
-.eyebrow{
-  font-family:'JetBrains Mono',monospace;
-  font-size:12px;
-  letter-spacing:0.14em;
-  text-transform:uppercase;
-  color:var(--gold-soft);
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
-.eyebrow::before{content:'';width:18px;height:1px;background:var(--gold);}
-
-header{
-  position:sticky;top:0;z-index:50;
-  background:rgba(21,34,25,0.88);
-  backdrop-filter:blur(10px);
-  border-bottom:1px solid var(--line);
-}
-nav{
-  display:flex;align-items:center;justify-content:space-between;
-  padding:18px 32px;max-width:1180px;margin:0 auto;
-}
-.logo{
-  font-family:'Fraunces',serif;font-weight:700;font-size:19px;color:var(--cream);
-  display:flex;align-items:center;gap:9px;
-}
-.logo .dot{width:8px;height:8px;border-radius:50%;background:var(--gold);}
-.navlinks{display:flex;gap:34px;font-size:14.5px;color:var(--cream-dim);}
-.navlinks a:hover{color:var(--gold-soft);}
-.nav-cta{
-  background:var(--gold);color:#1a2314;padding:9px 20px;border-radius:3px;
-  font-weight:600;font-size:14px;letter-spacing:0.01em;
-  transition:background .2s ease;
-}
-.nav-cta:hover{background:var(--gold-soft);}
-@media(max-width:820px){.navlinks{display:none;}}
-
-.crumb{padding:22px 0 0;font-size:13px;color:var(--cream-dim);font-family:'JetBrains Mono',monospace;}
-.crumb a{color:var(--gold-soft);}
-.crumb a:hover{text-decoration:underline;}
-
-.hero{
-  padding:36px 0 64px;
-  position:relative;
-  background:
-    radial-gradient(ellipse 900px 500px at 85% -10%, rgba(203,161,53,0.10), transparent 60%),
-    radial-gradient(ellipse 700px 500px at -10% 90%, rgba(166,92,50,0.10), transparent 60%);
-}
-.hero .num-tag{
-  font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--gold);
-  border:1px solid var(--line-strong);display:inline-block;padding:5px 12px;border-radius:20px;margin-bottom:20px;
-}
-.hero h1{
-  font-size:clamp(32px,4.4vw,50px);
-  line-height:1.08;
-  margin:14px 0 20px;
-  color:var(--cream);
-  max-width:780px;
-}
-.hero p.lead{
-  font-size:17.5px;color:var(--cream-dim);max-width:640px;margin-bottom:30px;
-}
-.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;}
-.btn-primary{
-  background:var(--gold);color:#1a2314;padding:14px 26px;border-radius:3px;
-  font-weight:600;font-size:15px;transition:transform .15s ease, background .2s ease;
-  display:inline-block;
-}
-.btn-primary:hover{background:var(--gold-soft);transform:translateY(-1px);}
-.btn-ghost{
-  border:1px solid var(--line-strong);color:var(--cream);padding:14px 26px;border-radius:3px;
-  font-weight:500;font-size:15px;transition:border-color .2s ease, background .2s ease;
-  display:inline-block;
-}
-.btn-ghost:hover{border-color:var(--gold);background:rgba(203,161,53,0.06);}
-
-section{padding:72px 0;}
-.section-head{max-width:640px;margin-bottom:44px;}
-.section-head h2{font-size:clamp(26px,3.2vw,34px);margin-top:14px;color:var(--cream);}
-.section-head p{color:var(--cream-dim);margin-top:14px;font-size:16px;}
-
-.includes{background:var(--bg-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
-.includes-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
-@media(max-width:700px){.includes-grid{grid-template-columns:1fr;}}
-.includes-card{background:var(--bg-alt);padding:26px 28px;display:flex;gap:16px;align-items:flex-start;}
-.includes-card .mark{
-  font-family:'Fraunces',serif;color:var(--gold-soft);font-size:18px;flex-shrink:0;margin-top:2px;
-}
-.includes-card p{font-size:15px;color:var(--cream);}
-
-.process-list{display:flex;flex-direction:column;}
-.process-row{
-  display:grid;grid-template-columns:90px 1fr;gap:24px;
-  padding:26px 0;border-top:1px solid var(--line);
-  align-items:start;
-}
-.process-row:last-child{border-bottom:1px solid var(--line);}
-.process-row .step-mark{
-  font-family:'Fraunces',serif;font-size:15px;color:var(--gold-soft);
-  display:flex;align-items:center;gap:10px;
-}
-.process-row .step-mark::after{content:'';flex:1;height:1px;background:var(--line-strong);}
-.process-row h3{font-size:18px;color:var(--cream);margin-bottom:6px;font-weight:600;}
-.process-row p{color:var(--cream-dim);font-size:14.5px;max-width:560px;}
-
-.related{background:var(--bg-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
-.related-grid{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px;}
-.related-chip{
-  border:1px solid var(--line-strong);padding:12px 18px;border-radius:4px;font-size:14px;color:var(--cream-dim);
-  transition:border-color .2s ease, color .2s ease;
-}
-.related-chip:hover{border-color:var(--gold);color:var(--gold-soft);}
-
-.contact{background:linear-gradient(180deg, var(--bg) 0%, #101c15 100%);border-top:1px solid var(--line);}
-.contact-box{
-  display:grid;grid-template-columns:1.1fr 0.9fr;gap:50px;
-  background:var(--panel);border:1px solid var(--line-strong);border-radius:6px;padding:52px;
-}
-@media(max-width:820px){.contact-box{grid-template-columns:1fr;padding:34px;}}
-.contact-box h2{font-size:clamp(24px,2.8vw,32px);margin-bottom:16px;color:var(--cream);}
-.contact-box p{color:var(--cream-dim);margin-bottom:26px;max-width:440px;}
-.contact-form{display:flex;flex-direction:column;gap:14px;}
-.contact-form input, .contact-form textarea{
-  background:var(--bg);border:1px solid var(--line-strong);color:var(--cream);
-  padding:13px 15px;border-radius:3px;font-family:'Work Sans',sans-serif;font-size:14.5px;
-}
-.contact-form input:focus, .contact-form textarea:focus{
-  outline:2px solid var(--gold);outline-offset:1px;border-color:var(--gold);
-}
-.contact-form textarea{resize:vertical;min-height:100px;}
-.contact-form button{
-  background:var(--gold);color:#1a2314;border:none;padding:14px;border-radius:3px;
-  font-weight:600;font-size:15px;cursor:pointer;transition:background .2s ease;
-  font-family:'Work Sans',sans-serif;
-}
-.contact-form button:hover{background:var(--gold-soft);}
-.contact-form button:focus-visible{outline:2px solid var(--cream);outline-offset:2px;}
-
-footer{padding:34px 0;border-top:1px solid var(--line);}
-footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
-footer p{font-size:13px;color:var(--cream-dim);}
-
-::selection{background:var(--gold);color:#1a2314;}
+:root{--blue:#1769e0;--blue2:#0b4fc4;--navy:#071b45;--sky:#eef6ff;--pale:#f7fbff;--text:#162033;--muted:#5d6b82;--line:#dce9f8;--shadow:0 18px 50px rgba(23,105,224,.12)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,Arial,sans-serif;color:var(--text);background:#fff;line-height:1.7}a{text-decoration:none;color:inherit}.container{max-width:1160px;margin:auto;padding:0 22px}section{padding:82px 0}.eyebrow{display:inline-block;color:var(--blue);font-size:.76rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}.section-head{max-width:720px;margin-bottom:44px}.section-head h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(2rem,4vw,3rem);line-height:1.12;color:var(--navy);margin-bottom:14px}.section-head p{color:var(--muted)}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}nav{height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font-family:'Space Grotesk',sans-serif;font-size:1.2rem;font-weight:800;color:var(--navy)}.logo span{color:var(--blue)}.nav-links{display:flex;align-items:center;gap:22px}.nav-links>a,.dropdown>a{font-size:.88rem;font-weight:700;color:#53627a}.nav-links>a:hover,.dropdown>a:hover{color:var(--blue)}.dropdown{position:relative}.dropdown-menu{position:absolute;top:135%;left:50%;transform:translateX(-50%) translateY(8px);width:310px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px;box-shadow:var(--shadow);opacity:0;visibility:hidden;transition:.2s}.dropdown:hover .dropdown-menu{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}.dropdown-menu a{display:block;padding:10px 12px;border-radius:9px;color:var(--text);font-size:.86rem}.dropdown-menu a:hover{background:var(--sky);color:var(--blue)}.nav-cta{background:var(--blue)!important;color:#fff!important;padding:10px 16px;border-radius:9px}
+.hero{padding:72px 0 62px;background:linear-gradient(135deg,#f7fbff,#eef6ff 58%,#fff)}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:50px;align-items:center}.hero h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(2.7rem,5vw,4.6rem);line-height:1.03;letter-spacing:-2px;color:var(--navy);margin-bottom:22px}.hero h1 span{color:var(--blue)}.hero-copy{font-size:1.05rem;color:var(--muted);max-width:690px}.hero-ctas{display:flex;gap:13px;flex-wrap:wrap;margin:30px 0 22px}.btn{display:inline-block;padding:14px 21px;border-radius:10px;font-weight:800;font-size:.92rem;transition:.2s}.btn-primary{background:var(--blue);color:#fff;box-shadow:0 10px 25px rgba(23,105,224,.2)}.btn-primary:hover{background:var(--blue2);transform:translateY(-2px)}.btn-secondary{background:#fff;color:var(--blue);border:1px solid #bcd5f7}.btn-secondary:hover{background:var(--sky)}.hero-points{display:flex;gap:10px;flex-wrap:wrap}.hero-points span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 11px;font-size:.76rem;font-weight:700;color:#465875}
+.visual{position:relative}.audit-card{background:#fff;border:1px solid #cfe0f5;border-radius:24px;padding:20px;box-shadow:0 24px 70px rgba(7,27,69,.14);transform:rotate(1deg)}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}.title{font-family:'Space Grotesk',sans-serif;font-weight:800;color:var(--navy)}.pill{background:#e8f3ff;color:var(--blue);font-size:.72rem;font-weight:800;padding:6px 9px;border-radius:999px}.audit-head{background:var(--navy);border-radius:15px;padding:17px;color:#fff}.audit-head small{color:#a9c3e7;font-size:.66rem;font-weight:700}.audit-head h3{font-family:'Space Grotesk',sans-serif;font-size:1.35rem;margin-top:4px}.checks{margin-top:12px;display:grid;gap:8px}.check{display:flex;align-items:center;justify-content:space-between;border:1px solid var(--line);border-radius:11px;padding:10px 12px;background:#fbfdff;font-size:.72rem}.check b{color:var(--navy)}.status{font-weight:800;padding:4px 7px;border-radius:999px;font-size:.62rem}.good{background:#e8f7ef;color:#16814b}.warn{background:#fff5dd;color:#9b6900}.issue{background:#ffebeb;color:#c23838}.audit-score{display:flex;align-items:center;gap:12px;margin-top:13px}.circle{width:52px;height:52px;border:6px solid #bcd8fa;border-top-color:var(--blue);border-radius:50%;display:grid;place-items:center;font-family:'Space Grotesk',sans-serif;font-weight:800;color:var(--blue);font-size:.82rem}.audit-score span{font-size:.7rem;color:var(--muted)}.floating{position:absolute;right:-18px;bottom:-18px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:15px 18px;box-shadow:var(--shadow);font-size:.78rem;font-weight:800;color:var(--navy)}.floating strong{display:block;color:var(--blue);font-size:1.15rem}
+.trust{background:var(--navy);color:#fff}.trust-row{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.trust-item{display:flex;align-items:center;gap:10px;font-weight:700;font-size:.86rem;padding:18px 0}.trust-icon{width:32px;height:32px;border-radius:9px;background:#12366f;display:grid;place-items:center;color:#75b0ff;font-weight:900}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:25px;box-shadow:0 10px 30px rgba(7,27,69,.05);transition:.2s}.feature-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#b8d3f5}.feature-icon{width:44px;height:44px;border-radius:12px;background:var(--sky);color:var(--blue);display:grid;place-items:center;font-weight:900;margin-bottom:18px}.feature-card h3{font-family:'Space Grotesk',sans-serif;color:var(--navy);margin-bottom:9px}.feature-card p{font-size:.9rem;color:var(--muted)}
+.alt{background:var(--pale)}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.step{background:#fff;border:1px solid var(--line);border-radius:15px;padding:22px}.step-num{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:10px;background:var(--blue);color:#fff;font-weight:800;margin-bottom:15px}.step h3{font-family:'Space Grotesk',sans-serif;color:var(--navy);font-size:1.05rem;margin-bottom:7px}.step p{font-size:.84rem;color:var(--muted)}
+.gap-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.gap-box{background:#fff;border:1px solid var(--line);border-radius:16px;padding:25px}.gap-box h3{font-family:'Space Grotesk',sans-serif;color:var(--navy);margin-bottom:15px}.gap-list{display:grid;gap:10px}.gap-list div{display:flex;gap:10px;align-items:flex-start;font-size:.84rem;color:var(--muted)}.dot{width:24px;height:24px;flex:0 0 24px;border-radius:7px;background:var(--sky);color:var(--blue);display:grid;place-items:center;font-weight:900;font-size:.7rem}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.faq{border:1px solid var(--line);border-radius:14px;padding:20px;background:#fff}.faq h3{font-family:'Space Grotesk',sans-serif;color:var(--navy);font-size:1rem;margin-bottom:7px}.faq p{font-size:.86rem;color:var(--muted)}
+.cta{background:linear-gradient(135deg,var(--blue2),var(--blue));color:#fff;border-radius:24px;padding:52px;text-align:center;box-shadow:0 20px 55px rgba(23,105,224,.2)}.cta h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(2rem,4vw,3rem);margin-bottom:12px}.cta p{max-width:650px;margin:0 auto 22px;color:#e6f0ff}.cta .btn{background:#fff;color:var(--blue)}
+.other-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.other-grid a{padding:15px;background:#fff;border:1px solid var(--line);border-radius:12px;font-weight:700;font-size:.82rem;color:var(--navy)}.other-grid a:hover{background:var(--sky);color:var(--blue)}footer{background:#061737;color:#b9c8df;padding:30px 0;text-align:center;font-size:.82rem}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.audit-card{transform:none}.trust-row{grid-template-columns:repeat(2,1fr)}.feature-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}.other-grid{grid-template-columns:repeat(2,1fr)}.nav-links>a:not(.nav-cta),.dropdown{display:none}}
+@media(max-width:600px){section{padding:65px 0}.hero{padding-top:48px}.hero h1{font-size:2.75rem;letter-spacing:-1px}.feature-grid,.steps,.faq-grid,.trust-row,.other-grid,.gap-grid{grid-template-columns:1fr}.hero-ctas{flex-direction:column}.btn{text-align:center}.cta{padding:38px 22px}.floating{right:5px}.container{padding:0 18px}}
 </style>
 </head>
 <body>
+<header><nav class="container">
+<a href="../index.html" class="logo">Zaheer <span>SEO Expert</span></a>
+<div class="nav-links">
+<a href="../index.html">Home</a>
+<div class="dropdown"><a href="#services">Services ▾</a><div class="dropdown-menu">
+<a href="on-page-seo.html">On-Page SEO →</a><a href="technical-seo.html">Technical SEO →</a><a href="off-page-seo-link-building.html">Off-Page SEO & Link Building →</a><a href="local-seo-google-business-profile.html">Local SEO & Google Business Profile →</a><a href="keyword-research-strategy.html">Keyword Research & Strategy →</a><a href="content-strategy-copywriting.html">Content Strategy & Copywriting →</a><a href="ecommerce-seo.html">E-commerce SEO →</a><a href="seo-audits-competitor-analysis.html">SEO Audits & Competitor Analysis →</a><a href="analytics-tracking-reporting.html">Analytics, Tracking & Reporting →</a>
+</div></div>
+<a href="../index.html#process">Process</a><a href="../index.html#why">Results</a><a href="../index.html#areas">Areas</a><a href="../blog/index.html">Blog</a><a href="../index.html#contact">Contact</a><a href="https://wa.me/923277350830" class="nav-cta">Free SEO Audit</a>
+</div></nav></header>
 
-<header>
-  <nav>
-    <a href="../index.html" class="logo"><span class="dot"></span>Layyah&nbsp;SEO&nbsp;Expert</a>
-    <div class="navlinks">
-      <a href="../index.html#services">Services</a>
-      <a href="../index.html#process">Process</a>
-      <a href="../index.html#why">Results</a>
-      <a href="../index.html#areas">Areas</a>
-      <a href="../index.html#contact">Contact</a>
-    </div>
-    <a href="../index.html#contact" class="nav-cta">Get a Free Audit</a>
-  </nav>
-</header>
+<section class="hero"><div class="container hero-grid">
+<div>
+<span class="eyebrow">SEO Audits & Competitor Analysis · Layyah, Punjab</span>
+<h1>Find What’s Holding Your <span>SEO Back.</span></h1>
+<p class="hero-copy">A detailed SEO audit turns hidden problems and missed opportunities into a clear action plan. I review technical health, on-page optimization, content, internal links, authority and competitors so you know what to fix first.</p>
+<div class="hero-ctas"><a href="https://wa.me/923277350830" class="btn btn-primary">Request a Free SEO Review</a><a href="../index.html#services" class="btn btn-secondary">Explore All Services</a></div>
+<div class="hero-points"><span>✓ Technical Checks</span><span>✓ On-Page Gaps</span><span>✓ Competitor Research</span><span>✓ Action Plan</span></div>
+</div>
+<div class="visual"><div class="audit-card">
+<div class="top"><span class="title">SEO Health Audit</span><span class="pill">Site Analysis</span></div>
+<div class="audit-head"><small>WEBSITE PERFORMANCE REVIEW</small><h3>Priority Findings</h3></div>
+<div class="checks">
+<div class="check"><b>Indexability</b><span class="status good">Healthy</span></div>
+<div class="check"><b>Page Structure</b><span class="status warn">Review</span></div>
+<div class="check"><b>Content Gaps</b><span class="status issue">Found</span></div>
+<div class="check"><b>Internal Links</b><span class="status warn">Improve</span></div>
+<div class="check"><b>Competitor Gaps</b><span class="status issue">Found</span></div>
+</div>
+<div class="audit-score"><div class="circle">SEO</div><span>Prioritize fixes by impact, effort and business value.</span></div>
+</div><div class="floating"><strong>Audit → Action</strong>Find issues. Fix priorities. Grow.</div></div>
+</div></section>
 
-<div class="wrap crumb"><a href="../index.html">Home</a> / <a href="../index.html#services">Services</a> / SEO Audits & Competitor Analysis</div>
+<div class="trust"><div class="container trust-row">
+<div class="trust-item"><span class="trust-icon">✓</span>Technical Review</div>
+<div class="trust-item"><span class="trust-icon">◎</span>On-Page Analysis</div>
+<div class="trust-item"><span class="trust-icon">↗</span>Competitor Gaps</div>
+<div class="trust-item"><span class="trust-icon">→</span>Action Roadmap</div>
+</div></div>
 
-<section class="hero">
-  <div class="wrap">
-    <div class="num-tag">Service 08 / 09</div>
-    <h1>A clear-eyed diagnostic of where you stand &mdash; and why.</h1>
-    <p class="lead">Before any strategy, I run a full audit of your site against the businesses actually outranking you, and turn it into a prioritized action list.</p>
-    <div class="hero-ctas">
-      <a href="#contact" class="btn-primary">Request a Free Audit</a>
-      <a href="../index.html#services" class="btn-ghost">See All Services</a>
-    </div>
-  </div>
-</section>
+<section id="services"><div class="container">
+<div class="section-head"><span class="eyebrow">What's Included</span><h2>See the full SEO picture—not just one metric.</h2><p>A useful audit should explain what is wrong, why it matters, how urgent it is and what you can do next.</p></div>
+<div class="feature-grid">
+<div class="feature-card"><div class="feature-icon">TC</div><h3>Technical SEO Audit</h3><p>Review crawlability, indexation, redirects, canonical signals, broken links, site structure and other technical SEO foundations.</p></div>
+<div class="feature-card"><div class="feature-icon">OP</div><h3>On-Page SEO Audit</h3><p>Check titles, headings, content relevance, internal linking, keyword targeting, image optimization and page-level opportunities.</p></div>
+<div class="feature-card"><div class="feature-icon">CO</div><h3>Content Gap Analysis</h3><p>Find important topics and pages your competitors cover that your website may be missing or underdeveloping.</p></div>
+<div class="feature-card"><div class="feature-icon">BL</div><h3>Backlink & Authority Review</h3><p>Assess backlink patterns and identify opportunities to build stronger, more relevant authority around important pages.</p></div>
+<div class="feature-card"><div class="feature-icon">CR</div><h3>Competitor Analysis</h3><p>Compare competitors' keywords, content, page structures and organic strategies to uncover realistic opportunities.</p></div>
+<div class="feature-card"><div class="feature-icon">RD</div><h3>SEO Roadmap</h3><p>Turn findings into prioritized tasks so you know which improvements should be handled first and which can wait.</p></div>
+</div></div></section>
 
-<section class="includes">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">What's Included</div>
-      <h2>What SEO Audits & Competitor Analysis covers.</h2>
-    </div>
-  </div>
-  <div class="includes-grid wrap" style="padding:0 32px;">
-    <div class="includes-card"><span class="mark">&mdash;</span><p>Full technical and on-page audit</p></div>
-    <div class="includes-card"><span class="mark">&mdash;</span><p>Competitor benchmarking against 3&ndash;5 top performers</p></div>
-    <div class="includes-card"><span class="mark">&mdash;</span><p>Backlink profile analysis and risk flagging</p></div>
-    <div class="includes-card"><span class="mark">&mdash;</span><p>Prioritized fix roadmap, ranked by impact and effort</p></div>
-    <div class="includes-card"><span class="mark">&mdash;</span><p>Quick-win identification for fast early results</p></div>
-    <div class="includes-card"><span class="mark">&mdash;</span><p>Ongoing audit tracking to measure real progress</p></div>
-  </div>
-</section>
+<section class="alt"><div class="container">
+<div class="section-head"><span class="eyebrow">What I Look For</span><h2>From technical issues to missed ranking opportunities.</h2><p>The audit is designed to connect SEO problems with practical business impact.</p></div>
+<div class="gap-grid">
+<div class="gap-box"><h3>Website SEO Checks</h3><div class="gap-list">
+<div><span class="dot">✓</span>Indexability, crawlability and important URL signals</div>
+<div><span class="dot">✓</span>Titles, meta descriptions, headings and content structure</div>
+<div><span class="dot">✓</span>Internal linking and site architecture opportunities</div>
+<div><span class="dot">✓</span>Duplicate, thin or overlapping content risks</div>
+<div><span class="dot">✓</span>Mobile experience and Core Web Vitals considerations</div>
+</div></div>
+<div class="gap-box"><h3>Competitor Intelligence</h3><div class="gap-list">
+<div><span class="dot">↗</span>Keywords and pages competitors are visible for</div>
+<div><span class="dot">↗</span>Content topics and commercial landing pages they target</div>
+<div><span class="dot">↗</span>Internal linking and website structure patterns</div>
+<div><span class="dot">↗</span>Authority and link-building opportunities</div>
+<div><span class="dot">↗</span>Gaps that can become new pages or content targets</div>
+</div></div>
+</div></div></section>
 
+<section><div class="container">
+<div class="section-head"><span class="eyebrow">How I Work</span><h2>A clear four-step audit process.</h2></div>
+<div class="steps">
+<div class="step"><span class="step-num">01</span><h3>Collect Data</h3><p>Review the website, target market, important pages, keywords and available SEO performance data.</p></div>
+<div class="step"><span class="step-num">02</span><h3>Diagnose</h3><p>Identify technical, on-page, content, internal-linking and authority issues that can limit visibility.</p></div>
+<div class="step"><span class="step-num">03</span><h3>Compare</h3><p>Analyze relevant competitors to understand what they do well and where your website can compete.</p></div>
+<div class="step"><span class="step-num">04</span><h3>Prioritize</h3><p>Convert findings into an actionable roadmap organized by impact, effort and business importance.</p></div>
+</div></div></section>
 
-<section id="process">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">How It Works</div>
-      <h2>A process you can actually see progress in.</h2>
-      <p>Every engagement follows the same four stages, with a reporting checkpoint at each one.</p>
-    </div>
-    <div class="process-list">
-      <div class="process-row">
-        <div class="step-mark">01</div>
-        <div><h3>Full-Site Audit</h3><p>On-page, technical, and backlink profile checked against 3&ndash;5 competitors to find the gaps worth closing first.</p></div>
-      </div>
-      <div class="process-row">
-        <div class="step-mark">02</div>
-        <div><h3>SEO Strategy</h3><p>A prioritized plan covering content, technical fixes, link building, and local visibility &mdash; based on your goals and budget.</p></div>
-      </div>
-      <div class="process-row">
-        <div class="step-mark">03</div>
-        <div><h3>Implementation</h3><p>Fixes shipped, content published, and outreach run &mdash; every change tracked before it goes live.</p></div>
-      </div>
-      <div class="process-row">
-        <div class="step-mark">04</div>
-        <div><h3>Reporting &amp; Iteration</h3><p>Monthly reports on rankings, traffic, and leads, with the plan adjusted based on what's working.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="alt"><div class="container">
+<div class="section-head"><span class="eyebrow">FAQ</span><h2>Common SEO audit questions.</h2></div>
+<div class="faq-grid">
+<div class="faq"><h3>What is an SEO audit?</h3><p>An SEO audit is a structured review of a website's technical setup, pages, content, internal links, authority and other factors that can influence organic search performance.</p></div>
+<div class="faq"><h3>How often should a website be audited?</h3><p>A full audit can be useful when launching a new SEO campaign, after major website changes, or whenever performance has stalled. Smaller checks can be performed more regularly.</p></div>
+<div class="faq"><h3>Will an audit guarantee higher rankings?</h3><p>No. An audit identifies opportunities and problems; ranking improvements depend on implementation, competition, search demand, site quality and many other factors.</p></div>
+<div class="faq"><h3>Do you audit local business websites?</h3><p>Yes. Local businesses can be reviewed for website SEO, location relevance, service pages, local content and their broader local search strategy.</p></div>
+</div></div></section>
 
+<section><div class="container"><div class="cta">
+<span class="eyebrow" style="color:#bfe0ff">Know What To Fix First</span>
+<h2>Want to know why your website isn't ranking?</h2>
+<p>Send me your website URL and target location. I'll help you identify the most important SEO opportunities and next steps.</p>
+<a href="https://wa.me/923277350830" class="btn">Request Free SEO Review</a>
+</div></div></section>
 
-<section class="related">
-  <div class="wrap">
-    <div class="section-head" style="margin-bottom:20px;">
-      <div class="eyebrow">Often Paired With</div>
-      <h2>Related services.</h2>
-    </div>
-    <div class="related-grid">
-      <a class="related-chip" href="on-page-seo.html">On-Page SEO</a>
-      <a class="related-chip" href="keyword-research.html">Keyword Research & Strategy</a>
-      <a class="related-chip" href="analytics-reporting.html">Analytics, Tracking & Reporting</a>
-    </div>
-  </div>
-</section>
+<section><div class="container"><div class="section-head"><span class="eyebrow">Explore More</span><h2>Other SEO services</h2></div>
+<div class="other-grid">
+<a href="on-page-seo.html">On-Page SEO →</a><a href="technical-seo.html">Technical SEO →</a><a href="off-page-seo-link-building.html">Off-Page SEO →</a><a href="local-seo-google-business-profile.html">Local SEO & GBP →</a><a href="keyword-research-strategy.html">Keyword Research →</a><a href="content-strategy-copywriting.html">Content Strategy →</a><a href="ecommerce-seo.html">E-commerce SEO →</a><a href="analytics-tracking-reporting.html">Analytics & Reporting →</a>
+</div></div></section>
 
-
-<section class="contact" id="contact">
-  <div class="wrap">
-    <div class="contact-box">
-      <div>
-        <div class="eyebrow">Get Started</div>
-        <h2>Let's talk about SEO Audits & Competitor Analysis.</h2>
-        <p>Send a few details and I'll come back with a short, honest read on where your site stands &mdash; no obligation.</p>
-        <p style="margin-top:-8px;"><strong style="color:var(--cream);">WhatsApp / Call:</strong> <a href="https://wa.me/923277350830" style="text-decoration:underline;">0327&nbsp;7350830</a> &nbsp;&middot;&nbsp; <strong style="color:var(--cream);">Email:</strong> <a href="mailto:seozaheer14@gmail.com" style="text-decoration:underline;">seozaheer14@gmail.com</a></p>
-      </div>
-      <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Sent — I will reply soon';">
-        <input type="text" placeholder="Your name" required>
-        <input type="text" placeholder="Website URL" required>
-        <input type="email" placeholder="Email address" required>
-        <textarea placeholder="What are you hoping to improve?"></textarea>
-        <button type="submit">Request Free SEO Audit</button>
-      </form>
-    </div>
-  </div>
-</section>
-
-
-<footer>
-  <div class="wrap">
-    <p>&copy; 2026 Layyah SEO Expert. All rights reserved.</p>
-    <p>Layyah, Punjab, Pakistan</p>
-  </div>
-</footer>
-
-</body>
-</html>
+<footer><div class="container">© 2026 Zaheer SEO Expert · Layyah, Punjab, Pakistan · WhatsApp 0327 7350830</div></footer>
+</body></html>
