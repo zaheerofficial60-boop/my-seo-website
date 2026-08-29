@@ -66,6 +66,34 @@
   .logo .dot{width:8px;height:8px;border-radius:50%;background:var(--gold);}
   .navlinks{display:flex;gap:34px;font-size:14.5px;color:var(--cream-dim);}
   .navlinks a:hover{color:var(--gold-soft);}
+  .nav-dropdown{position:relative;}
+  .nav-dropdown > a{display:flex;align-items:center;gap:5px;cursor:pointer;}
+  .nav-dropdown .chevron{
+    width:9px;height:9px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;
+    transform:rotate(45deg);margin-top:-3px;transition:transform .2s ease;
+  }
+  .nav-dropdown:hover .chevron{transform:rotate(225deg);margin-top:3px;}
+  .dropdown-menu{
+    position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(6px);
+    background:var(--panel);border:1px solid var(--line-strong);border-radius:6px;
+    padding:8px;min-width:230px;
+    opacity:0;visibility:hidden;pointer-events:none;
+    transition:opacity .18s ease, transform .18s ease;
+    box-shadow:0 12px 28px rgba(0,0,0,0.35);
+    z-index:60;
+  }
+  .nav-dropdown:hover .dropdown-menu{
+    opacity:1;visibility:visible;pointer-events:auto;
+    transform:translateX(-50%) translateY(10px);
+  }
+  .dropdown-menu a{
+    display:flex;align-items:center;justify-content:space-between;gap:10px;
+    padding:9px 12px;border-radius:4px;font-size:13.5px;color:var(--cream-dim);
+    white-space:nowrap;
+  }
+  .dropdown-menu a:hover{background:rgba(203,161,53,0.08);color:var(--gold-soft);}
+  .dropdown-menu .dnum{font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--gold);}
+  @media(max-width:820px){.dropdown-menu{display:none;}}
   .nav-cta{
     background:var(--gold);color:#1a2314;padding:9px 20px;border-radius:3px;
     font-weight:600;font-size:14px;letter-spacing:0.01em;
@@ -248,7 +276,20 @@
   <nav>
     <div class="logo"><span class="dot"></span>Zaheer&nbsp;SEO&nbsp;Expert</div>
     <div class="navlinks">
-      <a href="#services">Services</a>
+      <div class="nav-dropdown">
+        <a href="#services">Services<span class="chevron"></span></a>
+        <div class="dropdown-menu">
+          <a href="services/on-page-seo.html"><span>On-Page SEO</span><span class="dnum">01</span></a>
+          <a href="services/technical-seo.html"><span>Technical SEO</span><span class="dnum">02</span></a>
+          <a href="services/off-page-seo.html"><span>Off-Page SEO &amp; Link Building</span><span class="dnum">03</span></a>
+          <a href="services/local-seo-gbp.html"><span>Local SEO &amp; GBP</span><span class="dnum">04</span></a>
+          <a href="services/keyword-research.html"><span>Keyword Research</span><span class="dnum">05</span></a>
+          <a href="services/content-strategy.html"><span>Content Strategy</span><span class="dnum">06</span></a>
+          <a href="services/ecommerce-seo.html"><span>E-commerce SEO</span><span class="dnum">07</span></a>
+          <a href="services/seo-audits.html"><span>SEO Audits</span><span class="dnum">08</span></a>
+          <a href="services/analytics-reporting.html"><span>Analytics &amp; Reporting</span><span class="dnum">09</span></a>
+        </div>
+      </div>
       <a href="#process">Process</a>
       <a href="#why">Results</a>
       <a href="#areas">Areas</a>
