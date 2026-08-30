@@ -1,44 +1,848 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SEO Blog | Zaheer SEO Expert</title>
-  <meta name="description" content="SEO guides and insights from Zaheer SEO Expert covering on-page SEO, off-page SEO, local SEO and Google Business Profile optimization.">
+
+  <title>SEO Blog & Guides | Zaheer SEO Expert</title>
+
+  <meta name="description" content="Explore practical SEO guides from Zaheer SEO Expert covering off-page SEO, on-page SEO, Google Business Profile optimization, link building, local SEO and organic traffic growth.">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    :root {
+      --navy: #071b45;
+      --blue: #1769e0;
+      --blue-dark: #0b4fbe;
+      --sky: #edf5ff;
+      --light: #f7fbff;
+      --white: #ffffff;
+      --text: #243653;
+      --muted: #64748b;
+      --line: #dce8f6;
+      --shadow: 0 15px 40px rgba(7, 27, 69, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--text);
+      font-family: Inter, Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    /* =========================
+       NAVIGATION
+    ========================= */
+
+    header {
+      background: rgba(255,255,255,0.96);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--navy);
+    }
+
+    .logo span {
+      color: var(--blue);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #46566e;
+    }
+
+    .nav-links a:hover {
+      color: var(--blue);
+    }
+
+    .nav-btn {
+      background: var(--blue);
+      color: white !important;
+      padding: 10px 16px;
+      border-radius: 8px;
+    }
+
+    .nav-btn:hover {
+      background: var(--blue-dark) !important;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      padding: 85px 0 65px;
+      background:
+        radial-gradient(circle at 85% 15%, #dbeaff 0, transparent 28%),
+        linear-gradient(180deg, #ffffff 0%, #f5faff 100%);
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: var(--sky);
+      color: var(--blue);
+      padding: 7px 13px;
+      border-radius: 50px;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+    }
+
+    .hero h1 {
+      margin: 18px auto 16px;
+      max-width: 850px;
+      color: var(--navy);
+      font-family: "Space Grotesk", sans-serif;
+      font-size: clamp(2.4rem, 5vw, 4.2rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .hero p {
+      max-width: 730px;
+      margin: auto;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    /* =========================
+       BLOG SECTION
+    ========================= */
+
+    .blog-section {
+      padding: 65px 0 90px;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 38px;
+    }
+
+    .section-heading h2 {
+      color: var(--navy);
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    /* =========================
+       BLOG CARDS
+    ========================= */
+
+    .blog-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 45px rgba(7,27,69,0.12);
+    }
+
+    .card-top {
+      min-height: 180px;
+      padding: 25px;
+      background: linear-gradient(135deg, #edf5ff, #dbeaff);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-top::after {
+      content: "SEO";
+      position: absolute;
+      right: -15px;
+      bottom: -35px;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 6rem;
+      font-weight: 800;
+      color: rgba(23,105,224,0.08);
+    }
+
+    .category {
+      display: inline-block;
+      background: white;
+      color: var(--blue);
+      border: 1px solid #cfe0f5;
+      padding: 6px 10px;
+      border-radius: 7px;
+      font-size: 0.65rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+    }
+
+    .card-icon {
+      margin-top: 25px;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: var(--navy);
+    }
+
+    .card-content {
+      padding: 25px;
+    }
+
+    .card-content h3 {
+      color: var(--navy);
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.25rem;
+      line-height: 1.3;
+      margin-bottom: 13px;
+    }
+
+    .card-content p {
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-bottom: 20px;
+    }
+
+    .read-more {
+      color: var(--blue);
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+
+    .read-more:hover {
+      color: var(--blue-dark);
+    }
+
+    /* =========================
+       TOPICS
+    ========================= */
+
+    .topics {
+      margin-top: 65px;
+      padding: 35px;
+      background: var(--navy);
+      border-radius: 18px;
+      color: white;
+    }
+
+    .topics h2 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.7rem;
+      margin-bottom: 10px;
+    }
+
+    .topics p {
+      color: #dce7f8;
+      max-width: 760px;
+      margin-bottom: 22px;
+    }
+
+    .topic-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .topic-list span {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.15);
+      padding: 8px 12px;
+      border-radius: 7px;
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+
+    /* =========================
+       ABOUT AUTHOR
+    ========================= */
+
+    .author-section {
+      padding: 70px 0;
+      background: white;
+      border-top: 1px solid var(--line);
+    }
+
+    .author-box {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .author-box h2 {
+      color: var(--navy);
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 2rem;
+      margin-bottom: 13px;
+    }
+
+    .author-box p {
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .author-box strong {
+      color: var(--navy);
+    }
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta-section {
+      padding: 70px 0;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #0b4fbe, #1769e0);
+      color: white;
+      padding: 45px;
+      border-radius: 18px;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      color: #e6f0ff;
+      max-width: 680px;
+      margin: 0 auto 22px;
+    }
+
+    .cta a {
+      display: inline-block;
+      background: white;
+      color: var(--blue);
+      padding: 11px 18px;
+      border-radius: 8px;
+      font-weight: 800;
+      font-size: 0.8rem;
+    }
+
+    .cta a:hover {
+      background: #edf5ff;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      background: var(--navy);
+      color: #dbe7f8;
+      padding: 35px 0;
+      text-align: center;
+      font-size: 0.78rem;
+    }
+
+    footer a {
+      color: white;
+      font-weight: 700;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media(max-width: 850px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .blog-card {
+        max-width: 600px;
+        margin: auto;
+        width: 100%;
+      }
+
+    }
+
+    @media(max-width: 600px) {
+
+      .hero {
+        padding: 60px 0 45px;
+      }
+
+      .topics,
+      .cta {
+        padding: 28px 22px;
+      }
+
+    }
+
+  </style>
 </head>
+
 
 <body>
 
-  <h1>SEO Blog & Insights</h1>
 
-  <p>
-    Practical SEO guides, strategies and insights from Zaheer SEO Expert.
-  </p>
+<!-- =========================
+     NAVIGATION
+========================= -->
 
-  <h2>Latest SEO Articles</h2>
+<header>
 
-  <article>
-    <h3>Off-Page SEO Strategies to Improve Google Rankings and Organic Traffic</h3>
-    <p>Learn practical off-page SEO and link building strategies.</p>
-    <a href="off-page-seo-strategies.html">Read Article →</a>
-  </article>
+  <div class="container nav">
 
-  <article>
-    <h3>On-Page SEO Checklist 2026</h3>
-    <p>Important on-page SEO elements every website should optimize.</p>
-    <a href="on-page-seo-checklist-2026.html">Read Article →</a>
-  </article>
+    <a href="../index.html" class="logo">
+      Zaheer <span>SEO Expert</span>
+    </a>
 
-  <article>
-    <h3>Google Business Profile Optimization Guide</h3>
-    <p>Learn how to improve your local visibility with GBP optimization.</p>
-    <a href="google-business-profile-optimization-guide.html">Read Article →</a>
-  </article>
+    <nav class="nav-links">
 
-  <p>
-    <a href="../index.html">← Back to Homepage</a>
-  </p>
+      <a href="../index.html">
+        Home
+      </a>
+
+      <a href="../index.html#services">
+        Services
+      </a>
+
+      <a href="index.html">
+        Blog
+      </a>
+
+      <a href="../index.html#about">
+        About
+      </a>
+
+      <a href="../index.html#contact">
+        Contact
+      </a>
+
+      <a href="../index.html#contact" class="nav-btn">
+        Free SEO Audit
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+  <div class="container">
+
+    <span class="eyebrow">
+      SEO GUIDES • STRATEGIES • INSIGHTS
+    </span>
+
+    <h1>
+      SEO Blog & Insights
+    </h1>
+
+    <p>
+      Practical SEO guides and strategies to help businesses improve
+      Google visibility, organic traffic, local rankings and online
+      authority.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     BLOG ARTICLES
+========================= -->
+
+<section class="blog-section">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <h2>
+        Latest SEO Articles
+      </h2>
+
+      <p>
+        Explore practical guides covering on-page SEO, off-page SEO,
+        link building, local SEO and Google Business Profile optimization.
+      </p>
+
+    </div>
+
+
+    <div class="blog-grid">
+
+
+      <!-- ARTICLE 1 -->
+
+      <article class="blog-card">
+
+        <div class="card-top">
+
+          <span class="category">
+            OFF-PAGE SEO
+          </span>
+
+          <div class="card-icon">
+            LINK BUILDING
+          </div>
+
+        </div>
+
+
+        <div class="card-content">
+
+          <h3>
+            Off-Page SEO Strategies to Improve Google Rankings and Organic Traffic
+          </h3>
+
+          <p>
+            Learn practical off-page SEO strategies including quality
+            link building, personalized outreach, digital PR, local
+            citations, brand mentions and sustainable authority building.
+          </p>
+
+          <a
+            href="off-page-seo-strategies.html"
+            class="read-more">
+
+            Read Full Article →
+
+          </a>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- ARTICLE 2 -->
+
+      <article class="blog-card">
+
+        <div class="card-top">
+
+          <span class="category">
+            ON-PAGE SEO
+          </span>
+
+          <div class="card-icon">
+            SEO CHECKLIST
+          </div>
+
+        </div>
+
+
+        <div class="card-content">
+
+          <h3>
+            Complete On-Page SEO Guide
+          </h3>
+
+          <p>
+            Learn how to optimize titles, headings, content structure,
+            internal links, search intent and other important on-page
+            SEO elements for better search visibility.
+          </p>
+
+          <a
+            href="on-page-seo-checklist-2026.html"
+            class="read-more">
+
+            Read Full Article →
+
+          </a>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- ARTICLE 3 -->
+
+      <article class="blog-card">
+
+        <div class="card-top">
+
+          <span class="category">
+            LOCAL SEO
+          </span>
+
+          <div class="card-icon">
+            GOOGLE BUSINESS
+          </div>
+
+        </div>
+
+
+        <div class="card-content">
+
+          <h3>
+            Google Business Profile Optimization Guide
+          </h3>
+
+          <p>
+            Learn practical ways to optimize your Google Business Profile,
+            improve local visibility and attract more calls, website visits
+            and potential customers.
+          </p>
+
+          <a
+            href="google-business-profile-optimization-guide.html"
+            class="read-more">
+
+            Read Full Article →
+
+          </a>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+
+
+    <!-- =========================
+         SEO TOPICS
+    ========================= -->
+
+    <div class="topics">
+
+      <h2>
+        What You'll Learn Here
+      </h2>
+
+      <p>
+        This SEO blog focuses on practical strategies that businesses
+        and website owners can use to build sustainable search visibility,
+        authority and organic traffic.
+      </p>
+
+
+      <div class="topic-list">
+
+        <span>
+          Off-Page SEO
+        </span>
+
+        <span>
+          Link Building
+        </span>
+
+        <span>
+          Guest Posting
+        </span>
+
+        <span>
+          Digital PR
+        </span>
+
+        <span>
+          On-Page SEO
+        </span>
+
+        <span>
+          Technical SEO
+        </span>
+
+        <span>
+          Local SEO
+        </span>
+
+        <span>
+          Google Business Profile
+        </span>
+
+        <span>
+          Keyword Research
+        </span>
+
+        <span>
+          Organic Traffic
+        </span>
+
+        <span>
+          SEO Audits
+        </span>
+
+        <span>
+          SEO Analytics
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     ABOUT ZAHEER
+========================= -->
+
+<section class="author-section">
+
+  <div class="container">
+
+    <div class="author-box">
+
+      <h2>
+        About Zaheer SEO Expert
+      </h2>
+
+      <p>
+        I am <strong>Zaheer</strong>, an SEO professional providing
+        practical SEO services for businesses and websites.
+      </p>
+
+      <p>
+        My professional experience across
+        <strong>Layyah, Lahore and Multan</strong> has helped me
+        understand different business environments, local markets
+        and competitive search requirements.
+      </p>
+
+      <p>
+        My work includes on-page SEO, technical SEO, off-page SEO,
+        link building, local SEO, Google Business Profile optimization,
+        keyword research, content strategy, e-commerce SEO,
+        SEO audits and analytics reporting.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="cta-section">
+
+  <div class="container">
+
+    <div class="cta">
+
+      <h2>
+        Need Help Improving Your Google Rankings?
+      </h2>
+
+      <p>
+        Get practical SEO support focused on improving your website's
+        visibility, authority, organic traffic and local search presence.
+      </p>
+
+      <a href="../index.html#contact">
+        Request a Free SEO Review →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <div class="container">
+
+    © 2026 Zaheer SEO Expert · Layyah, Punjab, Pakistan
+
+    ·
+
+    <a href="../index.html">
+      Back to Homepage
+    </a>
+
+  </div>
+
+</footer>
+
 
 </body>
 </html>
