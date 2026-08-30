@@ -6,7 +6,7 @@
 
   <title>SEO Blog & Guides | Zaheer SEO Expert</title>
 
-  <meta name="description" content="Explore practical SEO guides from Zaheer SEO Expert covering off-page SEO, on-page SEO, Google Business Profile optimization, link building, local SEO and organic traffic growth.">
+  <meta name="description" content="Explore practical SEO guides and strategies from Zaheer SEO Expert covering off-page SEO, on-page SEO, link building, local SEO and Google Business Profile optimization.">
 
   <meta name="robots" content="index, follow">
 
@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
 
@@ -29,13 +29,13 @@
       --text: #243653;
       --muted: #64748b;
       --line: #dce8f6;
-      --shadow: 0 15px 40px rgba(7, 27, 69, 0.08);
+      --shadow: 0 15px 40px rgba(7,27,69,0.08);
     }
 
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     html {
@@ -43,9 +43,9 @@
     }
 
     body {
+      font-family: Inter, Arial, sans-serif;
       background: var(--light);
       color: var(--text);
-      font-family: Inter, Arial, sans-serif;
       line-height: 1.7;
     }
 
@@ -54,22 +54,27 @@
       color: inherit;
     }
 
+    img {
+      max-width: 100%;
+    }
+
     .container {
       width: min(1120px, 92%);
       margin: auto;
     }
+
 
     /* =========================
        NAVIGATION
     ========================= */
 
     header {
-      background: rgba(255,255,255,0.96);
-      border-bottom: 1px solid var(--line);
       position: sticky;
       top: 0;
-      z-index: 100;
-      backdrop-filter: blur(10px);
+      z-index: 999;
+      background: rgba(255,255,255,0.96);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
     }
 
     .nav {
@@ -81,7 +86,7 @@
 
     .logo {
       font-family: "Space Grotesk", sans-serif;
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       font-weight: 800;
       color: var(--navy);
     }
@@ -93,7 +98,7 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 24px;
+      gap: 23px;
       font-size: 0.8rem;
       font-weight: 700;
       color: #46566e;
@@ -114,133 +119,210 @@
       background: var(--blue-dark) !important;
     }
 
+
     /* =========================
        HERO
     ========================= */
 
     .hero {
-      padding: 85px 0 65px;
+      padding: 85px 0 70px;
+
       background:
-        radial-gradient(circle at 85% 15%, #dbeaff 0, transparent 28%),
-        linear-gradient(180deg, #ffffff 0%, #f5faff 100%);
-      text-align: center;
+        radial-gradient(
+          circle at 85% 15%,
+          #dbeaff 0,
+          transparent 30%
+        ),
+
+        linear-gradient(
+          180deg,
+          #ffffff 0%,
+          #f3f8ff 100%
+        );
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 55px;
     }
 
     .eyebrow {
       display: inline-block;
-      background: var(--sky);
+      background: white;
+      border: 1px solid #d5e5f8;
       color: var(--blue);
       padding: 7px 13px;
       border-radius: 50px;
       font-size: 0.68rem;
       font-weight: 800;
-      letter-spacing: 0.1em;
+      letter-spacing: .08em;
+      box-shadow: 0 8px 20px rgba(7,27,69,.05);
     }
 
     .hero h1 {
-      margin: 18px auto 16px;
-      max-width: 850px;
-      color: var(--navy);
+      margin: 20px 0 18px;
       font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(2.4rem, 5vw, 4.2rem);
-      line-height: 1.05;
-      letter-spacing: -0.04em;
+      color: var(--navy);
+      font-size: clamp(2.5rem, 5vw, 4.3rem);
+      line-height: 1.03;
+      letter-spacing: -0.045em;
     }
 
     .hero p {
-      max-width: 730px;
-      margin: auto;
+      max-width: 650px;
       color: var(--muted);
       font-size: 1rem;
     }
+
+    .hero-image {
+      min-height: 390px;
+      border-radius: 22px;
+      overflow: hidden;
+      border: 1px solid #d6e6f8;
+      box-shadow: 0 25px 60px rgba(7,27,69,.12);
+      background: linear-gradient(135deg,#edf5ff,#dbeaff);
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 390px;
+      object-fit: cover;
+      display: block;
+    }
+
+
+    /* =========================
+       FEATURES
+    ========================= */
+
+    .features {
+      margin-top: 35px;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 14px;
+    }
+
+    .feature {
+      text-align: center;
+      padding: 16px 10px;
+    }
+
+    .feature-icon {
+      width: 48px;
+      height: 48px;
+      margin: auto auto 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: var(--blue);
+      color: white;
+      font-size: 1.35rem;
+      font-weight: 800;
+    }
+
+    .feature strong {
+      display: block;
+      color: var(--navy);
+      font-size: .72rem;
+      line-height: 1.3;
+    }
+
 
     /* =========================
        BLOG SECTION
     ========================= */
 
     .blog-section {
-      padding: 65px 0 90px;
+      padding: 80px 0 90px;
+      background: white;
     }
 
     .section-heading {
-      text-align: center;
-      margin-bottom: 38px;
+      margin-bottom: 40px;
     }
 
     .section-heading h2 {
       color: var(--navy);
       font-family: "Space Grotesk", sans-serif;
-      font-size: 2rem;
+      font-size: 2.25rem;
       margin-bottom: 8px;
     }
 
     .section-heading p {
+      max-width: 700px;
       color: var(--muted);
-      max-width: 650px;
-      margin: auto;
     }
 
     .blog-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3,1fr);
       gap: 25px;
     }
 
+
     /* =========================
-       BLOG CARDS
+       BLOG CARD
     ========================= */
 
     .blog-card {
-      background: var(--white);
+      background: white;
       border: 1px solid var(--line);
       border-radius: 16px;
       overflow: hidden;
       box-shadow: var(--shadow);
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      transition: .25s ease;
     }
 
     .blog-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 45px rgba(7,27,69,0.12);
+      transform: translateY(-7px);
+      box-shadow: 0 25px 55px rgba(7,27,69,.13);
     }
 
-    .card-top {
-      min-height: 180px;
-      padding: 25px;
-      background: linear-gradient(135deg, #edf5ff, #dbeaff);
+    .card-image {
+      height: 220px;
       position: relative;
       overflow: hidden;
+      background: #edf5ff;
     }
 
-    .card-top::after {
-      content: "SEO";
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .35s ease;
+    }
+
+    .blog-card:hover .card-image img {
+      transform: scale(1.04);
+    }
+
+    .card-overlay {
       position: absolute;
-      right: -15px;
-      bottom: -35px;
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 6rem;
-      font-weight: 800;
-      color: rgba(23,105,224,0.08);
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(7,27,69,.45),
+        transparent 55%
+      );
     }
 
     .category {
-      display: inline-block;
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      z-index: 2;
       background: white;
       color: var(--blue);
       border: 1px solid #cfe0f5;
       padding: 6px 10px;
       border-radius: 7px;
-      font-size: 0.65rem;
+      font-size: .63rem;
       font-weight: 800;
-      letter-spacing: 0.05em;
-    }
-
-    .card-icon {
-      margin-top: 25px;
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 1.65rem;
-      font-weight: 800;
-      color: var(--navy);
+      letter-spacing: .04em;
     }
 
     .card-content {
@@ -248,8 +330,8 @@
     }
 
     .card-content h3 {
-      color: var(--navy);
       font-family: "Space Grotesk", sans-serif;
+      color: var(--navy);
       font-size: 1.25rem;
       line-height: 1.3;
       margin-bottom: 13px;
@@ -257,13 +339,13 @@
 
     .card-content p {
       color: var(--muted);
-      font-size: 0.88rem;
+      font-size: .88rem;
       margin-bottom: 20px;
     }
 
     .read-more {
       color: var(--blue);
-      font-size: 0.78rem;
+      font-size: .78rem;
       font-weight: 800;
     }
 
@@ -271,118 +353,150 @@
       color: var(--blue-dark);
     }
 
+
     /* =========================
        TOPICS
     ========================= */
 
     .topics {
-      margin-top: 65px;
-      padding: 35px;
-      background: var(--navy);
+      margin-top: 60px;
+      padding: 38px;
       border-radius: 18px;
+      background: linear-gradient(
+        135deg,
+        #092968,
+        #1769e0
+      );
       color: white;
     }
 
     .topics h2 {
       font-family: "Space Grotesk", sans-serif;
-      font-size: 1.7rem;
-      margin-bottom: 10px;
+      font-size: 1.8rem;
+      margin-bottom: 8px;
     }
 
     .topics p {
-      color: #dce7f8;
-      max-width: 760px;
+      max-width: 720px;
+      color: #dce8fb;
       margin-bottom: 22px;
     }
 
     .topic-list {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 9px;
     }
 
     .topic-list span {
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.15);
-      padding: 8px 12px;
-      border-radius: 7px;
-      font-size: 0.72rem;
+      padding: 8px 13px;
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 50px;
+      background: rgba(255,255,255,.09);
+      font-size: .72rem;
       font-weight: 700;
     }
 
+
     /* =========================
-       ABOUT AUTHOR
+       ABOUT
     ========================= */
 
-    .author-section {
-      padding: 70px 0;
+    .about {
+      padding: 75px 0;
+      background: var(--light);
+    }
+
+    .about-box {
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 35px;
+      align-items: center;
       background: white;
-      border-top: 1px solid var(--line);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 35px;
+      box-shadow: var(--shadow);
     }
 
-    .author-box {
-      max-width: 850px;
+    .profile-circle {
+      width: 140px;
+      height: 140px;
       margin: auto;
-      text-align: center;
+      border-radius: 50%;
+      background: linear-gradient(
+        135deg,
+        #dcecff,
+        #eef6ff
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--blue);
+      font-size: 4rem;
+      font-weight: 800;
     }
 
-    .author-box h2 {
-      color: var(--navy);
+    .about h2 {
       font-family: "Space Grotesk", sans-serif;
+      color: var(--navy);
       font-size: 2rem;
-      margin-bottom: 13px;
-    }
-
-    .author-box p {
-      color: var(--muted);
       margin-bottom: 12px;
     }
 
-    .author-box strong {
+    .about p {
+      color: var(--muted);
+      margin-bottom: 9px;
+    }
+
+    .about strong {
       color: var(--navy);
     }
+
 
     /* =========================
        CTA
     ========================= */
 
     .cta-section {
-      padding: 70px 0;
+      padding: 30px 0 80px;
+      background: var(--light);
     }
 
     .cta {
-      background: linear-gradient(135deg, #0b4fbe, #1769e0);
-      color: white;
-      padding: 45px;
       border-radius: 18px;
+      padding: 45px;
+      color: white;
+      background: linear-gradient(
+        135deg,
+        #1769e0,
+        #0b4fbe
+      );
       text-align: center;
     }
 
     .cta h2 {
       font-family: "Space Grotesk", sans-serif;
       font-size: 2rem;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .cta p {
-      color: #e6f0ff;
-      max-width: 680px;
-      margin: 0 auto 22px;
+      max-width: 700px;
+      margin: auto auto 23px;
+      color: #e5efff;
     }
 
     .cta a {
       display: inline-block;
       background: white;
       color: var(--blue);
-      padding: 11px 18px;
+      padding: 12px 20px;
       border-radius: 8px;
+      font-size: .8rem;
       font-weight: 800;
-      font-size: 0.8rem;
     }
 
-    .cta a:hover {
-      background: #edf5ff;
-    }
 
     /* =========================
        FOOTER
@@ -392,23 +506,52 @@
       background: var(--navy);
       color: #dbe7f8;
       padding: 35px 0;
-      text-align: center;
-      font-size: 0.78rem;
     }
 
-    footer a {
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .footer-brand strong {
       color: white;
+    }
+
+    .footer-brand small {
+      display: block;
+      margin-top: 4px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+      font-size: .76rem;
       font-weight: 700;
     }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
 
     /* =========================
        RESPONSIVE
     ========================= */
 
-    @media(max-width: 850px) {
+    @media(max-width: 900px) {
 
-      .nav-links {
-        display: none;
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-image {
+        min-height: 300px;
+      }
+
+      .hero-image img {
+        height: 300px;
       }
 
       .blog-grid {
@@ -416,22 +559,50 @@
       }
 
       .blog-card {
-        max-width: 600px;
-        margin: auto;
+        max-width: 620px;
         width: 100%;
+        margin: auto;
+      }
+
+      .features {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .about-box {
+        grid-template-columns: 1fr;
+        text-align: center;
       }
 
     }
 
-    @media(max-width: 600px) {
+
+    @media(max-width: 650px) {
+
+      .nav-links {
+        display: none;
+      }
 
       .hero {
-        padding: 60px 0 45px;
+        padding: 60px 0 50px;
+      }
+
+      .features {
+        grid-template-columns: repeat(2,1fr);
       }
 
       .topics,
       .cta {
         padding: 28px 22px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
       }
 
     }
@@ -457,25 +628,15 @@
 
     <nav class="nav-links">
 
-      <a href="../index.html">
-        Home
-      </a>
+      <a href="../index.html">Home</a>
 
-      <a href="../index.html#services">
-        Services
-      </a>
+      <a href="../index.html#services">Services</a>
 
-      <a href="index.html">
-        Blog
-      </a>
+      <a href="index.html">Blog</a>
 
-      <a href="../index.html#about">
-        About
-      </a>
+      <a href="../index.html#about">About</a>
 
-      <a href="../index.html#contact">
-        Contact
-      </a>
+      <a href="../index.html#contact">Contact</a>
 
       <a href="../index.html#contact" class="nav-btn">
         Free SEO Audit
@@ -497,19 +658,99 @@
 
   <div class="container">
 
-    <span class="eyebrow">
-      SEO GUIDES • STRATEGIES • INSIGHTS
-    </span>
+    <div class="hero-grid">
 
-    <h1>
-      SEO Blog & Insights
-    </h1>
+      <div>
 
-    <p>
-      Practical SEO guides and strategies to help businesses improve
-      Google visibility, organic traffic, local rankings and online
-      authority.
-    </p>
+        <span class="eyebrow">
+          SEO GUIDES • STRATEGIES • INSIGHTS
+        </span>
+
+        <h1>
+          SEO Blog & Insights
+        </h1>
+
+        <p>
+          Practical SEO guides and strategies to help businesses
+          improve Google visibility, organic traffic, local rankings
+          and online authority.
+        </p>
+
+        <div class="features">
+
+          <div class="feature">
+
+            <div class="feature-icon">
+              ↗
+            </div>
+
+            <strong>
+              QUALITY<br>
+              BACKLINKS
+            </strong>
+
+          </div>
+
+
+          <div class="feature">
+
+            <div class="feature-icon">
+              ★
+            </div>
+
+            <strong>
+              BRAND<br>
+              MENTIONS
+            </strong>
+
+          </div>
+
+
+          <div class="feature">
+
+            <div class="feature-icon">
+              +
+            </div>
+
+            <strong>
+              SOCIAL<br>
+              SIGNALS
+            </strong>
+
+          </div>
+
+
+          <div class="feature">
+
+            <div class="feature-icon">
+              ◎
+            </div>
+
+            <strong>
+              ONLINE<br>
+              AUTHORITY
+            </strong>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- HERO IMAGE -->
+
+      <div class="hero-image">
+
+        <img
+          src="images/seo-blog-hero.jpg"
+          alt="SEO blog and digital marketing strategy illustration"
+          loading="eager"
+        >
+
+      </div>
+
+    </div>
 
   </div>
 
@@ -518,7 +759,7 @@
 
 
 <!-- =========================
-     BLOG ARTICLES
+     LATEST ARTICLES
 ========================= -->
 
 <section class="blog-section">
@@ -532,7 +773,7 @@
       </h2>
 
       <p>
-        Explore practical guides covering on-page SEO, off-page SEO,
+        Explore practical guides covering off-page SEO, on-page SEO,
         link building, local SEO and Google Business Profile optimization.
       </p>
 
@@ -542,19 +783,25 @@
     <div class="blog-grid">
 
 
-      <!-- ARTICLE 1 -->
+      <!-- =====================
+           OFF PAGE SEO
+      ====================== -->
 
       <article class="blog-card">
 
-        <div class="card-top">
+        <div class="card-image">
+
+          <img
+            src="images/off-page-seo.jpg"
+            alt="Off-page SEO and link building strategy"
+            loading="lazy"
+          >
+
+          <div class="card-overlay"></div>
 
           <span class="category">
             OFF-PAGE SEO
           </span>
-
-          <div class="card-icon">
-            LINK BUILDING
-          </div>
 
         </div>
 
@@ -585,19 +832,25 @@
 
 
 
-      <!-- ARTICLE 2 -->
+      <!-- =====================
+           ON PAGE SEO
+      ====================== -->
 
       <article class="blog-card">
 
-        <div class="card-top">
+        <div class="card-image">
+
+          <img
+            src="images/on-page-seo.jpg"
+            alt="On-page SEO checklist and website optimization"
+            loading="lazy"
+          >
+
+          <div class="card-overlay"></div>
 
           <span class="category">
             ON-PAGE SEO
           </span>
-
-          <div class="card-icon">
-            SEO CHECKLIST
-          </div>
 
         </div>
 
@@ -610,8 +863,8 @@
 
           <p>
             Learn how to optimize titles, headings, content structure,
-            internal links, search intent and other important on-page
-            SEO elements for better search visibility.
+            internal links, search intent and important on-page SEO
+            elements for better search visibility.
           </p>
 
           <a
@@ -628,19 +881,25 @@
 
 
 
-      <!-- ARTICLE 3 -->
+      <!-- =====================
+           LOCAL SEO / GBP
+      ====================== -->
 
       <article class="blog-card">
 
-        <div class="card-top">
+        <div class="card-image">
+
+          <img
+            src="images/google-business-profile.jpg"
+            alt="Google Business Profile local SEO optimization"
+            loading="lazy"
+          >
+
+          <div class="card-overlay"></div>
 
           <span class="category">
             LOCAL SEO
           </span>
-
-          <div class="card-icon">
-            GOOGLE BUSINESS
-          </div>
 
         </div>
 
@@ -652,9 +911,9 @@
           </h3>
 
           <p>
-            Learn practical ways to optimize your Google Business Profile,
-            improve local visibility and attract more calls, website visits
-            and potential customers.
+            Learn practical ways to optimize your Google Business
+            Profile, improve local visibility and attract more calls,
+            website visits and potential customers.
           </p>
 
           <a
@@ -675,7 +934,7 @@
 
 
     <!-- =========================
-         SEO TOPICS
+         TOPICS
     ========================= -->
 
     <div class="topics">
@@ -693,53 +952,31 @@
 
       <div class="topic-list">
 
-        <span>
-          Off-Page SEO
-        </span>
+        <span>Off-Page SEO</span>
 
-        <span>
-          Link Building
-        </span>
+        <span>Link Building</span>
 
-        <span>
-          Guest Posting
-        </span>
+        <span>Guest Posting</span>
 
-        <span>
-          Digital PR
-        </span>
+        <span>Digital PR</span>
 
-        <span>
-          On-Page SEO
-        </span>
+        <span>On-Page SEO</span>
 
-        <span>
-          Technical SEO
-        </span>
+        <span>Technical SEO</span>
 
-        <span>
-          Local SEO
-        </span>
+        <span>Local SEO</span>
 
-        <span>
-          Google Business Profile
-        </span>
+        <span>Google Business Profile</span>
 
-        <span>
-          Keyword Research
-        </span>
+        <span>Keyword Research</span>
 
-        <span>
-          Organic Traffic
-        </span>
+        <span>Organic Traffic</span>
 
-        <span>
-          SEO Audits
-        </span>
+        <span>SEO Audits</span>
 
-        <span>
-          SEO Analytics
-        </span>
+        <span>SEO Analytics</span>
+
+        <span>Content Strategy</span>
 
       </div>
 
@@ -755,34 +992,43 @@
      ABOUT ZAHEER
 ========================= -->
 
-<section class="author-section">
+<section class="about">
 
   <div class="container">
 
-    <div class="author-box">
+    <div class="about-box">
 
-      <h2>
-        About Zaheer SEO Expert
-      </h2>
+      <div class="profile-circle">
+        Z
+      </div>
 
-      <p>
-        I am <strong>Zaheer</strong>, an SEO professional providing
-        practical SEO services for businesses and websites.
-      </p>
 
-      <p>
-        My professional experience across
-        <strong>Layyah, Lahore and Multan</strong> has helped me
-        understand different business environments, local markets
-        and competitive search requirements.
-      </p>
+      <div>
 
-      <p>
-        My work includes on-page SEO, technical SEO, off-page SEO,
-        link building, local SEO, Google Business Profile optimization,
-        keyword research, content strategy, e-commerce SEO,
-        SEO audits and analytics reporting.
-      </p>
+        <h2>
+          About Zaheer SEO Expert
+        </h2>
+
+        <p>
+          I am <strong>Zaheer</strong>, an SEO professional providing
+          practical SEO services for businesses and websites.
+        </p>
+
+        <p>
+          My professional experience across
+          <strong>Layyah, Lahore and Multan</strong> has helped me
+          understand different business environments, local markets
+          and competitive search requirements.
+        </p>
+
+        <p>
+          My work includes <strong>on-page SEO, technical SEO,
+          off-page SEO, link building, local SEO, Google Business
+          Profile optimization, keyword research, content strategy,
+          e-commerce SEO, SEO audits and analytics reporting.</strong>
+        </p>
+
+      </div>
 
     </div>
 
@@ -829,15 +1075,44 @@
 
 <footer>
 
-  <div class="container">
+  <div class="container footer-inner">
 
-    © 2026 Zaheer SEO Expert · Layyah, Punjab, Pakistan
+    <div class="footer-brand">
 
-    ·
+      <strong>
+        © 2026 Zaheer SEO Expert
+      </strong>
 
-    <a href="../index.html">
-      Back to Homepage
-    </a>
+      <small>
+        Layyah, Punjab, Pakistan
+      </small>
+
+    </div>
+
+
+    <div class="footer-links">
+
+      <a href="../index.html">
+        Home
+      </a>
+
+      <a href="../index.html#services">
+        Services
+      </a>
+
+      <a href="index.html">
+        Blog
+      </a>
+
+      <a href="../index.html#about">
+        About
+      </a>
+
+      <a href="../index.html#contact">
+        Contact
+      </a>
+
+    </div>
 
   </div>
 
