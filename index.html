@@ -1141,12 +1141,10 @@ font-size:2rem
 grid-template-columns:1fr
 }
 
-.about-photo-card{
-max-width:360px
+.about-photo-card {
+  max-width: 320px;
+  height: 420px;
 }
-
-.about-photo-card img{
-height:470px
 }
 
 }
@@ -1186,10 +1184,6 @@ Zaheer <span>SEO Expert</span>
 
 <a href="services/off-page-seo-link-building.html">
 Off-Page SEO & Link Building →
-</a>
-
-<a href="services/off-page-seo-link-building.html#free-sites">
-Free Backlink Sites →
 </a>
 
 <a href="services/local-seo-google-business-profile.html">
@@ -1352,9 +1346,7 @@ ABOUT ME
 <!-- ABOUT TEXT -->
 
 <div class="about-content">
-<div class="about-image">
-  <img src="zaheer-seo-expert.jpg" alt="Zaheer - SEO Expert">
-</div><span class="eyebrow">
+
 ABOUT ME
 </span>
 
@@ -3047,3 +3039,150 @@ Working Hours
 
 </body>
 </html>
+<!-- =========================
+     BACKLINK RESOURCES BAR
+========================== -->
+
+<section class="backlink-resource-bar">
+
+  <div class="container">
+
+    <div class="resource-bar-head">
+      <span class="eyebrow">OFF-PAGE SEO RESOURCES</span>
+
+      <h2>Explore Backlink Opportunities</h2>
+
+      <p>
+        Explore useful backlink resources, free backlink sites,
+        guest posting opportunities, directories, citations and
+        other off-page SEO strategies.
+      </p>
+    </div>
+
+    <div class="resource-bar">
+
+      <a href="services/off-page-seo-link-building.html">
+        <span>🔗</span>
+        <strong>Backlink Sites</strong>
+      </a>
+
+      <a href="services/off-page-seo-link-building.html#free-sites">
+        <span>🆓</span>
+        <strong>Free Backlink Sites</strong>
+      </a>
+
+      <a href="services/off-page-seo-link-building.html#guest-posting">
+        <span>✍️</span>
+        <strong>Guest Posting</strong>
+      </a>
+
+      <a href="services/off-page-seo-link-building.html#directories">
+        <span>🌐</span>
+        <strong>Directories</strong>
+      </a>
+
+      <a href="services/off-page-seo-link-building.html#citations">
+        <span>📍</span>
+        <strong>Local Citations</strong>
+      </a>
+
+      <a href="services/off-page-seo-link-building.html#web20">
+        <span>📝</span>
+        <strong>Web 2.0</strong>
+      </a>
+
+      <a href="services/off-page-seo-link-building.html#qa-sites">
+        <span>❓</span>
+        <strong>Q&A Sites</strong>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<style>
+
+.backlink-resource-bar{
+  padding:70px 0;
+  background:#f7fbff;
+}
+
+.resource-bar-head{
+  text-align:center;
+  max-width:760px;
+  margin:0 auto 35px;
+}
+
+.resource-bar-head h2{
+  color:var(--navy);
+  margin:10px 0 12px;
+  font-size:2.2rem;
+}
+
+.resource-bar-head p{
+  color:var(--muted);
+  line-height:1.7;
+  font-size:.95rem;
+}
+
+.resource-bar{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:13px;
+}
+
+.resource-bar a{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  padding:13px 18px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:999px;
+  text-decoration:none;
+  color:var(--navy);
+  transition:.3s ease;
+  box-shadow:0 7px 20px rgba(20,60,120,.05);
+}
+
+.resource-bar a span{
+  font-size:18px;
+}
+
+.resource-bar a strong{
+  font-size:.82rem;
+}
+
+.resource-bar a:hover{
+  transform:translateY(-3px);
+  border-color:var(--blue);
+  color:var(--blue);
+  box-shadow:0 12px 25px rgba(20,60,120,.10);
+}
+
+@media(max-width:600px){
+
+  .backlink-resource-bar{
+    padding:55px 0;
+  }
+
+  .resource-bar-head h2{
+    font-size:1.8rem;
+  }
+
+  .resource-bar{
+    justify-content:flex-start;
+  }
+
+  .resource-bar a{
+    width:100%;
+    justify-content:center;
+  }
+
+}
+
+</style>
