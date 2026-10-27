@@ -1913,6 +1913,38 @@ margin-top:8px;
 font-weight:600
 }
 
+.mobile-call{
+display:none
+}
+
+@media (max-width:768px){
+
+.mobile-call{
+display:flex;
+position:fixed;
+left:14px;
+right:14px;
+bottom:14px;
+z-index:999;
+align-items:center;
+justify-content:center;
+gap:8px;
+background:#1769e0;
+color:#fff;
+font-weight:700;
+font-size:17px;
+padding:15px 20px;
+border-radius:999px;
+text-decoration:none;
+box-shadow:0 10px 26px rgba(7,27,69,.35)
+}
+
+body{
+padding-bottom:84px
+}
+
+}
+
 </style>
 
 <script type="application/ld+json">
@@ -4125,5 +4157,6 @@ Rajan Shah Road, Rana Nagar, Chak 116 TDA, Layyah, Punjab, Pakistan
 </footer>
 
 
+<a class="mobile-call" href="tel:+923277350830">📞 Call Now: 0327 7350830</a>
 </body>
 </html>
