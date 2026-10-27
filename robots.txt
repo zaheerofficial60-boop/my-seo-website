@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zaheerofficial60-boop.github.io/my-seo-website/sitemap.xml
