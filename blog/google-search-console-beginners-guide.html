@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-62LVKLS4G2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-62LVKLS4G2');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Search Console Guide | Zaheer SEO Expert</title>
+<meta name="description" content="A beginner guide to Google Search Console: performance, pages and coverage, sitemaps, and the checks every website owner should learn first.">
+<meta name="keywords" content="Google Search Console beginners guide, Search Console performance, sitemap basics">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://zaheerofficial60-boop.github.io/my-seo-website/blog/google-search-console-beginners-guide.html">
+<meta property="og:title" content="Google Search Console Guide | Zaheer SEO Expert">
+<meta property="og:description" content="A beginner guide to Google Search Console: performance, pages and coverage, sitemaps, and the checks every website owner should learn first.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://zaheerofficial60-boop.github.io/my-seo-website/blog/google-search-console-beginners-guide.html">
+<meta property="og:image" content="https://zaheerofficial60-boop.github.io/my-seo-website/zaheer-seo-expert.jpg">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#071b45;--blue:#1769e0;--blue-dark:#0b4fbe;--light:#f6faff;--sky:#edf5ff;--text:#263957;--muted:#64748b;--line:#dce8f6;--white:#ffffff;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:Inter,Arial,sans-serif;background:var(--light);color:var(--text);line-height:1.8;}
+a{text-decoration:none;color:var(--blue);}
+.container{width:min(1000px,92%);margin:auto;}
+header{position:sticky;top:0;z-index:999;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(10px);}
+.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;}
+.logo{font-family:"Space Grotesk",sans-serif;font-weight:800;font-size:1.15rem;color:var(--navy);}
+.logo span{color:var(--blue);}
+.nav-links{display:flex;gap:22px;align-items:center;font-size:.78rem;font-weight:700;}
+.nav-links a{color:#52627a;}
+.nav-links a:hover{color:var(--blue);}
+.nav-btn{background:var(--blue);color:white!important;padding:9px 15px;border-radius:7px;}
+.article-hero{padding:70px 0 55px;background:radial-gradient(circle at 85% 10%,#dbeaff 0,transparent 30%),linear-gradient(180deg,#fff,#f1f7ff);}
+.breadcrumb{font-size:.75rem;font-weight:600;color:var(--muted);margin-bottom:20px;}
+.breadcrumb a{color:var(--blue);}
+.category{display:inline-block;background:white;border:1px solid #cfe0f5;color:var(--blue);padding:7px 12px;border-radius:7px;font-size:.68rem;font-weight:800;letter-spacing:.04em;}
+.article-hero h1{font-family:"Space Grotesk",sans-serif;font-size:clamp(2.3rem,5vw,4rem);line-height:1.08;letter-spacing:-.04em;color:var(--navy);margin:20px 0 18px;max-width:850px;}
+.article-intro{font-size:1.05rem;color:var(--muted);max-width:820px;}
+.article-meta{margin-top:20px;font-size:.75rem;font-weight:600;color:#718198;}
+.article-image{margin:0 auto 55px;width:min(1000px,92%);height:350px;border-radius:18px;overflow:hidden;background:#edf5ff;border:1px solid var(--line);box-shadow:0 20px 45px rgba(7,27,69,.09);}
+.article-image svg{width:100%;height:100%;display:block;}
+.article-layout{display:grid;grid-template-columns:1fr 270px;gap:45px;align-items:start;padding-bottom:80px;}
+.article{background:white;border:1px solid var(--line);border-radius:16px;padding:45px;box-shadow:0 12px 35px rgba(7,27,69,.05);}
+.article h2{font-family:"Space Grotesk",sans-serif;font-size:1.8rem;line-height:1.25;color:var(--navy);margin:35px 0 15px;}
+.article h2:first-child{margin-top:0;}
+.article h3{font-family:"Space Grotesk",sans-serif;font-size:1.25rem;color:var(--navy);margin:27px 0 10px;}
+.article p{margin-bottom:17px;color:#4f617a;}
+.article ul,.article ol{padding-left:23px;margin:10px 0 22px;}
+.article li{margin-bottom:9px;color:#4f617a;}
+.article strong{color:var(--navy);}
+.checklist{background:#f3f8ff;border-left:4px solid var(--blue);padding:20px 22px;margin:25px 0;border-radius:8px;}
+.checklist strong{display:block;margin-bottom:5px;}
+.sidebar{position:sticky;top:95px;}
+.sidebar-box{background:white;border:1px solid var(--line);border-radius:14px;padding:23px;margin-bottom:18px;box-shadow:0 10px 25px rgba(7,27,69,.05);}
+.sidebar-box h3{font-family:"Space Grotesk",sans-serif;color:var(--navy);font-size:1rem;margin-bottom:12px;}
+.sidebar-box a{display:block;font-size:.78rem;font-weight:600;padding:8px 0;border-bottom:1px solid #edf2f8;}
+.sidebar-box a:last-child{border-bottom:0;}
+.gbp-button{display:inline-block;background:var(--blue);color:white;padding:12px 18px;border-radius:8px;font-weight:800;font-size:.82rem;margin:8px 0 22px;}
+.gbp-button:hover{background:var(--blue-dark);}
+.author-box{margin-top:45px;padding:25px;background:#f5f9ff;border:1px solid var(--line);border-radius:12px;}
+.author-box h3{margin-top:0;}
+.cta{margin-top:45px;padding:35px;border-radius:15px;background:linear-gradient(135deg,#1769e0,#0b4fbe);color:white;text-align:center;}
+.cta h2{color:white;margin:0 0 10px;}
+.cta p{color:#e3edff;}
+.cta a{display:inline-block;background:white;color:var(--blue);padding:11px 18px;border-radius:7px;font-weight:800;font-size:.8rem;}
+footer{background:var(--navy);color:#dbe7f8;padding:32px 0;}
+.footer{display:flex;justify-content:space-between;gap:20px;align-items:center;}
+.footer strong{color:white;}
+.footer small{display:block;margin-top:3px;}
+.footer-links{display:flex;gap:18px;font-size:.75rem;font-weight:700;}
+.footer-links a{color:#dbe7f8;}
+@media(max-width:850px){.nav-links{display:none;}.article-layout{grid-template-columns:1fr;}.sidebar{position:static;}}
+@media(max-width:600px){.article{padding:25px 20px;}.article-image{height:270px;}.article-hero{padding:55px 0 40px;}.footer{flex-direction:column;text-align:center;}.footer-links{justify-content:center;flex-wrap:wrap;}}
+.post-image{margin:28px 0;}
+.post-image img{width:100%;max-width:100%;height:auto;display:block;border-radius:12px;border:1px solid var(--line);}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Zaheer Seo Expert",
+  "url": "https://zaheerofficial60-boop.github.io/my-seo-website/",
+  "image": "https://zaheerofficial60-boop.github.io/my-seo-website/zaheer-seo-expert.jpg",
+  "telephone": "+92 327 7350830",
+  "email": "seozaheer14@gmail.com",
+  "address": {"@type": "PostalAddress","streetAddress": "Rajan Shah Road, Rana Nagar, Chak 116 TDA","addressLocality": "Layyah","addressRegion": "Punjab","addressCountry": "PK"},
+  "areaServed": ["Layyah","Chobara","Mianwali","Chowk Azam","Jaman Shah","Dera Ghazi Khan","Karor Lal Eason"],
+  "openingHoursSpecification": {"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens": "00:00","closes": "23:59"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question","name": "Is Google Search Console free?","acceptedAnswer": {"@type": "Answer","text": "Yes, Search Console is a free tool from Google. You verify that you own your website, and then Google starts sharing data about how your pages appear in search results and whether any technical problems need attention."}},
+    {"@type": "Question","name": "What does impressions mean in Search Console?","acceptedAnswer": {"@type": "Answer","text": "An impression means your page appeared somewhere in search results for a query, whether or not anyone clicked it. Impressions show growing visibility, while clicks show how often that visibility turned into an actual visit."}},
+    {"@type": "Question","name": "Why is a page not indexed?","acceptedAnswer": {"@type": "Answer","text": "Common reasons include the page being new, blocked by settings, having very thin content, or Google simply not having crawled it yet. The Pages report gives a reason for each group of pages, which is the best place to start checking."}},
+    {"@type": "Question","name": "Do I need to submit a sitemap more than once?","acceptedAnswer": {"@type": "Answer","text": "Usually you submit your sitemap once, and Google returns to it over time as pages change. If you rebuild your website or change your page addresses, check that the sitemap still lists the correct, current pages."}}
+  ]
+}
+</script>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a href="../index.html" class="logo">Zaheer <span>SEO Expert</span></a>
+<nav class="nav-links">
+<a href="../index.html">Home</a>
+<a href="../index.html#services">Services</a>
+<a href="index.html">Blog</a>
+<a href="../index.html#about">About</a>
+<a href="../index.html#contact" class="nav-btn">Free SEO Audit</a>
+</nav>
+</div>
+</header>
+<section class="article-hero">
+<div class="container">
+<div class="breadcrumb">
+<a href="../index.html">Home</a> &nbsp; / &nbsp; <a href="index.html">Blog</a> &nbsp; / &nbsp; Google Search Console Guide
+</div>
+<span class="category">ANALYTICS &amp; REPORTING</span>
+<h1>Google Search Console: A Beginner Guide for Website Owners</h1>
+<p class="article-intro">Search Console is Google talking directly to you about your website: what people searched, which pages appeared, and whether anything is broken. Here is how to read it without feeling overwhelmed.</p>
+<div class="article-meta">By Zaheer SEO Expert · 27 October 2026 · Analytics &amp; Reporting</div>
+</div>
+</section>
+<main class="container">
+<div class="article-layout">
+<article class="article">
+<p>If Google Analytics shows what visitors do after they arrive on your website, Google Search Console shows what happened before the click. It is a free tool where Google reports how your pages appear in search results, which searches brought people to you, and whether Google can properly read and index your pages. For any business that depends on being found, it is essential.</p>
+<p>Beginners often open Search Console once, see unfamiliar charts and warnings, and close it again. This guide takes a calmer path: three main areas, in order, and what each one is really telling you.</p>
+<h2>Setting Up and Verifying Your Website</h2>
+<p>Before any data appears, Google asks you to prove you own the website. This is called verification, and it can be done through your domain provider, a small file, or by connecting through Google Analytics. Once verified, data starts building over the following days. Make sure the account belongs to you, the business owner, and not only to a developer or agency. Our <a href="../services/analytics-tracking-reporting.html">analytics, tracking and reporting service</a> includes checking that both Analytics and Search Console are set up under the right ownership, because losing access to your own data is a common and avoidable problem.</p>
+<p>After verification, the first useful step is submitting your sitemap, which is covered below. Then give the tool some time. Search Console data usually lags by a few days, so yesterday's chart is rarely complete.</p>
+<figure class="post-image"><img src="../images/blog-google-search-console-beginners-guide-1.jpg" alt="Website owner verifying a site in Google Search Console on a laptop" loading="lazy"></figure>
+<h2>The Performance Report: Searches, Clicks and Visibility</h2>
+<p>Performance is the report most owners should learn first. It shows four main numbers. <strong>Clicks</strong> are visits from Google search. <strong>Impressions</strong> count how often your pages appeared in results. <strong>Average CTR</strong> is the share of impressions that became clicks, and <strong>average position</strong> is a rough guide to where your pages appeared on average.</p>
+<p>Below the chart you can switch between queries, pages, countries and devices. The queries list is especially valuable because it shows the real words people typed. A shop in Layyah might discover that customers search with the town name included far more often than expected. That discovery should shape your page titles and content, as explained in our guide on <a href="using-search-data-to-plan-content.html">using search data to plan content</a>.</p>
+<ul>
+<li><strong>Queries:</strong> The searches where your site appeared.</li>
+<li><strong>Pages:</strong> Which of your pages earned clicks and impressions.</li>
+<li><strong>Devices:</strong> Whether searchers mainly used mobile or desktop.</li>
+<li><strong>Date comparison:</strong> This period against the previous one, to see direction.</li>
+</ul>
+<h2>The Pages Report: Coverage and Indexing Basics</h2>
+<p>For a page to appear on Google, Google must crawl it and add it to its index. The Pages report, sometimes described as coverage, shows how many of your pages are indexed and how many are not, with a reason for each group. Some reasons are normal, such as old redirected addresses or duplicate pages Google chose to handle differently. Others need action, such as pages blocked by mistake or pages returning errors.</p>
+<p>Do not panic at every not-indexed entry. Start with one question: are all my important service and contact pages indexed? Use the URL Inspection tool at the top of Search Console to check a specific page. It tells you whether that page is on Google and lets you request indexing after you publish or fix something important.</p>
+<figure class="post-image"><img src="../images/blog-google-search-console-beginners-guide-2.jpg" alt="Checklist of website pages being reviewed for indexing" loading="lazy"></figure>
+<h2>Sitemaps: Giving Google a Clean List of Your Pages</h2>
+<p>A sitemap is a simple file that lists your website's pages. Think of it as handing Google a tidy contents page instead of asking it to guess your structure. In Search Console, open the Sitemaps section, enter your sitemap address, usually ending in sitemap.xml, and submit it. The status should show success, and over time Google reports how many of the listed pages it discovered.</p>
+<p>A sitemap only helps if it is accurate. It should list your current, working pages and not old addresses that no longer exist. Whenever your website is rebuilt or pages are renamed, check the sitemap again. A broken or outdated sitemap quietly wastes the tool's main benefit.</p>
+<h2>Other Sections Worth a Quick Look</h2>
+<p>Once the basics feel comfortable, glance at a few more areas from time to time. The Links report shows which websites link to you and which of your pages attract the most links. The mobile and page experience sections flag pages that are hard to use on phones. Messages from Google also arrive inside Search Console, so an important warning about your site may appear here before anywhere else.</p>
+<p>Remember that Search Console only covers Google search. It does not show social media visits or what people did after clicking. That is why it works as a pair with Analytics, a relationship explained simply in <a href="search-console-vs-google-analytics.html">Search Console versus Google Analytics</a>.</p>
+<h2>A Simple Monthly Search Console Habit</h2>
+<p>Once a month, open Performance and compare the last three months with the previous three. Note your top queries, any important page that lost clicks, and any indexing warning that mentions your key pages. Check that your sitemap status is still healthy. Write down one action, such as improving a title or expanding a page that is close to earning more clicks.</p>
+<p>Zaheer Seo Expert, based in Layyah, reviews these same basics for clients as part of honest monthly reporting. You do not need to understand every warning code. You need to know that Google can find your important pages, what customers are searching for, and whether your visibility is moving in the right direction.</p>
+<figure class="post-image"><img src="../images/blog-google-search-console-beginners-guide-3.jpg" alt="Business owner reviewing search performance graphs at a desk" loading="lazy"></figure>
+<h2>Frequently Asked Questions</h2>
+<h3>Is Google Search Console free?</h3>
+<p>Yes, Search Console is a free tool from Google. You verify that you own your website, and then Google starts sharing data about how your pages appear in search results and whether any technical problems need attention.</p>
+<h3>What does impressions mean in Search Console?</h3>
+<p>An impression means your page appeared somewhere in search results for a query, whether or not anyone clicked it. Impressions show growing visibility, while clicks show how often that visibility turned into an actual visit.</p>
+<h3>Why is a page not indexed?</h3>
+<p>Common reasons include the page being new, blocked by settings, having very thin content, or Google simply not having crawled it yet. The Pages report gives a reason for each group of pages, which is the best place to start checking.</p>
+<h3>Do I need to submit a sitemap more than once?</h3>
+<p>Usually you submit your sitemap once, and Google returns to it over time as pages change. If you rebuild your website or change your page addresses, check that the sitemap still lists the correct, current pages.</p>
+<div class="author-box">
+<h3>About Zaheer SEO Expert</h3>
+<p>Zaheer Seo Expert is an SEO services business based in Layyah, Punjab, providing on-page SEO, off-page SEO, local SEO, Google Business Profile optimization, keyword research and SEO audits for businesses in Layyah and across the surrounding areas.</p>
+</div>
+<div class="cta">
+<h2>Want More Customers From Google?</h2>
+<p>Call <a href="tel:+923277350830" style="display:inline;background:transparent;color:#ffffff;padding:0;border-radius:0;font-size:inherit;font-weight:700;text-decoration:underline;">0327 7350830</a> or email <a href="mailto:seozaheer14@gmail.com" style="display:inline;background:transparent;color:#ffffff;padding:0;border-radius:0;font-size:inherit;font-weight:700;text-decoration:underline;">seozaheer14@gmail.com</a>. Zaheer Seo Expert, Layyah - Rajan Shah Road, Rana Nagar, Chak 116 TDA, Pakistan. Open 24 hours.</p>
+<a href="../index.html#contact">Get Your SEO Strategy →</a>
+</div>
+</article>
+<aside class="sidebar">
+<div class="sidebar-box">
+<h3>In This Guide</h3>
+<a href="#">Setup and Verification</a>
+<a href="#">Performance Report</a>
+<a href="#">Pages and Indexing</a>
+<a href="#">Sitemaps Basics</a>
+<a href="#">Monthly Habit</a>
+</div>
+<div class="sidebar-box">
+<h3>Related SEO Guides</h3>
+<a href="using-search-data-to-plan-content.html">Using Search Data to Plan Content</a>
+<a href="search-console-vs-google-analytics.html">Search Console vs Google Analytics</a>
+<a href="index.html">All SEO Articles</a>
+</div>
+<div class="sidebar-box">
+<h3>SEO Services</h3>
+<a href="../services/analytics-tracking-reporting.html">Analytics, Tracking &amp; Reporting</a>
+<a href="../services/technical-seo.html">Technical SEO</a>
+<a href="../services/seo-audits-competitor-analysis.html">SEO Audits &amp; Competitor Analysis</a>
+<a href="../services/local-seo-google-business-profile.html">Local SEO &amp; Google Business Profile</a>
+<a href="../index.html#contact">Contact Zaheer</a>
+</div>
+</aside>
+</div>
+</main>
+<footer>
+<div class="container footer">
+<div>
+<strong>© 2026 Zaheer SEO Expert</strong>
+<small>Rajan Shah Road, Rana Nagar, Chak 116 TDA, Layyah, Punjab, Pakistan</small>
+<small>Call: <a href="tel:+923277350830">0327 7350830</a> · Email: <a href="mailto:seozaheer14@gmail.com">seozaheer14@gmail.com</a></small>
+</div>
+<div class="footer-links">
+<a href="../index.html">Home</a>
+<a href="../index.html#services">Services</a>
+<a href="index.html">Blog</a>
+<a href="../index.html#about">About</a>
+<a href="../index.html#contact">Contact</a>
+</div>
+</div>
+</footer>
+</body>
+</html>
