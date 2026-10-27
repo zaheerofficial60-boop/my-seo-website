@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-62LVKLS4G2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-62LVKLS4G2');
+</script>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Keyword Mapping for Your Website | Zaheer SEO Expert</title>
+
+<meta name="description" content="Keyword mapping explained: how to group keywords by intent, assign each group to the right page type, prevent overlapping pages, and keep the map updated.">
+
+<meta name="keywords" content="keyword mapping, assign keywords to pages, website structure, SEO planning">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://zaheerofficial60-boop.github.io/my-seo-website/blog/keyword-mapping-for-your-website.html">
+<meta property="og:title" content="Keyword Mapping for Your Website | Zaheer SEO Expert">
+<meta property="og:description" content="Keyword mapping explained: how to group keywords by intent, assign each group to the right page type, prevent overlapping pages, and keep the map updated.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://zaheerofficial60-boop.github.io/my-seo-website/blog/keyword-mapping-for-your-website.html">
+<meta property="og:image" content="https://zaheerofficial60-boop.github.io/my-seo-website/zaheer-seo-expert.jpg">
+
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap"
+      rel="stylesheet">
+
+
+<style>
+
+
+:root{
+--navy:#071b45;
+--blue:#1769e0;
+--blue-dark:#0b4fbe;
+--light:#f6faff;
+--sky:#edf5ff;
+--text:#263957;
+--muted:#64748b;
+--line:#dce8f6;
+--white:#ffffff;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Inter,Arial,sans-serif;
+background:var(--light);
+color:var(--text);
+line-height:1.8;
+}
+
+a{
+text-decoration:none;
+color:var(--blue);
+}
+
+.container{
+width:min(1000px,92%);
+margin:auto;
+}
+
+
+/* NAVIGATION */
+
+header{
+position:sticky;
+top:0;
+z-index:999;
+background:rgba(255,255,255,.97);
+border-bottom:1px solid var(--line);
+backdrop-filter:blur(10px);
+}
+
+.nav{
+min-height:70px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo{
+font-family:"Space Grotesk",sans-serif;
+font-weight:800;
+font-size:1.15rem;
+color:var(--navy);
+}
+
+.logo span{
+color:var(--blue);
+}
+
+.nav-links{
+display:flex;
+gap:22px;
+align-items:center;
+font-size:.78rem;
+font-weight:700;
+}
+
+.nav-links a{
+color:#52627a;
+}
+
+.nav-links a:hover{
+color:var(--blue);
+}
+
+.nav-btn{
+background:var(--blue);
+color:white!important;
+padding:9px 15px;
+border-radius:7px;
+}
+
+
+/* HERO */
+
+.article-hero{
+padding:70px 0 55px;
+background:
+radial-gradient(circle at 85% 10%,#dbeaff 0,transparent 30%),
+linear-gradient(180deg,#fff,#f1f7ff);
+}
+
+.breadcrumb{
+font-size:.75rem;
+font-weight:600;
+color:var(--muted);
+margin-bottom:20px;
+}
+
+.breadcrumb a{
+color:var(--blue);
+}
+
+.category{
+display:inline-block;
+background:white;
+border:1px solid #cfe0f5;
+color:var(--blue);
+padding:7px 12px;
+border-radius:7px;
+font-size:.68rem;
+font-weight:800;
+letter-spacing:.04em;
+}
+
+.article-hero h1{
+font-family:"Space Grotesk",sans-serif;
+font-size:clamp(2.3rem,5vw,4rem);
+line-height:1.08;
+letter-spacing:-.04em;
+color:var(--navy);
+margin:20px 0 18px;
+max-width:850px;
+}
+
+.article-intro{
+font-size:1.05rem;
+color:var(--muted);
+max-width:820px;
+}
+
+.article-meta{
+margin-top:20px;
+font-size:.75rem;
+font-weight:600;
+color:#718198;
+}
+
+
+/* HERO IMAGE */
+
+.article-image{
+margin:0 auto 55px;
+width:min(1000px,92%);
+height:350px;
+border-radius:18px;
+overflow:hidden;
+background:#edf5ff;
+border:1px solid var(--line);
+box-shadow:0 20px 45px rgba(7,27,69,.09);
+}
+
+.article-image svg{
+width:100%;
+height:100%;
+display:block;
+}
+
+
+/* CONTENT */
+
+.article-layout{
+display:grid;
+grid-template-columns:1fr 270px;
+gap:45px;
+align-items:start;
+padding-bottom:80px;
+}
+
+.article{
+background:white;
+border:1px solid var(--line);
+border-radius:16px;
+padding:45px;
+box-shadow:0 12px 35px rgba(7,27,69,.05);
+}
+
+.article h2{
+font-family:"Space Grotesk",sans-serif;
+font-size:1.8rem;
+line-height:1.25;
+color:var(--navy);
+margin:35px 0 15px;
+}
+
+.article h2:first-child{
+margin-top:0;
+}
+
+.article h3{
+font-family:"Space Grotesk",sans-serif;
+font-size:1.25rem;
+color:var(--navy);
+margin:27px 0 10px;
+}
+
+.article p{
+margin-bottom:17px;
+color:#4f617a;
+}
+
+.article ul,
+.article ol{
+padding-left:23px;
+margin:10px 0 22px;
+}
+
+.article li{
+margin-bottom:9px;
+color:#4f617a;
+}
+
+.article strong{
+color:var(--navy);
+}
+
+
+/* CHECKLIST */
+
+.checklist{
+background:#f3f8ff;
+border-left:4px solid var(--blue);
+padding:20px 22px;
+margin:25px 0;
+border-radius:8px;
+}
+
+.checklist strong{
+display:block;
+margin-bottom:5px;
+}
+
+
+/* SIDEBAR */
+
+.sidebar{
+position:sticky;
+top:95px;
+}
+
+.sidebar-box{
+background:white;
+border:1px solid var(--line);
+border-radius:14px;
+padding:23px;
+margin-bottom:18px;
+box-shadow:0 10px 25px rgba(7,27,69,.05);
+}
+
+.sidebar-box h3{
+font-family:"Space Grotesk",sans-serif;
+color:var(--navy);
+font-size:1rem;
+margin-bottom:12px;
+}
+
+.sidebar-box a{
+display:block;
+font-size:.78rem;
+font-weight:600;
+padding:8px 0;
+border-bottom:1px solid #edf2f8;
+}
+
+.sidebar-box a:last-child{
+border-bottom:0;
+}
+
+
+/* GBP BUTTON */
+
+.gbp-button{
+display:inline-block;
+background:var(--blue);
+color:white;
+padding:12px 18px;
+border-radius:8px;
+font-weight:800;
+font-size:.82rem;
+margin:8px 0 22px;
+}
+
+.gbp-button:hover{
+background:var(--blue-dark);
+}
+
+
+/* AUTHOR */
+
+.author-box{
+margin-top:45px;
+padding:25px;
+background:#f5f9ff;
+border:1px solid var(--line);
+border-radius:12px;
+}
+
+.author-box h3{
+margin-top:0;
+}
+
+
+/* CTA */
+
+.cta{
+margin-top:45px;
+padding:35px;
+border-radius:15px;
+background:linear-gradient(135deg,#1769e0,#0b4fbe);
+color:white;
+text-align:center;
+}
+
+.cta h2{
+color:white;
+margin:0 0 10px;
+}
+
+.cta p{
+color:#e3edff;
+}
+
+.cta a{
+display:inline-block;
+background:white;
+color:var(--blue);
+padding:11px 18px;
+border-radius:7px;
+font-weight:800;
+font-size:.8rem;
+}
+
+
+/* FOOTER */
+
+footer{
+background:var(--navy);
+color:#dbe7f8;
+padding:32px 0;
+}
+
+.footer{
+display:flex;
+justify-content:space-between;
+gap:20px;
+align-items:center;
+}
+
+.footer strong{
+color:white;
+}
+
+.footer small{
+display:block;
+margin-top:3px;
+}
+
+.footer-links{
+display:flex;
+gap:18px;
+font-size:.75rem;
+font-weight:700;
+}
+
+.footer-links a{
+color:#dbe7f8;
+}
+
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+.nav-links{
+display:none;
+}
+
+.article-layout{
+grid-template-columns:1fr;
+}
+
+.sidebar{
+position:static;
+}
+
+}
+
+@media(max-width:600px){
+
+.article{
+padding:25px 20px;
+}
+
+.article-image{
+height:270px;
+}
+
+.article-hero{
+padding:55px 0 40px;
+}
+
+.footer{
+flex-direction:column;
+text-align:center;
+}
+
+.footer-links{
+justify-content:center;
+flex-wrap:wrap;
+}
+
+}
+
+
+/* POST IMAGES */
+.post-image{margin:28px 0;}
+.post-image img{width:100%;max-width:100%;height:auto;display:block;border-radius:12px;border:1px solid var(--line);}
+
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Zaheer Seo Expert",
+  "url": "https://zaheerofficial60-boop.github.io/my-seo-website/",
+  "image": "https://zaheerofficial60-boop.github.io/my-seo-website/zaheer-seo-expert.jpg",
+  "telephone": "+92 327 7350830",
+  "email": "seozaheer14@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rajan Shah Road, Rana Nagar, Chak 116 TDA",
+    "addressLocality": "Layyah",
+    "addressRegion": "Punjab",
+    "addressCountry": "PK"
+  },
+  "areaServed": [
+    "Layyah",
+    "Chobara",
+    "Mianwali",
+    "Chowk Azam",
+    "Jaman Shah",
+    "Dera Ghazi Khan",
+    "Karor Lal Eason"
+  ],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is keyword mapping in simple words?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Keyword mapping means assigning each important keyword group to exactly one page on your website, so every search has one clear page responsible for answering it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do overlapping pages hurt my rankings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If several pages chase the same keyword, Google cannot tell which one to show, rankings become unstable, and none of the pages builds strong visibility."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should a keyword map include?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A simple spreadsheet with the keyword group, its search intent, the target page, and a status note is enough for most small business websites."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I update my keyword map?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Update it whenever you add a service or page, and review the whole map a few times a year using fresh Search Console data and new customer phrases."
+      }
+    }
+  ]
+}
+</script>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<header>
+
+<div class="container nav">
+
+<a href="../index.html" class="logo">
+Zaheer <span>SEO Expert</span>
+</a>
+
+<nav class="nav-links">
+
+<a href="../index.html">Home</a>
+
+<a href="../index.html#services">Services</a>
+
+<a href="index.html">Blog</a>
+
+<a href="../index.html#about">About</a>
+
+<a href="../index.html#contact" class="nav-btn">
+Free SEO Audit
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<section class="article-hero">
+
+<div class="container">
+
+<div class="breadcrumb">
+
+<a href="../index.html">Home</a>
+&nbsp; / &nbsp;
+
+<a href="index.html">Blog</a>
+&nbsp; / &nbsp;
+
+Keyword Mapping Guide
+
+</div>
+
+
+<span class="category">
+KEYWORD RESEARCH
+</span>
+
+
+<h1>
+Keyword Mapping for Your Website: Give Every Keyword a Home
+</h1>
+
+
+<p class="article-intro">
+A keyword list alone changes nothing. Mapping assigns each keyword group to one clear page, so Google and your visitors always know where to go.
+</p>
+
+
+<div class="article-meta">
+By Zaheer SEO Expert · 27 October 2026 · Keyword Research
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CONTENT -->
+
+<main class="container">
+
+<div class="article-layout">
+
+
+<article class="article">
+
+
+<p>You have done the research and built a list of promising keywords. Now comes the step that turns that list into results: keyword mapping. Mapping simply means deciding, for every important keyword, exactly which page on your website is responsible for it. One keyword group, one page, no confusion. Without this step, websites grow messily, pages overlap, and Google cannot tell which page you want it to show.</p>
+<p>A map can live in a simple spreadsheet: keyword group, search intent, target page, and status. That one document becomes the plan for writing new pages, improving old ones, and checking progress. It is a standard working document in any organised <a href="../services/keyword-research-strategy.html">keyword research and strategy service</a>, and a small business can keep one just as effectively as a large agency.</p>
+<figure class="post-image"><img src="../images/blog-keyword-mapping-for-your-website-1.jpg" alt="Spreadsheet on a desk mapping keywords to website pages in organised rows" loading="lazy"></figure>
+<h2>Why Mapping Matters</h2>
+<p>Google ranks pages, not websites. When someone searches, Google chooses the single page it believes fits best. If three of your pages all chase the same phrase with similar content, Google must guess among them, and its guess keeps changing. Rankings wobble, traffic splits, and none of the pages builds real strength. Mapping removes the guesswork by giving each search one clear home on your site.</p>
+<p>Mapping also reveals gaps and waste. Gaps are valuable keywords with no page assigned, which become your content plan. Waste is pages targeting phrases nobody searches for, or services you no longer offer, which can be improved, merged, or removed. Most owners are surprised by both lists the first time they map properly.</p>
+<h2>Step 1: Group Keywords by Meaning and Intent</h2>
+<p>Start by clustering your researched keywords. Phrases that mean the same thing and would satisfy the same searcher belong in one group. Slight rewordings of one need are one group, not five. Phrases with different intent must not share a group, even if they share words: a learning question and a buying phrase need different pages. If intent is still fuzzy for you, revisit <a href="search-intent-explained-simply.html">search intent explained simply</a> before grouping.</p>
+<p>Within each group, choose one primary keyword: the clearest, most natural phrasing of the need. The other phrases become supporting terms you will cover naturally within the same page content.</p>
+<h2>Step 2: Match Each Group to the Right Page Type</h2>
+<p>Now decide what kind of page each group deserves. Buying-intent groups belong on service pages. Town-specific groups belong on location pages or clearly marked service sections. Learning-intent groups belong in blog articles or guides. Very specific question groups often fit FAQ sections or detailed articles. Matching type to intent is the heart of mapping; a brilliant article assigned to a buying keyword will still disappoint everyone.</p>
+<ul>
+<li>Service keyword group → dedicated service page.</li>
+<li>Service plus town group → location page for that town.</li>
+<li>How and why questions → blog article or guide.</li>
+<li>Comparison questions → honest comparison article.</li>
+</ul>
+<figure class="post-image"><img src="../images/blog-keyword-mapping-for-your-website-2.jpg" alt="Website owner grouping sticky notes for different pages on a wall" loading="lazy"></figure>
+<h2>Step 3: Assign, Then Check for Overlaps</h2>
+<p>Write the target page beside each group. Where an existing page fits, assign it and note any improvements needed. Where nothing fits, mark a new page to create. Then scan the whole map for overlaps: two groups claiming one page with different intents, or two pages claiming one group. Resolve every overlap on paper now, because resolving it later means rewriting published content. This overlap problem and its costs are covered further in <a href="keyword-research-mistakes-to-avoid.html">keyword research mistakes to avoid</a>.</p>
+<h2>Step 4: Build Internal Links That Support the Map</h2>
+<p>Your map should guide your internal linking too. Supporting articles link to the main service or location page for their topic, using natural wording that includes the primary keyword where it fits honestly. The main page can link back to helpful detailed articles for readers who want more. This web of links shows Google the structure of your expertise and helps visitors travel from learning to contacting you without friction.</p>
+<figure class="post-image"><img src="../images/blog-keyword-mapping-for-your-website-3.jpg" alt="Diagram of connected website pages drawn with lines showing internal links" loading="lazy"></figure>
+<h2>Step 5: Keep the Map Alive</h2>
+<p>A keyword map is a living document, not a framed certificate. When you add a service, map it before writing anything. When Search Console shows visitors arriving through a phrase you never targeted, add it to the map and decide whether an existing page should cover it better or a new page is justified. Review the full map a few times a year alongside your keyword research refresh. Websites that keep their map current grow in a straight line. Websites that abandon it slowly tangle, and untangling always costs more than maintaining.</p>
+<p>Start small if you need to. Even mapping your ten most important keywords to ten clear pages puts you ahead of competitors whose sites grew by accident. From there, the map grows with your business, one well-planned page at a time.</p>
+<p>If you inherit a website that already has many pages, do not try to map everything in one sitting. Begin with the pages that bring the most visitors and the services that bring the most income, map those properly first, and work outward over the following weeks. A partial map that is accurate and used is far more valuable than a complete map that sits ignored in a folder nobody opens again.</p>
+
+
+<h2>
+Frequently Asked Questions
+</h2>
+
+<h3>
+What is keyword mapping in simple words?
+</h3>
+
+<p>
+Keyword mapping means assigning each important keyword group to exactly one page on your website, so every search has one clear page responsible for answering it.
+</p>
+
+<h3>
+Why do overlapping pages hurt my rankings?
+</h3>
+
+<p>
+If several pages chase the same keyword, Google cannot tell which one to show, rankings become unstable, and none of the pages builds strong visibility.
+</p>
+
+<h3>
+What should a keyword map include?
+</h3>
+
+<p>
+A simple spreadsheet with the keyword group, its search intent, the target page, and a status note is enough for most small business websites.
+</p>
+
+<h3>
+How often should I update my keyword map?
+</h3>
+
+<p>
+Update it whenever you add a service or page, and review the whole map a few times a year using fresh Search Console data and new customer phrases.
+</p>
+
+
+<!-- AUTHOR -->
+
+<div class="author-box">
+
+<h3>
+About Zaheer SEO Expert
+</h3>
+
+<p>
+Zaheer Seo Expert is an SEO services business based in Layyah, Punjab,
+providing on-page SEO, off-page SEO, local SEO, Google Business Profile
+optimization, keyword research and SEO audits for businesses in Layyah
+and across the surrounding areas.
+</p>
+
+</div>
+
+
+
+<!-- CTA -->
+
+<div class="cta">
+
+<h2>
+Want More Customers From Google?
+</h2>
+
+<p>
+Call <a href="tel:+923277350830" style="display:inline;background:transparent;color:#ffffff;padding:0;border-radius:0;font-size:inherit;font-weight:700;text-decoration:underline;">0327 7350830</a>
+or email <a href="mailto:seozaheer14@gmail.com" style="display:inline;background:transparent;color:#ffffff;padding:0;border-radius:0;font-size:inherit;font-weight:700;text-decoration:underline;">seozaheer14@gmail.com</a>.
+Zaheer Seo Expert, Layyah - Rajan Shah Road, Rana Nagar, Chak 116 TDA, Pakistan. Open 24 hours.
+</p>
+
+<a href="../index.html#contact">
+Get Your SEO Strategy →
+</a>
+
+</div>
+
+
+</article>
+
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+
+<div class="sidebar-box">
+
+<h3>
+In This Guide
+</h3>
+
+<a href="#">Why Mapping Matters</a>
+<a href="#">Group by Meaning and Intent</a>
+<a href="#">Match Groups to Page Types</a>
+<a href="#">Check for Overlaps</a>
+<a href="#">Keep the Map Alive</a>
+
+</div>
+
+
+<div class="sidebar-box">
+
+<h3>
+Related SEO Guides
+</h3>
+
+<a href="search-intent-explained-simply.html">Search Intent Explained Simply</a>
+<a href="keyword-research-mistakes-to-avoid.html">Keyword Research Mistakes to Avoid</a>
+
+<a href="index.html">
+All SEO Articles
+</a>
+
+</div>
+
+
+<div class="sidebar-box">
+
+<h3>
+SEO Services
+</h3>
+
+<a href="../services/keyword-research-strategy.html">Keyword Research & Strategy</a>
+<a href="../services/on-page-seo.html">On-Page SEO</a>
+<a href="../services/content-strategy-copywriting.html">Content Strategy & Copywriting</a>
+
+<a href="../index.html#contact">
+Contact Zaheer
+</a>
+
+</div>
+
+
+</aside>
+
+</div>
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container footer">
+
+<div>
+
+<strong>
+© 2026 Zaheer SEO Expert
+</strong>
+
+<small>
+Rajan Shah Road, Rana Nagar, Chak 116 TDA, Layyah, Punjab, Pakistan
+</small>
+
+<small>
+Call: <a href="tel:+923277350830">0327 7350830</a> · Email: <a href="mailto:seozaheer14@gmail.com">seozaheer14@gmail.com</a>
+</small>
+
+</div>
+
+
+<div class="footer-links">
+
+<a href="../index.html">
+Home
+</a>
+
+<a href="../index.html#services">
+Services
+</a>
+
+<a href="index.html">
+Blog
+</a>
+
+<a href="../index.html#about">
+About
+</a>
+
+<a href="../index.html#contact">
+Contact
+</a>
+
+</div>
+
+</div>
+
+</footer>
+
+
+</body>
+</html>

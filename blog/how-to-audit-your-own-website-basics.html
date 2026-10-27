@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-62LVKLS4G2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-62LVKLS4G2');
+</script>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Audit Your Own Website: Basics | Zaheer SEO Expert</title>
+
+<meta name="description" content="Simple website checks any owner can do personally, from mobile viewing and Google searches to titles, links, speed, and your business profile.">
+
+<meta name="keywords" content="audit your own website, basic SEO audit, DIY website check">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://zaheerofficial60-boop.github.io/my-seo-website/blog/how-to-audit-your-own-website-basics.html">
+<meta property="og:title" content="Audit Your Own Website: Basics | Zaheer SEO Expert">
+<meta property="og:description" content="Simple website checks any owner can do personally, from mobile viewing and Google searches to titles, links, speed, and your business profile.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://zaheerofficial60-boop.github.io/my-seo-website/blog/how-to-audit-your-own-website-basics.html">
+<meta property="og:image" content="https://zaheerofficial60-boop.github.io/my-seo-website/zaheer-seo-expert.jpg">
+
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap"
+      rel="stylesheet">
+
+
+<style>
+
+
+:root{
+--navy:#071b45;
+--blue:#1769e0;
+--blue-dark:#0b4fbe;
+--light:#f6faff;
+--sky:#edf5ff;
+--text:#263957;
+--muted:#64748b;
+--line:#dce8f6;
+--white:#ffffff;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Inter,Arial,sans-serif;
+background:var(--light);
+color:var(--text);
+line-height:1.8;
+}
+
+a{
+text-decoration:none;
+color:var(--blue);
+}
+
+.container{
+width:min(1000px,92%);
+margin:auto;
+}
+
+
+/* NAVIGATION */
+
+header{
+position:sticky;
+top:0;
+z-index:999;
+background:rgba(255,255,255,.97);
+border-bottom:1px solid var(--line);
+backdrop-filter:blur(10px);
+}
+
+.nav{
+min-height:70px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo{
+font-family:"Space Grotesk",sans-serif;
+font-weight:800;
+font-size:1.15rem;
+color:var(--navy);
+}
+
+.logo span{
+color:var(--blue);
+}
+
+.nav-links{
+display:flex;
+gap:22px;
+align-items:center;
+font-size:.78rem;
+font-weight:700;
+}
+
+.nav-links a{
+color:#52627a;
+}
+
+.nav-links a:hover{
+color:var(--blue);
+}
+
+.nav-btn{
+background:var(--blue);
+color:white!important;
+padding:9px 15px;
+border-radius:7px;
+}
+
+
+/* HERO */
+
+.article-hero{
+padding:70px 0 55px;
+background:
+radial-gradient(circle at 85% 10%,#dbeaff 0,transparent 30%),
+linear-gradient(180deg,#fff,#f1f7ff);
+}
+
+.breadcrumb{
+font-size:.75rem;
+font-weight:600;
+color:var(--muted);
+margin-bottom:20px;
+}
+
+.breadcrumb a{
+color:var(--blue);
+}
+
+.category{
+display:inline-block;
+background:white;
+border:1px solid #cfe0f5;
+color:var(--blue);
+padding:7px 12px;
+border-radius:7px;
+font-size:.68rem;
+font-weight:800;
+letter-spacing:.04em;
+}
+
+.article-hero h1{
+font-family:"Space Grotesk",sans-serif;
+font-size:clamp(2.3rem,5vw,4rem);
+line-height:1.08;
+letter-spacing:-.04em;
+color:var(--navy);
+margin:20px 0 18px;
+max-width:850px;
+}
+
+.article-intro{
+font-size:1.05rem;
+color:var(--muted);
+max-width:820px;
+}
+
+.article-meta{
+margin-top:20px;
+font-size:.75rem;
+font-weight:600;
+color:#718198;
+}
+
+
+/* HERO IMAGE */
+
+.article-image{
+margin:0 auto 55px;
+width:min(1000px,92%);
+height:350px;
+border-radius:18px;
+overflow:hidden;
+background:#edf5ff;
+border:1px solid var(--line);
+box-shadow:0 20px 45px rgba(7,27,69,.09);
+}
+
+.article-image svg{
+width:100%;
+height:100%;
+display:block;
+}
+
+
+/* CONTENT */
+
+.article-layout{
+display:grid;
+grid-template-columns:1fr 270px;
+gap:45px;
+align-items:start;
+padding-bottom:80px;
+}
+
+.article{
+background:white;
+border:1px solid var(--line);
+border-radius:16px;
+padding:45px;
+box-shadow:0 12px 35px rgba(7,27,69,.05);
+}
+
+.article h2{
+font-family:"Space Grotesk",sans-serif;
+font-size:1.8rem;
+line-height:1.25;
+color:var(--navy);
+margin:35px 0 15px;
+}
+
+.article h2:first-child{
+margin-top:0;
+}
+
+.article h3{
+font-family:"Space Grotesk",sans-serif;
+font-size:1.25rem;
+color:var(--navy);
+margin:27px 0 10px;
+}
+
+.article p{
+margin-bottom:17px;
+color:#4f617a;
+}
+
+.article ul,
+.article ol{
+padding-left:23px;
+margin:10px 0 22px;
+}
+
+.article li{
+margin-bottom:9px;
+color:#4f617a;
+}
+
+.article strong{
+color:var(--navy);
+}
+
+
+/* CHECKLIST */
+
+.checklist{
+background:#f3f8ff;
+border-left:4px solid var(--blue);
+padding:20px 22px;
+margin:25px 0;
+border-radius:8px;
+}
+
+.checklist strong{
+display:block;
+margin-bottom:5px;
+}
+
+
+/* SIDEBAR */
+
+.sidebar{
+position:sticky;
+top:95px;
+}
+
+.sidebar-box{
+background:white;
+border:1px solid var(--line);
+border-radius:14px;
+padding:23px;
+margin-bottom:18px;
+box-shadow:0 10px 25px rgba(7,27,69,.05);
+}
+
+.sidebar-box h3{
+font-family:"Space Grotesk",sans-serif;
+color:var(--navy);
+font-size:1rem;
+margin-bottom:12px;
+}
+
+.sidebar-box a{
+display:block;
+font-size:.78rem;
+font-weight:600;
+padding:8px 0;
+border-bottom:1px solid #edf2f8;
+}
+
+.sidebar-box a:last-child{
+border-bottom:0;
+}
+
+
+/* GBP BUTTON */
+
+.gbp-button{
+display:inline-block;
+background:var(--blue);
+color:white;
+padding:12px 18px;
+border-radius:8px;
+font-weight:800;
+font-size:.82rem;
+margin:8px 0 22px;
+}
+
+.gbp-button:hover{
+background:var(--blue-dark);
+}
+
+
+/* AUTHOR */
+
+.author-box{
+margin-top:45px;
+padding:25px;
+background:#f5f9ff;
+border:1px solid var(--line);
+border-radius:12px;
+}
+
+.author-box h3{
+margin-top:0;
+}
+
+
+/* CTA */
+
+.cta{
+margin-top:45px;
+padding:35px;
+border-radius:15px;
+background:linear-gradient(135deg,#1769e0,#0b4fbe);
+color:white;
+text-align:center;
+}
+
+.cta h2{
+color:white;
+margin:0 0 10px;
+}
+
+.cta p{
+color:#e3edff;
+}
+
+.cta a{
+display:inline-block;
+background:white;
+color:var(--blue);
+padding:11px 18px;
+border-radius:7px;
+font-weight:800;
+font-size:.8rem;
+}
+
+
+/* FOOTER */
+
+footer{
+background:var(--navy);
+color:#dbe7f8;
+padding:32px 0;
+}
+
+.footer{
+display:flex;
+justify-content:space-between;
+gap:20px;
+align-items:center;
+}
+
+.footer strong{
+color:white;
+}
+
+.footer small{
+display:block;
+margin-top:3px;
+}
+
+.footer-links{
+display:flex;
+gap:18px;
+font-size:.75rem;
+font-weight:700;
+}
+
+.footer-links a{
+color:#dbe7f8;
+}
+
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+.nav-links{
+display:none;
+}
+
+.article-layout{
+grid-template-columns:1fr;
+}
+
+.sidebar{
+position:static;
+}
+
+}
+
+@media(max-width:600px){
+
+.article{
+padding:25px 20px;
+}
+
+.article-image{
+height:270px;
+}
+
+.article-hero{
+padding:55px 0 40px;
+}
+
+.footer{
+flex-direction:column;
+text-align:center;
+}
+
+.footer-links{
+justify-content:center;
+flex-wrap:wrap;
+}
+
+}
+
+
+/* POST IMAGES */
+.post-image{margin:28px 0;}
+.post-image img{width:100%;max-width:100%;height:auto;display:block;border-radius:12px;border:1px solid var(--line);}
+
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Zaheer Seo Expert",
+  "url": "https://zaheerofficial60-boop.github.io/my-seo-website/",
+  "image": "https://zaheerofficial60-boop.github.io/my-seo-website/zaheer-seo-expert.jpg",
+  "telephone": "+92 327 7350830",
+  "email": "seozaheer14@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rajan Shah Road, Rana Nagar, Chak 116 TDA",
+    "addressLocality": "Layyah",
+    "addressRegion": "Punjab",
+    "addressCountry": "PK"
+  },
+  "areaServed": [
+    "Layyah",
+    "Chobara",
+    "Mianwali",
+    "Chowk Azam",
+    "Jaman Shah",
+    "Dera Ghazi Khan",
+    "Karor Lal Eason"
+  ],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I really audit my own website without expertise?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, for the basics. Viewing your site on a phone, testing links and forms, reading your own content, and checking your Google profile will reveal many common problems. Deeper technical issues may still need professional help."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a basic self-audit take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For a small website, set aside an hour or two to go page by page and write notes. Rushing helps nobody. A careful, honest pass is worth more than a quick glance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I fix first from my list?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fix anything broken or misleading first, such as error pages, wrong phone numbers, and broken contact forms. Then improve thin or duplicate content, and then deal with smaller presentation issues."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I ask for a professional audit instead?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If pages are missing from Google, traffic has dropped without explanation, or your list includes technical problems you do not understand, a professional audit will diagnose the causes properly."
+      }
+    }
+  ]
+}
+</script>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<header>
+
+<div class="container nav">
+
+<a href="../index.html" class="logo">
+Zaheer <span>SEO Expert</span>
+</a>
+
+<nav class="nav-links">
+
+<a href="../index.html">Home</a>
+
+<a href="../index.html#services">Services</a>
+
+<a href="index.html">Blog</a>
+
+<a href="../index.html#about">About</a>
+
+<a href="../index.html#contact" class="nav-btn">
+Free SEO Audit
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<section class="article-hero">
+
+<div class="container">
+
+<div class="breadcrumb">
+
+<a href="../index.html">Home</a>
+&nbsp; / &nbsp;
+
+<a href="index.html">Blog</a>
+&nbsp; / &nbsp;
+
+Audit Your Own Website
+
+</div>
+
+
+<span class="category">
+SEO AUDITS
+</span>
+
+
+<h1>
+How to Audit Your Own Website: The Basics
+</h1>
+
+
+<p class="article-intro">
+Practical checks any business owner can do personally, with no special tools, to spot the most common problems holding a website back.
+</p>
+
+
+<div class="article-meta">
+By Zaheer SEO Expert · 27 October 2026 · SEO Audits
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CONTENT -->
+
+<main class="container">
+
+<div class="article-layout">
+
+
+<article class="article">
+
+<p>You do not need to be an expert to spot the most common problems on your own website. With a phone, a laptop, and a little patience, you can run a basic check yourself and learn a lot about how customers and Google see your site.</p>
+<p>This guide walks through simple checks any business owner can do. It will not replace a full professional review, but it will help you find obvious issues, ask better questions, and understand your website with fresh eyes.</p>
+<h2>Start by Viewing Your Site Like a Customer</h2>
+<p>Open your website on your phone first, because many of your visitors will do the same. Is the text easy to read without pinching and zooming? Does the page load quickly, or do you sit waiting? Can you find your phone number and tap it to call within a few seconds?</p>
+<p>Then click through every main page. Note any page that looks broken, unfinished, or out of date. Write down prices, offers, or services you no longer provide if you spot them. A customer who finds old information loses trust quickly, and Google notices neglected pages too.</p>
+<figure class="post-image"><img src="../images/blog-how-to-audit-your-own-website-basics-1.jpg" alt="Shop owner checking his own business website on a mobile phone" loading="lazy"></figure>
+<h2>Check That Google Can Find Your Pages</h2>
+<p>Go to Google and search for your business name. Does your website appear? Then search for your main service plus your town, for example your trade and Layyah. See where you show up, and who shows up above you.</p>
+<p>A simple trick is to search Google using your website address to see which pages Google has stored. If important pages are missing, or old unwanted pages appear, that is a sign something needs attention. Our detailed breakdown in <a href="inside-an-seo-audit-report.html">inside an SEO audit report</a> shows how this finding is recorded properly.</p>
+<h2>Look at Titles, Headings, and Content</h2>
+<p>Open each important page and read its main heading. Does it clearly say what the page is about? Read the first paragraph. Would a stranger understand what you offer, where you offer it, and why they should choose you?</p>
+<ul><li>Each page should have one clear main heading</li><li>Titles shown in Google should describe the page honestly</li><li>Content should answer real questions customers ask you</li><li>Avoid copying the same paragraph onto many pages</li><li>Check spelling, dates, and contact details carefully</li></ul>
+<p>If several pages say almost the same thing, or a page has only a few lines of text, mark it for improvement. Thin pages rarely perform well because they give Google and visitors very little to work with.</p>
+<figure class="post-image"><img src="../images/blog-how-to-audit-your-own-website-basics-2.jpg" alt="Person reviewing website headings and text on a laptop screen" loading="lazy"></figure>
+<h2>Test Speed, Links, and the Basics</h2>
+<p>Click every link in your menu and footer. Any link that leads to an error page needs fixing. Check that your contact form actually sends, by testing it yourself and confirming the message arrives. Many businesses lose enquiries for months through a broken form nobody tested.</p>
+<p>Notice how long pages take to open, especially on mobile data. Large uncompressed photos are a common cause of slow pages. If a page feels sluggish to you, it feels worse to a customer in a hurry.</p>
+<h2>Review Your Google Business Profile</h2>
+<p>Search for your business on Google Maps. Check that your name, address, phone number, category, and hours match your website exactly. Look at your photos: are they recent and clear? Read your latest reviews and reply to any you have missed.</p>
+<p>This local check matters a great deal for nearby customers. If you want the full picture of how audits cover this area, our <a href="../services/seo-audits-competitor-analysis.html">SEO audits and competitor analysis service</a> explains what a complete review includes.</p>
+<h2>Write It Down and Fix in Order</h2>
+<p>Keep a simple list as you go: page, problem, and how urgent it feels. Fix broken and misleading things first, then missing or thin content, then smaller polish. Even a basic self-audit, done honestly, puts you ahead of owners who never look at their own site.</p>
+<figure class="post-image"><img src="../images/blog-how-to-audit-your-own-website-basics-3.jpg" alt="Notebook with a handwritten website checklist beside a laptop" loading="lazy"></figure>
+<p>When your list grows long or the problems look technical, that is the point where a professional audit saves time. But your own notes will still be valuable, because nobody knows your customers and services better than you do.</p>
+
+<h2>Make Your Self-Audit a Monthly Habit</h2><p>You do not need to repeat the full check every week. A short monthly version works well for most owners: open the site on your phone, test the contact form, search your business name, and glance at your newest reviews. Keep the notes from each check together, so you can see whether a problem is new or whether it has been waiting for attention for a while.</p><p>Over a few months, this habit changes how you see your website. Instead of a finished project you rarely think about, it becomes a working part of the business that you inspect like any other equipment. Problems get caught while they are still small, cheap, and easy to explain to anyone who helps you fix them.</p><p>If you find the same issue returning, note that too. Repeated faults often point to a deeper cause, such as a theme problem or a plugin conflict, and that pattern is exactly the kind of evidence a professional reviewer will thank you for collecting.</p>
+<h2>
+Frequently Asked Questions
+</h2>
+
+<h3>
+Can I really audit my own website without expertise?
+</h3>
+
+<p>
+Yes, for the basics. Viewing your site on a phone, testing links and forms, reading your own content, and checking your Google profile will reveal many common problems. Deeper technical issues may still need professional help.
+</p>
+
+<h3>
+How long does a basic self-audit take?
+</h3>
+
+<p>
+For a small website, set aside an hour or two to go page by page and write notes. Rushing helps nobody. A careful, honest pass is worth more than a quick glance.
+</p>
+
+<h3>
+What should I fix first from my list?
+</h3>
+
+<p>
+Fix anything broken or misleading first, such as error pages, wrong phone numbers, and broken contact forms. Then improve thin or duplicate content, and then deal with smaller presentation issues.
+</p>
+
+<h3>
+When should I ask for a professional audit instead?
+</h3>
+
+<p>
+If pages are missing from Google, traffic has dropped without explanation, or your list includes technical problems you do not understand, a professional audit will diagnose the causes properly.
+</p>
+
+
+<!-- AUTHOR -->
+
+<div class="author-box">
+
+<h3>
+About Zaheer SEO Expert
+</h3>
+
+<p>
+Zaheer Seo Expert is an SEO services business based in Layyah, Punjab,
+providing on-page SEO, off-page SEO, local SEO, Google Business Profile
+optimization, keyword research and SEO audits for businesses in Layyah
+and across the surrounding areas.
+</p>
+
+</div>
+
+
+
+<!-- CTA -->
+
+<div class="cta">
+
+<h2>
+Want More Customers From Google?
+</h2>
+
+<p>
+Call <a href="tel:+923277350830" style="display:inline;background:transparent;color:#ffffff;padding:0;border-radius:0;font-size:inherit;font-weight:700;text-decoration:underline;">0327 7350830</a>
+or email <a href="mailto:seozaheer14@gmail.com" style="display:inline;background:transparent;color:#ffffff;padding:0;border-radius:0;font-size:inherit;font-weight:700;text-decoration:underline;">seozaheer14@gmail.com</a>.
+Zaheer Seo Expert, Layyah - Rajan Shah Road, Rana Nagar, Chak 116 TDA, Pakistan. Open 24 hours.
+</p>
+
+<a href="../index.html#contact">
+Get Your SEO Strategy →
+</a>
+
+</div>
+
+
+</article>
+
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+
+<div class="sidebar-box">
+
+<h3>
+In This Guide
+</h3>
+
+<a href="#">View Like a Customer</a>
+<a href="#">Check Google Finds You</a>
+<a href="#">Titles and Content</a>
+<a href="#">Speed and Links</a>
+<a href="#">Your Business Profile</a>
+
+</div>
+
+
+<div class="sidebar-box">
+
+<h3>
+Related SEO Guides
+</h3>
+
+<a href="what-is-an-seo-audit.html">What Is an SEO Audit?</a>
+<a href="free-tools-for-a-basic-seo-audit.html">Free Tools for a Basic Audit</a>
+
+<a href="index.html">
+All SEO Articles
+</a>
+
+</div>
+
+
+<div class="sidebar-box">
+
+<h3>
+SEO Services
+</h3>
+
+<a href="../services/seo-audits-competitor-analysis.html">SEO Audits and Competitor Analysis</a>
+<a href="../services/technical-seo.html">Technical SEO</a>
+<a href="../services/on-page-seo.html">On-Page SEO</a>
+<a href="../services/local-seo-google-business-profile.html">Local SEO and Google Business Profile</a>
+
+<a href="../index.html#contact">
+Contact Zaheer
+</a>
+
+</div>
+
+
+</aside>
+
+</div>
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container footer">
+
+<div>
+
+<strong>
+© 2026 Zaheer SEO Expert
+</strong>
+
+<small>
+Rajan Shah Road, Rana Nagar, Chak 116 TDA, Layyah, Punjab, Pakistan
+</small>
+
+<small>
+Call: <a href="tel:+923277350830">0327 7350830</a> · Email: <a href="mailto:seozaheer14@gmail.com">seozaheer14@gmail.com</a>
+</small>
+
+</div>
+
+
+<div class="footer-links">
+
+<a href="../index.html">
+Home
+</a>
+
+<a href="../index.html#services">
+Services
+</a>
+
+<a href="index.html">
+Blog
+</a>
+
+<a href="../index.html#about">
+About
+</a>
+
+<a href="../index.html#contact">
+Contact
+</a>
+
+</div>
+
+</div>
+
+</footer>
+
+
+</body>
+</html>
