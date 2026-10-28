@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-62LVKLS4G2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-62LVKLS4G2');
+</script>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Check Your Website After a Redesign</title>
+
+<meta name="description" content="Learn a practical checklist for checking your website after a redesign so visitors, search engines and customers can still find everything easily.">
+
+<meta name="keywords" content="SEO for Layyah businesses, local SEO Layyah, Google Business Profile Layyah, SEO services Layyah">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://zaheerofficial60-boop.github.io/my-seo-website/blog/seo-audit-checking-your-website-after-a-redesign.html">
+<meta property="og:title" content="Check Your Website After a Redesign">
+<meta property="og:description" content="Learn a practical checklist for checking your website after a redesign so visitors, search engines and customers can still find everything easily.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://zaheerofficial60-boop.github.io/my-seo-website/blog/seo-audit-checking-your-website-after-a-redesign.html">
+<meta property="og:image" content="https://zaheerofficial60-boop.github.io/my-seo-website/zaheer-seo-expert.jpg">
+
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap"
+      rel="stylesheet">
+
+
+<style>
+
+
+:root{
+--navy:#071b45;
+--blue:#1769e0;
+--blue-dark:#0b4fbe;
+--light:#f6faff;
+--sky:#edf5ff;
+--text:#263957;
+--muted:#64748b;
+--line:#dce8f6;
+--white:#ffffff;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Inter,Arial,sans-serif;
+background:var(--light);
+color:var(--text);
+line-height:1.8;
+}
+
+a{
+text-decoration:none;
+color:var(--blue);
+}
+
+.container{
+width:min(1000px,92%);
+margin:auto;
+}
+
+
+/* NAVIGATION */
+
+header{
+position:sticky;
+top:0;
+z-index:999;
+background:rgba(255,255,255,.97);
+border-bottom:1px solid var(--line);
+backdrop-filter:blur(10px);
+}
+
+.nav{
+min-height:70px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo{
+font-family:"Space Grotesk",sans-serif;
+font-weight:800;
+font-size:1.15rem;
+color:var(--navy);
+}
+
+.logo span{
+color:var(--blue);
+}
+
+.nav-links{
+display:flex;
+gap:22px;
+align-items:center;
+font-size:.78rem;
+font-weight:700;
+}
+
+.nav-links a{
+color:#52627a;
+}
+
+.nav-links a:hover{
+color:var(--blue);
+}
+
+.nav-btn{
+background:var(--blue);
+color:white!important;
+padding:9px 15px;
+border-radius:7px;
+}
+
+
+/* HERO */
+
+.article-hero{
+padding:70px 0 55px;
+background:
+radial-gradient(circle at 85% 10%,#dbeaff 0,transparent 30%),
+linear-gradient(180deg,#fff,#f1f7ff);
+}
+
+.breadcrumb{
+font-size:.75rem;
+font-weight:600;
+color:var(--muted);
+margin-bottom:20px;
+}
+
+.breadcrumb a{
+color:var(--blue);
+}
+
+.category{
+display:inline-block;
+background:white;
+border:1px solid #cfe0f5;
+color:var(--blue);
+padding:7px 12px;
+border-radius:7px;
+font-size:.68rem;
+font-weight:800;
+letter-spacing:.04em;
+}
+
+.article-hero h1{
+font-family:"Space Grotesk",sans-serif;
+font-size:clamp(2.3rem,5vw,4rem);
+line-height:1.08;
+letter-spacing:-.04em;
+color:var(--navy);
+margin:20px 0 18px;
+max-width:850px;
+}
+
+.article-intro{
+font-size:1.05rem;
+color:var(--muted);
+max-width:820px;
+}
+
+.article-meta{
+margin-top:20px;
+font-size:.75rem;
+font-weight:600;
+color:#718198;
+}
+
+
+/* HERO IMAGE */
+
+.article-image{
+margin:0 auto 55px;
+width:min(1000px,92%);
+height:350px;
+border-radius:18px;
+overflow:hidden;
+background:#edf5ff;
+border:1px solid var(--line);
+box-shadow:0 20px 45px rgba(7,27,69,.09);
+}
+
+.article-image svg{
+width:100%;
+height:100%;
+display:block;
+}
+
+
+/* CONTENT */
+
+.article-layout{
+display:grid;
+grid-template-columns:1fr 270px;
+gap:45px;
+align-items:start;
+padding-bottom:80px;
+}
+
+.article{
+background:white;
+border:1px solid var(--line);
+border-radius:16px;
+padding:45px;
+box-shadow:0 12px 35px rgba(7,27,69,.05);
+}
+
+.article h2{
+font-family:"Space Grotesk",sans-serif;
+font-size:1.8rem;
+line-height:1.25;
+color:var(--navy);
+margin:35px 0 15px;
+}
+
+.article h2:first-child{
+margin-top:0;
+}
+
+.article h3{
+font-family:"Space Grotesk",sans-serif;
+font-size:1.25rem;
+color:var(--navy);
+margin:27px 0 10px;
+}
+
+.article p{
+margin-bottom:17px;
+color:#4f617a;
+}
+
+.article ul,
+.article ol{
+padding-left:23px;
+margin:10px 0 22px;
+}
+
+.article li{
+margin-bottom:9px;
+color:#4f617a;
+}
+
+.article strong{
+color:var(--navy);
+}
+
+
+/* CHECKLIST */
+
+.checklist{
+background:#f3f8ff;
+border-left:4px solid var(--blue);
+padding:20px 22px;
+margin:25px 0;
+border-radius:8px;
+}
+
+.checklist strong{
+display:block;
+margin-bottom:5px;
+}
+
+
+/* SIDEBAR */
+
+.sidebar{
+position:sticky;
+top:95px;
+}
+
+.sidebar-box{
+background:white;
+border:1px solid var(--line);
+border-radius:14px;
+padding:23px;
+margin-bottom:18px;
+box-shadow:0 10px 25px rgba(7,27,69,.05);
+}
+
+.sidebar-box h3{
+font-family:"Space Grotesk",sans-serif;
+color:var(--navy);
+font-size:1rem;
+margin-bottom:12px;
+}
+
+.sidebar-box a{
+display:block;
+font-size:.78rem;
+font-weight:600;
+padding:8px 0;
+border-bottom:1px solid #edf2f8;
+}
+
+.sidebar-box a:last-child{
+border-bottom:0;
+}
+
+
+/* GBP BUTTON */
+
+.gbp-button{
+display:inline-block;
+background:var(--blue);
+color:white;
+padding:12px 18px;
+border-radius:8px;
+font-weight:800;
+font-size:.82rem;
+margin:8px 0 22px;
+}
+
+.gbp-button:hover{
+background:var(--blue-dark);
+}
+
+
+/* AUTHOR */
+
+.author-box{
+margin-top:45px;
+padding:25px;
+background:#f5f9ff;
+border:1px solid var(--line);
+border-radius:12px;
+}
+
+.author-box h3{
+margin-top:0;
+}
+
+
+/* CTA */
+
+.cta{
+margin-top:45px;
+padding:35px;
+border-radius:15px;
+background:linear-gradient(135deg,#1769e0,#0b4fbe);
+color:white;
+text-align:center;
+}
+
+.cta h2{
+color:white;
+margin:0 0 10px;
+}
+
+.cta p{
+color:#e3edff;
+}
+
+.cta a{
+display:inline-block;
+background:white;
+color:var(--blue);
+padding:11px 18px;
+border-radius:7px;
+font-weight:800;
+font-size:.8rem;
+}
+
+
+/* FOOTER */
+
+footer{
+background:var(--navy);
+color:#dbe7f8;
+padding:32px 0;
+}
+
+.footer{
+display:flex;
+justify-content:space-between;
+gap:20px;
+align-items:center;
+}
+
+.footer strong{
+color:white;
+}
+
+.footer small{
+display:block;
+margin-top:3px;
+}
+
+.footer-links{
+display:flex;
+gap:18px;
+font-size:.75rem;
+font-weight:700;
+}
+
+.footer-links a{
+color:#dbe7f8;
+}
+
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+.nav-links{
+display:none;
+}
+
+.article-layout{
+grid-template-columns:1fr;
+}
+
+.sidebar{
+position:static;
+}
+
+}
+
+@media(max-width:600px){
+
+.article{
+padding:25px 20px;
+}
+
+.article-image{
+height:270px;
+}
+
+.article-hero{
+padding:55px 0 40px;
+}
+
+.footer{
+flex-direction:column;
+text-align:center;
+}
+
+.footer-links{
+justify-content:center;
+flex-wrap:wrap;
+}
+
+}
+
+
+/* POST IMAGES */
+.post-image{margin:28px 0;}
+.post-image img{width:100%;max-width:100%;height:auto;display:block;border-radius:12px;border:1px solid var(--line);}
+
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Zaheer Seo Expert",
+  "url": "https://zaheerofficial60-boop.github.io/my-seo-website/",
+  "image": "https://zaheerofficial60-boop.github.io/my-seo-website/zaheer-seo-expert.jpg",
+  "telephone": "+92 327 7350830",
+  "email": "seozaheer14@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rajan Shah Road, Rana Nagar, Chak 116 TDA",
+    "addressLocality": "Layyah",
+    "addressRegion": "Punjab",
+    "addressCountry": "PK"
+  },
+  "areaServed": [
+    "Layyah",
+    "Chobara",
+    "Mianwali",
+    "Chowk Azam",
+    "Jaman Shah",
+    "Dera Ghazi Khan",
+    "Karor Lal Eason"
+  ],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the first thing to check after a redesign?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check the homepage and main navigation as a visitor would, on a phone and a computer, to confirm key information is clear and easy to find."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do old page addresses matter after a redesign?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Visitors and search engines may still use old addresses, so each important old address should still work or redirect to the right new page."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I test contact forms after a redesign?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, send a test message through each form and check phone and email links so you know enquiries can actually reach you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How soon should I recheck the website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Recheck fixed pages right away, then plan a short follow-up check a few weeks later to catch issues that appear over time."
+      }
+    }
+  ]
+}
+</script>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<header>
+
+<div class="container nav">
+
+<a href="../index.html" class="logo">
+Zaheer <span>SEO Expert</span>
+</a>
+
+<nav class="nav-links">
+
+<a href="../index.html">Home</a>
+
+<a href="../index.html#services">Services</a>
+
+<a href="index.html">Blog</a>
+
+<a href="../index.html#about">About</a>
+
+<a href="../index.html#contact" class="nav-btn">
+Free SEO Audit
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<section class="article-hero">
+
+<div class="container">
+
+<div class="breadcrumb">
+
+<a href="../index.html">Home</a>
+&nbsp; / &nbsp;
+
+<a href="index.html">Blog</a>
+&nbsp; / &nbsp;
+
+SEO Audit: Checking Your Website After a Redesign
+
+</div>
+
+
+<span class="category">
+SEO AUDITS
+</span>
+
+
+<h1>
+SEO Audit: Checking Your Website After a Redesign
+</h1>
+
+
+<p class="article-intro">
+A redesign can make a website look fresh and modern, but it can also break links, hide important pages or change how search engines understand your site. A careful check after a redesign protects your visitors and your search visibility. This guide covers the practical checks that matter most.
+</p>
+
+
+<div class="article-meta">
+By Zaheer SEO Expert · 28 October 2026 · SEO audits
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CONTENT -->
+
+<main class="container">
+
+<div class="article-layout">
+
+
+<article class="article">
+
+<h2>
+Start With What Visitors See First
+</h2>
+
+<p>
+After a redesign, open your website as a first-time visitor would, on both a phone and a computer. Check the homepage first: is the business name clear, is it easy to understand what you offer, and can a visitor find contact details without searching. A beautiful design that hides basic information will frustrate visitors, no matter how modern it looks.
+</p>
+
+<p>
+Test the main navigation next. Click each menu link and confirm it goes to the right page. Check that important pages, such as services, contact and location information, are easy to reach from the homepage. If a page was easy to find before the redesign but is now buried, visitors may assume it no longer exists.
+</p>
+
+<p>
+Also check loading and readability. Pages should open without long delays, text should be easy to read against its background, and buttons should be large enough to tap on a phone. Small design problems that seem minor to the owner can be major barriers for a visitor using a small screen or a slower connection.
+</p>
+
+<figure class="post-image">
+<img src="../images/blog-seo-audit-checking-your-website-after-a-redesign-1.jpg" alt="Website designer checking a redesigned site on a laptop and phone" loading="lazy">
+</figure>
+
+<h2>
+Check That Old Pages Still Work
+</h2>
+
+<p>
+One of the biggest risks in a redesign is losing old pages. If a page address changes, visitors and search engines following the old address may reach an error page instead. Make a list of your important old pages before launch, and after launch, open each old address to confirm it either still works or correctly redirects to the right new page.
+</p>
+
+<p>
+Pay special attention to pages that customers and search engines use most, such as your homepage, main service pages and contact page. If a popular page now shows an error, fix it quickly. An error page does not just lose one visit; it can also weaken trust and make it harder for search engines to understand your site structure.
+</p>
+
+<p>
+Check internal links too. Links inside your content should point to live pages, not to old addresses that no longer exist. A systematic check of menus, footers and in-text links catches many problems that a quick visual review would miss. Keep a note of any redirects you set up, so future changes do not break them again.
+</p>
+
+<h2>
+Review Titles, Descriptions and Headings
+</h2>
+
+<p>
+A redesign sometimes changes page titles or headings without anyone noticing. After launch, check that each important page still has a clear, accurate title that describes its topic in simple words. The title should be short enough to display well in search results and should match what the page actually covers.
+</p>
+
+<p>
+Check the short description shown in search results as well. It should summarise the page honestly and invite the right visitor to click, without exaggeration or promises you cannot keep. If descriptions were lost or replaced with generic text during the redesign, rewrite them page by page, starting with your most important pages.
+</p>
+
+<p>
+Headings matter for readers too. Each page should have one clear main heading, followed by subheadings that organise the content logically. If headings were changed for design reasons and no longer describe the sections below them, fix them. Clear headings help visitors scan a page quickly and help search engines understand its structure.
+</p>
+
+<figure class="post-image">
+<img src="../images/blog-seo-audit-checking-your-website-after-a-redesign-2.jpg" alt="Person reviewing a website checklist at a desk" loading="lazy">
+</figure>
+
+<h2>
+Confirm Contact Details and Business Information
+</h2>
+
+<p>
+Redesigns often involve new footers, headers or contact sections, and business details can be lost or mistyped in the process. After launch, check every place your name, address, phone number and email appear. They should be correct, consistent and easy to find, especially on the homepage and contact page.
+</p>
+
+<p>
+Test your contact methods. If your phone number is shown as a link, tap it on a phone to confirm it dials correctly. If your email is shown as a link, check that it opens correctly. If you have a contact form, send a test message and confirm it arrives. A form that looks fine but does not deliver messages can silently lose enquiries.
+</p>
+
+<p>
+Also check your opening hours and service list if they appear on the new design. Remove services you no longer offer and add any new services you now provide. Accurate business information is part of a good audit, not just a design detail, because customers rely on it to decide whether to contact you.
+</p>
+
+<h2>
+Test Speed, Mobile Use and Basic Tracking
+</h2>
+
+<p>
+A new design can change how fast pages load, especially if it adds large images or new features. Test your main pages on a phone using a normal mobile connection if possible. If pages feel slow, consider reducing image sizes or removing features that do not help visitors. Speed affects both visitor patience and search visibility, so it deserves attention after any redesign.
+</p>
+
+<p>
+Check mobile layout carefully, not just on a computer screen made smaller. Menus, forms and buttons should work well with touch, text should not require sideways scrolling, and images should fit the screen. Many customers in Pakistan browse mainly on phones, so a design that only works well on a desktop is incomplete.
+</p>
+
+<p>
+If you use analytics, confirm it is still recording visits after the redesign. A missing tracking code is a common redesign mistake, and without it you cannot tell which pages visitors use or where problems remain. Confirm the tracking code appears on the new pages, and check that it is the correct one for your site.
+</p>
+
+<figure class="post-image">
+<img src="../images/blog-seo-audit-checking-your-website-after-a-redesign-3.jpg" alt="Mobile phone showing a newly redesigned business website" loading="lazy">
+</figure>
+
+<h2>
+Make a Short Fix List and Recheck
+</h2>
+
+<p>
+An audit after a redesign will almost always find some issues, and that is normal. Write them down in a simple list, ordered by impact on visitors: broken important pages and wrong contact details first, followed by missing titles, slow pages and smaller design issues. Fixing in this order protects customers while you work through the rest.
+</p>
+
+<p>
+After fixing, recheck the changed pages rather than assuming the fix worked. Open the corrected links, test the forms again and view the updated titles. This second check catches mistakes in the fix itself and gives you confidence that the site is truly ready. Keep the list and the dates of fixes as a record for future redesigns.
+</p>
+
+<p>
+Finally, plan a follow-up check a few weeks later. Some problems only appear over time, such as a page that search engines have not yet revisited, or a link from another site that still points to an old address. A short follow-up audit completes the redesign properly and keeps your website reliable for visitors and search engines alike.
+</p>
+
+<h2>
+Frequently Asked Questions
+</h2>
+
+<h3>
+What is the first thing to check after a redesign?
+</h3>
+
+<p>
+Check the homepage and main navigation as a visitor would, on a phone and a computer, to confirm key information is clear and easy to find.
+</p>
+
+<h3>
+Why do old page addresses matter after a redesign?
+</h3>
+
+<p>
+Visitors and search engines may still use old addresses, so each important old address should still work or redirect to the right new page.
+</p>
+
+<h3>
+Should I test contact forms after a redesign?
+</h3>
+
+<p>
+Yes, send a test message through each form and check phone and email links so you know enquiries can actually reach you.
+</p>
+
+<h3>
+How soon should I recheck the website?
+</h3>
+
+<p>
+Recheck fixed pages right away, then plan a short follow-up check a few weeks later to catch issues that appear over time.
+</p>
+
+
+<!-- AUTHOR -->
+
+<div class="author-box">
+
+<h3>
+About Zaheer SEO Expert
+</h3>
+
+<p>
+Zaheer Seo Expert is an SEO services business based in Layyah, Punjab,
+providing on-page SEO, off-page SEO, local SEO, Google Business Profile
+optimization, keyword research and SEO audits for businesses in Layyah
+and across the surrounding areas.
+</p>
+
+</div>
+
+
+
+<!-- CTA -->
+
+<div class="cta">
+
+<h2>
+Want More Customers From Google?
+</h2>
+
+<p>
+Call <a href="tel:+923277350830" style="display:inline;background:transparent;color:#ffffff;padding:0;border-radius:0;font-size:inherit;font-weight:700;text-decoration:underline;">0327 7350830</a>
+or email <a href="mailto:seozaheer14@gmail.com" style="display:inline;background:transparent;color:#ffffff;padding:0;border-radius:0;font-size:inherit;font-weight:700;text-decoration:underline;">seozaheer14@gmail.com</a>.
+Zaheer Seo Expert, Layyah - Rajan Shah Road, Rana Nagar, Chak 116 TDA, Pakistan. Open 24 hours.
+</p>
+
+<a href="../index.html#contact">
+Get Your SEO Strategy →
+</a>
+
+</div>
+
+
+</article>
+
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+
+<div class="sidebar-box">
+
+<h3>
+In This Guide
+</h3>
+
+<a href="#">Why Local Search Matters</a>
+<a href="#">Google Business Profile</a>
+<a href="#">Your Website</a>
+<a href="#">Reviews</a>
+<a href="#">Common Mistakes</a>
+
+</div>
+
+
+<div class="sidebar-box">
+
+<h3>
+Related SEO Guides
+</h3>
+
+<a href="google-business-profile-optimization-guide.html">
+Google Business Profile Guide
+</a>
+
+<a href="on-page-seo-checklist-2026.html">
+On-Page SEO Guide
+</a>
+
+<a href="index.html">
+All SEO Articles
+</a>
+
+</div>
+
+
+<div class="sidebar-box">
+
+<h3>
+SEO Services
+</h3>
+
+<a href="../services/local-seo-google-business-profile.html">
+Local SEO & Google Business Profile
+</a>
+
+<a href="../services/on-page-seo.html">
+On-Page SEO
+</a>
+
+<a href="../services/keyword-research-strategy.html">
+Keyword Research
+</a>
+
+<a href="../services/seo-audits-competitor-analysis.html">
+SEO Audits
+</a>
+
+<a href="../index.html#contact">
+Contact Zaheer
+</a>
+
+</div>
+
+
+</aside>
+
+</div>
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container footer">
+
+<div>
+
+<strong>
+© 2026 Zaheer SEO Expert
+</strong>
+
+<small>
+Rajan Shah Road, Rana Nagar, Chak 116 TDA, Layyah, Punjab, Pakistan
+</small>
+
+<small>
+Call: <a href="tel:+923277350830">0327 7350830</a> · Email: <a href="mailto:seozaheer14@gmail.com">seozaheer14@gmail.com</a>
+</small>
+
+</div>
+
+
+<div class="footer-links">
+
+<a href="../index.html">
+Home
+</a>
+
+<a href="../index.html#services">
+Services
+</a>
+
+<a href="index.html">
+Blog
+</a>
+
+<a href="../index.html#about">
+About
+</a>
+
+<a href="../index.html#contact">
+Contact
+</a>
+
+</div>
+
+</div>
+
+</footer>
+
+
+</body>
+</html>

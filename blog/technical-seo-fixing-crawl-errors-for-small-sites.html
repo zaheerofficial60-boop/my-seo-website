@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-62LVKLS4G2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-62LVKLS4G2');
+</script>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fixing Crawl Errors for Small Websites</title>
+
+<meta name="description" content="A plain-language guide to finding and fixing crawl errors on small business websites, so search engines can find, read, and show your pages properly.">
+
+<meta name="keywords" content="SEO for Layyah businesses, local SEO Layyah, Google Business Profile Layyah, SEO services Layyah">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://zaheerofficial60-boop.github.io/my-seo-website/blog/technical-seo-fixing-crawl-errors-for-small-sites.html">
+<meta property="og:title" content="Fixing Crawl Errors for Small Websites">
+<meta property="og:description" content="A plain-language guide to finding and fixing crawl errors on small business websites, so search engines can find, read, and show your pages properly.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://zaheerofficial60-boop.github.io/my-seo-website/blog/technical-seo-fixing-crawl-errors-for-small-sites.html">
+<meta property="og:image" content="https://zaheerofficial60-boop.github.io/my-seo-website/zaheer-seo-expert.jpg">
+
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap"
+      rel="stylesheet">
+
+
+<style>
+
+
+:root{
+--navy:#071b45;
+--blue:#1769e0;
+--blue-dark:#0b4fbe;
+--light:#f6faff;
+--sky:#edf5ff;
+--text:#263957;
+--muted:#64748b;
+--line:#dce8f6;
+--white:#ffffff;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Inter,Arial,sans-serif;
+background:var(--light);
+color:var(--text);
+line-height:1.8;
+}
+
+a{
+text-decoration:none;
+color:var(--blue);
+}
+
+.container{
+width:min(1000px,92%);
+margin:auto;
+}
+
+
+/* NAVIGATION */
+
+header{
+position:sticky;
+top:0;
+z-index:999;
+background:rgba(255,255,255,.97);
+border-bottom:1px solid var(--line);
+backdrop-filter:blur(10px);
+}
+
+.nav{
+min-height:70px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo{
+font-family:"Space Grotesk",sans-serif;
+font-weight:800;
+font-size:1.15rem;
+color:var(--navy);
+}
+
+.logo span{
+color:var(--blue);
+}
+
+.nav-links{
+display:flex;
+gap:22px;
+align-items:center;
+font-size:.78rem;
+font-weight:700;
+}
+
+.nav-links a{
+color:#52627a;
+}
+
+.nav-links a:hover{
+color:var(--blue);
+}
+
+.nav-btn{
+background:var(--blue);
+color:white!important;
+padding:9px 15px;
+border-radius:7px;
+}
+
+
+/* HERO */
+
+.article-hero{
+padding:70px 0 55px;
+background:
+radial-gradient(circle at 85% 10%,#dbeaff 0,transparent 30%),
+linear-gradient(180deg,#fff,#f1f7ff);
+}
+
+.breadcrumb{
+font-size:.75rem;
+font-weight:600;
+color:var(--muted);
+margin-bottom:20px;
+}
+
+.breadcrumb a{
+color:var(--blue);
+}
+
+.category{
+display:inline-block;
+background:white;
+border:1px solid #cfe0f5;
+color:var(--blue);
+padding:7px 12px;
+border-radius:7px;
+font-size:.68rem;
+font-weight:800;
+letter-spacing:.04em;
+}
+
+.article-hero h1{
+font-family:"Space Grotesk",sans-serif;
+font-size:clamp(2.3rem,5vw,4rem);
+line-height:1.08;
+letter-spacing:-.04em;
+color:var(--navy);
+margin:20px 0 18px;
+max-width:850px;
+}
+
+.article-intro{
+font-size:1.05rem;
+color:var(--muted);
+max-width:820px;
+}
+
+.article-meta{
+margin-top:20px;
+font-size:.75rem;
+font-weight:600;
+color:#718198;
+}
+
+
+/* HERO IMAGE */
+
+.article-image{
+margin:0 auto 55px;
+width:min(1000px,92%);
+height:350px;
+border-radius:18px;
+overflow:hidden;
+background:#edf5ff;
+border:1px solid var(--line);
+box-shadow:0 20px 45px rgba(7,27,69,.09);
+}
+
+.article-image svg{
+width:100%;
+height:100%;
+display:block;
+}
+
+
+/* CONTENT */
+
+.article-layout{
+display:grid;
+grid-template-columns:1fr 270px;
+gap:45px;
+align-items:start;
+padding-bottom:80px;
+}
+
+.article{
+background:white;
+border:1px solid var(--line);
+border-radius:16px;
+padding:45px;
+box-shadow:0 12px 35px rgba(7,27,69,.05);
+}
+
+.article h2{
+font-family:"Space Grotesk",sans-serif;
+font-size:1.8rem;
+line-height:1.25;
+color:var(--navy);
+margin:35px 0 15px;
+}
+
+.article h2:first-child{
+margin-top:0;
+}
+
+.article h3{
+font-family:"Space Grotesk",sans-serif;
+font-size:1.25rem;
+color:var(--navy);
+margin:27px 0 10px;
+}
+
+.article p{
+margin-bottom:17px;
+color:#4f617a;
+}
+
+.article ul,
+.article ol{
+padding-left:23px;
+margin:10px 0 22px;
+}
+
+.article li{
+margin-bottom:9px;
+color:#4f617a;
+}
+
+.article strong{
+color:var(--navy);
+}
+
+
+/* CHECKLIST */
+
+.checklist{
+background:#f3f8ff;
+border-left:4px solid var(--blue);
+padding:20px 22px;
+margin:25px 0;
+border-radius:8px;
+}
+
+.checklist strong{
+display:block;
+margin-bottom:5px;
+}
+
+
+/* SIDEBAR */
+
+.sidebar{
+position:sticky;
+top:95px;
+}
+
+.sidebar-box{
+background:white;
+border:1px solid var(--line);
+border-radius:14px;
+padding:23px;
+margin-bottom:18px;
+box-shadow:0 10px 25px rgba(7,27,69,.05);
+}
+
+.sidebar-box h3{
+font-family:"Space Grotesk",sans-serif;
+color:var(--navy);
+font-size:1rem;
+margin-bottom:12px;
+}
+
+.sidebar-box a{
+display:block;
+font-size:.78rem;
+font-weight:600;
+padding:8px 0;
+border-bottom:1px solid #edf2f8;
+}
+
+.sidebar-box a:last-child{
+border-bottom:0;
+}
+
+
+/* GBP BUTTON */
+
+.gbp-button{
+display:inline-block;
+background:var(--blue);
+color:white;
+padding:12px 18px;
+border-radius:8px;
+font-weight:800;
+font-size:.82rem;
+margin:8px 0 22px;
+}
+
+.gbp-button:hover{
+background:var(--blue-dark);
+}
+
+
+/* AUTHOR */
+
+.author-box{
+margin-top:45px;
+padding:25px;
+background:#f5f9ff;
+border:1px solid var(--line);
+border-radius:12px;
+}
+
+.author-box h3{
+margin-top:0;
+}
+
+
+/* CTA */
+
+.cta{
+margin-top:45px;
+padding:35px;
+border-radius:15px;
+background:linear-gradient(135deg,#1769e0,#0b4fbe);
+color:white;
+text-align:center;
+}
+
+.cta h2{
+color:white;
+margin:0 0 10px;
+}
+
+.cta p{
+color:#e3edff;
+}
+
+.cta a{
+display:inline-block;
+background:white;
+color:var(--blue);
+padding:11px 18px;
+border-radius:7px;
+font-weight:800;
+font-size:.8rem;
+}
+
+
+/* FOOTER */
+
+footer{
+background:var(--navy);
+color:#dbe7f8;
+padding:32px 0;
+}
+
+.footer{
+display:flex;
+justify-content:space-between;
+gap:20px;
+align-items:center;
+}
+
+.footer strong{
+color:white;
+}
+
+.footer small{
+display:block;
+margin-top:3px;
+}
+
+.footer-links{
+display:flex;
+gap:18px;
+font-size:.75rem;
+font-weight:700;
+}
+
+.footer-links a{
+color:#dbe7f8;
+}
+
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+.nav-links{
+display:none;
+}
+
+.article-layout{
+grid-template-columns:1fr;
+}
+
+.sidebar{
+position:static;
+}
+
+}
+
+@media(max-width:600px){
+
+.article{
+padding:25px 20px;
+}
+
+.article-image{
+height:270px;
+}
+
+.article-hero{
+padding:55px 0 40px;
+}
+
+.footer{
+flex-direction:column;
+text-align:center;
+}
+
+.footer-links{
+justify-content:center;
+flex-wrap:wrap;
+}
+
+}
+
+
+/* POST IMAGES */
+.post-image{margin:28px 0;}
+.post-image img{width:100%;max-width:100%;height:auto;display:block;border-radius:12px;border:1px solid var(--line);}
+
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Zaheer Seo Expert",
+  "url": "https://zaheerofficial60-boop.github.io/my-seo-website/",
+  "image": "https://zaheerofficial60-boop.github.io/my-seo-website/zaheer-seo-expert.jpg",
+  "telephone": "+92 327 7350830",
+  "email": "seozaheer14@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rajan Shah Road, Rana Nagar, Chak 116 TDA",
+    "addressLocality": "Layyah",
+    "addressRegion": "Punjab",
+    "addressCountry": "PK"
+  },
+  "areaServed": [
+    "Layyah",
+    "Chobara",
+    "Mianwali",
+    "Chowk Azam",
+    "Jaman Shah",
+    "Dera Ghazi Khan",
+    "Karor Lal Eason"
+  ],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a crawl error in simple terms?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A crawl error happens when a search engine tries to visit a page on your site but cannot reach it, read it, or use it properly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I find crawl errors on my website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use Google Search Console after verifying your site, and review its reports for missing pages, blocked pages, and server problems."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do with a page that no longer exists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Redirect it to a relevant replacement page if one exists, or show a helpful not-found page with links to your homepage and main services."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I check for crawl errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A short monthly check is enough for most small sites, with extra checks after a redesign, a move, or major content changes."
+      }
+    }
+  ]
+}
+</script>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<header>
+
+<div class="container nav">
+
+<a href="../index.html" class="logo">
+Zaheer <span>SEO Expert</span>
+</a>
+
+<nav class="nav-links">
+
+<a href="../index.html">Home</a>
+
+<a href="../index.html#services">Services</a>
+
+<a href="index.html">Blog</a>
+
+<a href="../index.html#about">About</a>
+
+<a href="../index.html#contact" class="nav-btn">
+Free SEO Audit
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<section class="article-hero">
+
+<div class="container">
+
+<div class="breadcrumb">
+
+<a href="../index.html">Home</a>
+&nbsp; / &nbsp;
+
+<a href="index.html">Blog</a>
+&nbsp; / &nbsp;
+
+Fixing Crawl Errors for Small Websites
+
+</div>
+
+
+<span class="category">
+TECHNICAL SEO
+</span>
+
+
+<h1>
+Fixing Crawl Errors for Small Websites
+</h1>
+
+
+<p class="article-intro">
+If search engines cannot properly visit and read your website, even good content may struggle to appear in search results. These visiting problems are called crawl errors. This guide explains, in plain language, what crawl errors are, how to find them, and how to fix the most common ones on a small business website.
+</p>
+
+
+<div class="article-meta">
+By Zaheer SEO Expert · 28 October 2026 · Technical SEO
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CONTENT -->
+
+<main class="container">
+
+<div class="article-layout">
+
+
+<article class="article">
+
+<h2>
+What Crawl Errors Mean in Simple Terms
+</h2>
+
+<p>
+Think of a search engine as a visitor who follows links from page to page to learn what your website contains. When that visitor reaches a broken link, a missing page, or a page that blocks access, it records a crawl error. The page may still exist for human visitors, or it may be gone entirely, but the search engine cannot use it properly until the problem is fixed. A small number of errors is normal on many sites, but a large number, or errors on important pages, can reduce how well your site performs in search.
+</p>
+
+<p>
+Crawl errors do not always mean your business is doing something wrong. Pages are renamed, products change, and old links remain on other sites long after a page has moved. What matters is how you respond. Regular checks help you catch problems early, before they affect important service pages or your homepage. Understanding the basic types of errors, and fixing them one by one, is a practical skill that any small business owner can learn with the right tools and a calm, step-by-step approach.
+</p>
+
+<figure class="post-image">
+<img src="../images/blog-technical-seo-fixing-crawl-errors-for-small-sites-1.jpg" alt="Person checking website error reports on a laptop screen" loading="lazy">
+</figure>
+
+<h2>
+Find Errors With Free Tools Before You Fix Anything
+</h2>
+
+<p>
+Before fixing anything, you need a clear list of problems. Google Search Console is a free tool that shows crawl and indexing issues for your own website, once you have verified ownership. Its reports list pages that could not be found, pages blocked by settings, and pages with server problems. Start there, and focus first on errors affecting your homepage, main service pages, and contact page, because these pages matter most to new visitors and potential customers searching for your business.
+</p>
+
+<p>
+Do not try to fix every minor warning at once. Sort errors by importance and by type, and work through the most serious ones first. Note the affected page addresses carefully, and check each one in a browser to see what a visitor actually experiences. Sometimes a reported error is already fixed, or affects an old page that no longer matters. A careful check prevents wasted effort and helps you understand whether the problem is a broken link, a missing page, a settings issue, or a temporary server problem that may resolve on its own.
+</p>
+
+<h2>
+Fix Broken Links and Missing Pages Carefully
+</h2>
+
+<p>
+The most common crawl error is a page that cannot be found, often shown as a 404 error. This happens when a page is deleted, renamed, or linked to with a wrong address. First, check whether the page should still exist. If it was renamed, set up a redirect from the old address to the new one, so visitors and search engines are sent to the correct page automatically. If the page is truly gone and has no replacement, make sure your site shows a helpful not-found page with links back to your homepage and main services, rather than a blank or confusing error.
+</p>
+
+<p>
+Next, fix the links that point to the missing page, especially links on your own website. Update menus, service pages, and blog posts that still use the old address. If another website links to your old page, a redirect still helps, because it guides those visitors to the right place. Keep a simple list of redirects you create, so you do not create chains where one redirect leads to another. Clean, direct redirects are easier to maintain and less likely to cause new errors in the future for your site.
+</p>
+
+<ul>
+<li>Check each error page in a browser first</li>
+<li>Redirect renamed pages to their new address</li>
+<li>Fix broken links on your own site</li>
+<li>Show a helpful page when content is truly gone</li>
+</ul>
+
+<figure class="post-image">
+<img src="../images/blog-technical-seo-fixing-crawl-errors-for-small-sites-2.jpg" alt="Website developer fixing broken links on a computer" loading="lazy">
+</figure>
+
+<h2>
+Check Settings That May Block Search Engines
+</h2>
+
+<p>
+Sometimes a page is not broken, but search engines are told not to visit it. This can happen through a robots file, a page setting, or a password that blocks access. These settings are useful when you genuinely want to keep a page private, such as an admin page, but they cause problems when applied to public pages by mistake. Check your robots file and page settings for important pages, and make sure public service pages, your homepage, and your contact page are allowed to be visited and read by search engines.
+</p>
+
+<p>
+Also check for accidental duplicate settings, such as a test version of your site that is still blocking search engines after launch. If you recently changed your website, redesigned it, or moved to a new host, review these settings as part of that change. Small mistakes here can have a large effect, because a blocked page may disappear from search results even though it looks fine to human visitors. When in doubt, ask your website helper to review the settings with you, and keep a note of any intentional blocks so future changes do not undo them by accident.
+</p>
+
+<h2>
+Handle Server Errors and Slow Pages Promptly
+</h2>
+
+<p>
+Server errors mean the search engine tried to visit your site but the server could not respond properly. These can be temporary, caused by a brief hosting problem, or persistent, caused by a site fault or overloaded hosting. If you see a small number of server errors on one day, check again after a short time to see if they clear. If they persist, contact your hosting provider with the affected page addresses and the dates of the errors, so they can investigate the cause with clear information from you.
+</p>
+
+<p>
+Slow pages can also create crawling problems, because search engines may stop visiting a site that takes too long to load. Keep images reasonably sized, avoid unnecessary heavy features, and remove plugins or scripts you no longer use. Test your main pages on a phone as well as a computer, because many visitors and search engines now focus on mobile experience. A fast, stable site is easier to crawl, easier for visitors to use, and more likely to perform well over time, even without any advanced technical changes or expensive upgrades.
+</p>
+
+<figure class="post-image">
+<img src="../images/blog-technical-seo-fixing-crawl-errors-for-small-sites-3.jpg" alt="Small business owner reviewing a fast-loading website on a phone" loading="lazy">
+</figure>
+
+<h2>
+Build a Simple Monthly Crawl Check Routine
+</h2>
+
+<p>
+Fixing crawl errors once is helpful, but regular checks prevent old problems from returning and catch new ones early. Set aside a short time each month to open your Search Console reports, review new errors, and fix the most important ones first. After each fix, note what you changed and when, so you can track whether the error clears in the next report. This simple routine takes little time for a small site, but it keeps your website healthy and reliable for both visitors and search engines throughout the year.
+</p>
+
+<p>
+Do not be discouraged if new errors appear from time to time; websites change, and errors are a normal part of maintaining a site. The goal is steady improvement, not perfection. Zaheer Seo Expert is based in Layyah, at Layyah - Rajan Shah Road, Rana Nagar, Chak 116 TDA, Layyah, Punjab, Pakistan, and is open 24 hours. You can contact Zaheer Seo Expert on 0327 7350830 or by email at seozaheer14@gmail.com. Check regularly, fix important errors first, and keep your site easy for search engines and customers to explore with confidence.
+</p>
+
+<h2>
+Frequently Asked Questions
+</h2>
+
+<h3>
+What is a crawl error in simple terms?
+</h3>
+
+<p>
+A crawl error happens when a search engine tries to visit a page on your site but cannot reach it, read it, or use it properly.
+</p>
+
+<h3>
+How do I find crawl errors on my website?
+</h3>
+
+<p>
+Use Google Search Console after verifying your site, and review its reports for missing pages, blocked pages, and server problems.
+</p>
+
+<h3>
+What should I do with a page that no longer exists?
+</h3>
+
+<p>
+Redirect it to a relevant replacement page if one exists, or show a helpful not-found page with links to your homepage and main services.
+</p>
+
+<h3>
+How often should I check for crawl errors?
+</h3>
+
+<p>
+A short monthly check is enough for most small sites, with extra checks after a redesign, a move, or major content changes.
+</p>
+
+
+<!-- AUTHOR -->
+
+<div class="author-box">
+
+<h3>
+About Zaheer SEO Expert
+</h3>
+
+<p>
+Zaheer Seo Expert is an SEO services business based in Layyah, Punjab,
+providing on-page SEO, off-page SEO, local SEO, Google Business Profile
+optimization, keyword research and SEO audits for businesses in Layyah
+and across the surrounding areas.
+</p>
+
+</div>
+
+
+
+<!-- CTA -->
+
+<div class="cta">
+
+<h2>
+Want More Customers From Google?
+</h2>
+
+<p>
+Call <a href="tel:+923277350830" style="display:inline;background:transparent;color:#ffffff;padding:0;border-radius:0;font-size:inherit;font-weight:700;text-decoration:underline;">0327 7350830</a>
+or email <a href="mailto:seozaheer14@gmail.com" style="display:inline;background:transparent;color:#ffffff;padding:0;border-radius:0;font-size:inherit;font-weight:700;text-decoration:underline;">seozaheer14@gmail.com</a>.
+Zaheer Seo Expert, Layyah - Rajan Shah Road, Rana Nagar, Chak 116 TDA, Pakistan. Open 24 hours.
+</p>
+
+<a href="../index.html#contact">
+Get Your SEO Strategy →
+</a>
+
+</div>
+
+
+</article>
+
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+
+<div class="sidebar-box">
+
+<h3>
+In This Guide
+</h3>
+
+<a href="#">Why Local Search Matters</a>
+<a href="#">Google Business Profile</a>
+<a href="#">Your Website</a>
+<a href="#">Reviews</a>
+<a href="#">Common Mistakes</a>
+
+</div>
+
+
+<div class="sidebar-box">
+
+<h3>
+Related SEO Guides
+</h3>
+
+<a href="google-business-profile-optimization-guide.html">
+Google Business Profile Guide
+</a>
+
+<a href="on-page-seo-checklist-2026.html">
+On-Page SEO Guide
+</a>
+
+<a href="index.html">
+All SEO Articles
+</a>
+
+</div>
+
+
+<div class="sidebar-box">
+
+<h3>
+SEO Services
+</h3>
+
+<a href="../services/local-seo-google-business-profile.html">
+Local SEO & Google Business Profile
+</a>
+
+<a href="../services/on-page-seo.html">
+On-Page SEO
+</a>
+
+<a href="../services/keyword-research-strategy.html">
+Keyword Research
+</a>
+
+<a href="../services/seo-audits-competitor-analysis.html">
+SEO Audits
+</a>
+
+<a href="../index.html#contact">
+Contact Zaheer
+</a>
+
+</div>
+
+
+</aside>
+
+</div>
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container footer">
+
+<div>
+
+<strong>
+© 2026 Zaheer SEO Expert
+</strong>
+
+<small>
+Rajan Shah Road, Rana Nagar, Chak 116 TDA, Layyah, Punjab, Pakistan
+</small>
+
+<small>
+Call: <a href="tel:+923277350830">0327 7350830</a> · Email: <a href="mailto:seozaheer14@gmail.com">seozaheer14@gmail.com</a>
+</small>
+
+</div>
+
+
+<div class="footer-links">
+
+<a href="../index.html">
+Home
+</a>
+
+<a href="../index.html#services">
+Services
+</a>
+
+<a href="index.html">
+Blog
+</a>
+
+<a href="../index.html#about">
+About
+</a>
+
+<a href="../index.html#contact">
+Contact
+</a>
+
+</div>
+
+</div>
+
+</footer>
+
+
+</body>
+</html>
