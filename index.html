@@ -31,17 +31,17 @@
 <style>
 
 :root{
---blue:#1769e0;
---blue2:#0b4fc4;
---navy:#071b45;
---sky:#eef6ff;
---pale:#f7fbff;
---text:#162033;
---muted:#5d6b82;
---line:#dce9f8;
+--blue:#ff6a00;
+--blue2:#e04e00;
+--navy:#141417;
+--sky:#fff1e4;
+--pale:#fdf9f4;
+--text:#1c1a17;
+--muted:#5f594f;
+--line:#ecdfd0;
 --white:#fff;
---shadow:0 18px 50px rgba(23,105,224,.12);
---shadow-sm:0 8px 30px rgba(7,27,69,.05);
+--shadow:0 18px 50px rgba(255,106,0,.12);
+--shadow-sm:0 8px 30px rgba(18,18,22,.05);
 --radius:18px
 }
 
@@ -80,7 +80,7 @@ color:#fff
 
 a:focus-visible,
 summary:focus-visible{
-outline:3px solid rgba(23,105,224,.45);
+outline:3px solid rgba(255,106,0,.45);
 outline-offset:2px;
 border-radius:6px
 }
@@ -115,19 +115,19 @@ cursor:pointer
 .btn-primary{
 background:linear-gradient(135deg,var(--blue),var(--blue2));
 color:#fff;
-box-shadow:0 12px 26px rgba(23,105,224,.28)
+box-shadow:0 12px 26px rgba(255,106,0,.28)
 }
 
 .btn-primary:hover{
 transform:translateY(-2px);
-box-shadow:0 16px 32px rgba(23,105,224,.34)
+box-shadow:0 16px 32px rgba(255,106,0,.34)
 }
 
 .btn-secondary{
 background:#fff;
-border-color:#c8dbf2;
+border-color:#f0d3b3;
 color:var(--navy);
-box-shadow:0 6px 18px rgba(7,27,69,.06)
+box-shadow:0 6px 18px rgba(18,18,22,.06)
 }
 
 .btn-secondary:hover{
@@ -145,7 +145,7 @@ align-items:center;
 gap:8px;
 color:var(--blue);
 background:var(--sky);
-border:1px solid #d7e7fa;
+border:1px solid #ffd9ae;
 font-size:.7rem;
 font-weight:800;
 letter-spacing:.12em;
@@ -171,10 +171,10 @@ header{
 position:sticky;
 top:0;
 z-index:50;
-background:rgba(255,255,255,.96);
+background:#0b0b0e;
 backdrop-filter:blur(12px);
 border-bottom:1px solid var(--line);
-box-shadow:0 6px 24px rgba(7,27,69,.05)
+box-shadow:0 6px 24px rgba(18,18,22,.05)
 }
 
 nav{
@@ -195,7 +195,7 @@ padding:0 34px
 font-family:'Space Grotesk';
 font-weight:700;
 font-size:1.22rem;
-color:var(--navy);
+color:#fff;
 letter-spacing:-.01em;
 white-space:nowrap
 }
@@ -218,7 +218,7 @@ width:44px;
 height:44px;
 border:1px solid var(--line);
 border-radius:11px;
-background:#fff;
+background:transparent;
 cursor:pointer;
 flex-direction:column;
 align-items:center;
@@ -232,7 +232,7 @@ display:block;
 width:20px;
 height:2px;
 border-radius:2px;
-background:var(--navy);
+background:#fff;
 transition:.25s
 }
 
@@ -258,7 +258,7 @@ gap:6px
 .dropdown>a{
 font-size:.86rem;
 font-weight:700;
-color:#53627a;
+color:#d9d5cd;
 padding:9px 11px;
 border-radius:9px;
 transition:.2s
@@ -318,7 +318,7 @@ color:#fff!important;
 padding:11px 18px!important;
 border-radius:10px;
 margin-left:8px;
-box-shadow:0 10px 22px rgba(23,105,224,.25)
+box-shadow:0 10px 22px rgba(255,106,0,.25)
 }
 
 .nav-cta:hover{
@@ -332,7 +332,7 @@ transform:translateY(-1px)
 .hero{
 position:relative;
 padding:84px 0 72px;
-background:linear-gradient(155deg,#f7fbff 0%,#eef6ff 55%,#e2effe 100%);
+background:linear-gradient(155deg,#0a0a0d 0%,#121215 52%,#221206 100%);
 overflow:hidden
 }
 
@@ -342,7 +342,7 @@ position:absolute;
 width:520px;
 height:520px;
 border-radius:50%;
-background:radial-gradient(circle,rgba(23,105,224,.14),rgba(23,105,224,0) 65%);
+background:radial-gradient(circle,rgba(255,106,0,.14),rgba(255,106,0,0) 65%);
 top:-190px;
 right:-120px;
 pointer-events:none
@@ -354,7 +354,7 @@ position:absolute;
 width:420px;
 height:420px;
 border-radius:50%;
-background:radial-gradient(circle,rgba(11,79,196,.10),rgba(11,79,196,0) 65%);
+background:radial-gradient(circle,rgba(224,78,0,.10),rgba(224,78,0,0) 65%);
 bottom:-210px;
 left:-110px;
 pointer-events:none
@@ -377,7 +377,7 @@ font-family:'Space Grotesk';
 font-size:clamp(2.6rem,5.2vw,4.3rem);
 line-height:1.04;
 letter-spacing:-.03em;
-color:var(--navy);
+color:#fff;
 margin-bottom:20px
 }
 
@@ -387,7 +387,7 @@ color:var(--blue)
 
 .hero-sub{
 font-size:1.05rem;
-color:var(--muted);
+color:#c7c1b8;
 max-width:600px;
 margin-bottom:30px
 }
@@ -427,10 +427,10 @@ max-width:460px;
 width:100%;
 margin:auto;
 padding:12px;
-border:1px solid #cfe0f5;
+border:1px solid #f3d9bd;
 border-radius:28px;
 background:linear-gradient(145deg,#ffffff,#eaf3ff);
-box-shadow:0 30px 70px rgba(7,27,69,.16)
+box-shadow:0 30px 70px rgba(18,18,22,.16)
 }
 
 .hero-photo img{
@@ -446,14 +446,14 @@ border-radius:21px
 position:absolute;
 z-index:3;
 background:#fff;
-border:1px solid #cfe0f5;
+border:1px solid #f3d9bd;
 border-radius:999px;
 padding:8px 14px;
 font-size:.66rem;
 font-weight:800;
 letter-spacing:.07em;
 color:var(--navy);
-box-shadow:0 12px 26px rgba(7,27,69,.13)
+box-shadow:0 12px 26px rgba(18,18,22,.13)
 }
 
 .chip-1{top:34px;right:-16px}
@@ -467,14 +467,14 @@ top:28px;
 left:28px;
 z-index:2;
 background:#fff;
-border:1px solid #cfe0f5;
+border:1px solid #f3d9bd;
 color:var(--blue);
 padding:8px 13px;
 border-radius:9px;
 font-size:.65rem;
 font-weight:800;
 letter-spacing:.08em;
-box-shadow:0 8px 20px rgba(7,27,69,.10)
+box-shadow:0 8px 20px rgba(18,18,22,.10)
 }
 
 .photo-caption{
@@ -486,7 +486,7 @@ background:rgba(255,255,255,.95);
 border:1px solid #e2edf9;
 border-radius:13px;
 padding:13px 16px;
-box-shadow:0 10px 30px rgba(7,27,69,.10)
+box-shadow:0 10px 30px rgba(18,18,22,.10)
 }
 
 .photo-caption strong{
@@ -622,7 +622,7 @@ display:flex;
 align-items:center;
 gap:10px;
 padding:13px 14px;
-background:#f7fbff;
+background:#fdf9f4;
 border:1px solid var(--line);
 border-radius:12px;
 font-size:.76rem;
@@ -674,9 +674,9 @@ margin-top:-4px
 .radar{
 position:relative;
 min-height:400px;
-border:1px solid #cfe0f5;
+border:1px solid #f3d9bd;
 border-radius:28px;
-background:radial-gradient(circle at 50% 42%,#fbfdff,#eef6ff);
+background:radial-gradient(circle at 50% 42%,#fbfdff,#fff1e4);
 box-shadow:var(--shadow);
 display:flex;
 align-items:center;
@@ -712,20 +712,20 @@ font-family:'Space Grotesk';
 font-weight:700;
 font-size:1.18rem;
 z-index:2;
-box-shadow:0 0 0 12px #e3efff,0 18px 36px rgba(11,79,196,.30)
+box-shadow:0 0 0 12px #e3efff,0 18px 36px rgba(224,78,0,.30)
 }
 
 .node{
 position:absolute;
 background:#fff;
-border:1px solid #cfe0f5;
+border:1px solid #f3d9bd;
 border-radius:999px;
 padding:8px 13px;
 font-size:.66rem;
 font-weight:800;
 letter-spacing:.06em;
 color:var(--navy);
-box-shadow:0 10px 22px rgba(7,27,69,.10);
+box-shadow:0 10px 22px rgba(18,18,22,.10);
 z-index:2
 }
 
@@ -784,7 +784,7 @@ transform:scaleX(1)
 display:inline-block;
 color:var(--blue);
 background:var(--sky);
-border:1px solid #d7e7fa;
+border:1px solid #ffd9ae;
 font-family:'Space Grotesk';
 font-weight:700;
 font-size:.74rem;
@@ -874,7 +874,7 @@ font-weight:800;
 letter-spacing:.06em;
 color:var(--blue);
 background:var(--sky);
-border:1px solid #d7e7fa;
+border:1px solid #ffd9ae;
 padding:5px 9px;
 border-radius:999px
 }
@@ -918,7 +918,7 @@ padding:13px 22px;
 border-radius:11px;
 font-size:.82rem;
 font-weight:800;
-box-shadow:0 12px 24px rgba(23,105,224,.24);
+box-shadow:0 12px 24px rgba(255,106,0,.24);
 transition:.2s
 }
 
@@ -1151,14 +1151,14 @@ margin-top:24px
 }
 
 .trust span{
-border:1px solid #cfe0f5;
+border:1px solid #f3d9bd;
 background:#fff;
 border-radius:999px;
 padding:8px 14px;
 font-size:.7rem;
 font-weight:800;
 letter-spacing:.03em;
-color:#53627a
+color:#d9d5cd
 }
 
 
@@ -1212,7 +1212,7 @@ font-size:.66rem;
 font-weight:800;
 color:var(--blue);
 background:var(--sky);
-border:1px solid #d7e7fa;
+border:1px solid #ffd9ae;
 padding:6px 10px;
 border-radius:999px
 }
@@ -1295,13 +1295,13 @@ display:inline-flex;
 align-items:center;
 gap:8px;
 background:#fff;
-border:1px solid #cfe0f5;
+border:1px solid #f3d9bd;
 color:var(--blue);
 padding:11px 18px;
 border-radius:999px;
 font-size:.84rem;
 font-weight:800;
-box-shadow:0 6px 16px rgba(7,27,69,.05);
+box-shadow:0 6px 16px rgba(18,18,22,.05);
 transition:.2s
 }
 
@@ -1319,7 +1319,7 @@ background:var(--blue);
 border-color:var(--blue);
 color:#fff;
 transform:translateY(-2px);
-box-shadow:0 12px 24px rgba(23,105,224,.25)
+box-shadow:0 12px 24px rgba(255,106,0,.25)
 }
 
 .area-tag:hover:before{
@@ -1483,7 +1483,7 @@ flex-shrink:0
 
 .backlink-resource-bar{
 padding:76px 0;
-background:#f7fbff;
+background:#fdf9f4;
 border-top:1px solid var(--line)
 }
 
@@ -1550,8 +1550,8 @@ box-shadow:0 12px 25px rgba(20,60,120,.10)
 /* FOOTER */
 
 footer{
-background:#061737;
-color:#b9c8df;
+background:#0a0a0c;
+color:#cfc9bf;
 padding:58px 0 0;
 font-size:.82rem
 }
@@ -1591,7 +1591,7 @@ margin-bottom:15px
 .footer-col a{
 display:block;
 padding:5px 0;
-color:#b9c8df;
+color:#cfc9bf;
 transition:.2s
 }
 
@@ -1611,7 +1611,7 @@ border-top:1px solid rgba(255,255,255,.12);
 padding:20px 0;
 text-align:center;
 font-size:.76rem;
-color:#8fa5c6
+color:#9d968a
 }
 
 .footer-bottom a{
@@ -1699,7 +1699,7 @@ right:0;
 flex-direction:column;
 align-items:stretch;
 gap:2px;
-background:#fff;
+background:#101014;
 border:1px solid var(--line);
 border-radius:16px;
 box-shadow:var(--shadow);
@@ -1930,14 +1930,14 @@ z-index:999;
 align-items:center;
 justify-content:center;
 gap:8px;
-background:#1769e0;
+background:#ff6a00;
 color:#fff;
 font-weight:700;
 font-size:17px;
 padding:15px 20px;
 border-radius:999px;
 text-decoration:none;
-box-shadow:0 10px 26px rgba(7,27,69,.35)
+box-shadow:0 10px 26px rgba(18,18,22,.35)
 }
 
 body{
@@ -1946,6 +1946,12 @@ padding-bottom:84px
 
 }
 
+
+/* BLACK + ORANGE REDESIGN */
+.hero .eyebrow{background:rgba(255,106,0,.16);border-color:rgba(255,106,0,.45);color:#ffa25e}
+.hero .btn-secondary{background:transparent;color:#fff;border-color:#454550;box-shadow:none}
+.hero .btn-secondary:hover{border-color:#ff6a00;color:#ff8b2d}
+.hero-alt{color:#a49e94}
 </style>
 
 <script type="application/ld+json">
@@ -2321,6 +2327,15 @@ using real search and website performance data.
 </p>
 
 
+
+<p>
+Zaheer Seo Expert is based in Layyah, at Rajan Shah Road, Rana Nagar, Chak 116 TDA, and works with local shops, service providers, professionals and online businesses across Layyah, Chobara, Mianwali, Chowk Azam, Jaman Shah, Dera Ghazi Khan and Karor Lal Eason. Most local customers now search on Google before they call or visit a business, so being visible at that moment matters. My work makes sure your business appears clearly in Google search and on Google Maps when nearby customers are looking for the services you offer.
+</p>
+
+<p>
+Every project starts with a proper review of your website and your Google Business Profile, so the work is based on your real situation instead of guesswork. You always know what is being done, why it is being done and what it is meant to improve. There are no shortcuts, no copied tactics and no unrealistic promises, only careful SEO work that is built to grow your visibility steadily and safely over time.
+</p>
+
 <div class="about-points">
 
 <div class="about-point">
@@ -2426,8 +2441,7 @@ each part of your SEO strategy works together.
 <h3>On-Page SEO</h3>
 
 <p>
-Titles, meta descriptions, headings, keyword mapping,
-internal links and content structure.
+On-page SEO makes every page of your website clear for Google and helpful for visitors. It covers title tags, meta descriptions, headings, keyword mapping, internal links, image alt text and content structure, so each page targets the right searches and supports the rest of your website instead of competing with it.
 </p>
 
 <span class="learn">
@@ -2444,8 +2458,7 @@ Learn more →
 <h3>Technical SEO</h3>
 
 <p>
-Speed, Core Web Vitals, crawling, indexing, sitemaps,
-mobile usability and schema.
+Technical SEO fixes the issues that quietly hold a website back. It covers site speed, Core Web Vitals, crawling and indexing problems, sitemaps, robots files, mobile usability, structured data and broken links, so search engines can reach, understand and trust every important page on your website.
 </p>
 
 <span class="learn">
@@ -2462,8 +2475,7 @@ Learn more →
 <h3>Off-Page SEO & Link Building</h3>
 
 <p>
-Relevant white-hat backlinks, outreach, guest posts,
-digital PR and citations.
+Off-page SEO builds the authority your website needs to compete in search results. The focus is on relevant, white-hat backlinks from real websites, honest outreach, guest posts, digital PR and business citations, earned gradually and safely instead of bought in bulk from low-quality sources.
 </p>
 
 <span class="learn">
@@ -2480,8 +2492,7 @@ Learn more →
 <h3>Local SEO & GBP</h3>
 
 <p>
-Google Business Profile optimization, local visibility,
-reviews and citations.
+Local SEO helps your business appear when nearby customers search on Google and Google Maps. It includes complete Google Business Profile optimization, accurate business details, services, photos, posts, reviews strategy and local citations, supported by location pages on your website for the areas you serve.
 </p>
 
 <span class="learn">
@@ -2498,8 +2509,7 @@ Learn more →
 <h3>Keyword Research</h3>
 
 <p>
-Search terms mapped to intent, competition, business value
-and ranking opportunities.
+Keyword research finds the exact words your customers type into Google, and how difficult each one is to win. Those keywords are then mapped to the right pages and services, so your content, headings and internal links all follow one clear strategy instead of random guessing.
 </p>
 
 <span class="learn">
@@ -2516,8 +2526,7 @@ Learn more →
 <h3>Content Strategy</h3>
 
 <p>
-Useful search-focused content designed to attract qualified
-visitors and customers.
+Good content answers the questions your customers are already asking. This service plans and writes service pages, location pages and helpful articles that match real search intent, read naturally for visitors and support your rankings, so your website keeps giving Google fresh, relevant reasons to rank it.
 </p>
 
 <span class="learn">
@@ -2534,8 +2543,7 @@ Learn more →
 <h3>E-commerce SEO</h3>
 
 <p>
-Product and category optimization, technical fixes and
-structured data.
+E-commerce SEO helps online stores get found for the products they sell. It covers product and category page optimization, product titles and descriptions, image SEO, site structure and technical fixes, so more shoppers reach your products from Google search and Google Shopping results.
 </p>
 
 <span class="learn">
@@ -2552,8 +2560,7 @@ Learn more →
 <h3>SEO Audits</h3>
 
 <p>
-Find technical, content and authority gaps against the
-businesses outranking you.
+An SEO audit shows exactly what is helping your website and what is holding it back. It reviews technical health, content, keywords, links and your Google Business Profile, compares your site with competitors, and ends with a clear, prioritised list of fixes you can act on.
 </p>
 
 <span class="learn">
@@ -2570,8 +2577,7 @@ Learn more →
 <h3>Analytics & Reporting</h3>
 
 <p>
-Search Console and Analytics tracking with clear reporting
-on rankings, traffic and leads.
+You should always know what your SEO is doing. This service sets up and reads Google Analytics and Search Console, tracks rankings, traffic, calls and enquiries, and turns the numbers into simple reports that show progress clearly and guide the next steps of your strategy.
 </p>
 
 <span class="learn">
@@ -2588,6 +2594,47 @@ Learn more →
 </section>
 
 
+
+
+<!-- LOCAL SEO -->
+<section id="local-seo">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow">
+Local SEO
+</span>
+<h2>
+Local SEO and Google Business Profile services for Layyah businesses.
+</h2>
+<p>
+When someone in Layyah searches for a service on Google, the first thing they usually see is the map and the local business listings. If your business is not there, or your profile is incomplete, those customers call a competitor instead. Local SEO fixes that, by making your Google Business Profile complete, accurate and active, and by supporting it with the right pages and signals on your website.
+</p>
+</div>
+<div class="card-grid">
+<div class="card">
+<span class="card-num">01</span>
+<h3>Google Business Profile Optimization</h3>
+<p>
+Your profile is set up properly from the start: the right categories, complete services, accurate address and phone number, working hours, photos, a clear business description and regular posts. A complete profile gives Google the confidence to show your business more often in local searches and on Google Maps.
+</p>
+</div>
+<div class="card">
+<span class="card-num">02</span>
+<h3>Reviews, Photos and Posts</h3>
+<p>
+Customers trust businesses that look active and well reviewed. You get a simple, honest system for asking real customers for reviews, replying to them properly, adding fresh photos and publishing regular profile posts about your services, so your listing keeps looking alive and trustworthy to both Google and customers.
+</p>
+</div>
+<div class="card">
+<span class="card-num">03</span>
+<h3>Location Pages and Local Keywords</h3>
+<p>
+Your website supports your profile with proper location pages for Layyah and the areas you serve, built around the words local customers actually search for. Zaheer Seo Expert is based in Layyah and serves the surrounding areas from there, and every page says so honestly while targeting the right local searches.
+</p>
+</div>
+</div>
+</div>
+</section>
 
 <!-- BLOG -->
 
@@ -2948,8 +2995,7 @@ Full-Site Audit
 </h3>
 
 <p>
-Review technical SEO, content, keywords and backlink profile
-to find the highest-impact opportunities.
+The work begins with a complete review of your website and Google Business Profile: technical SEO, page content, keywords, internal links and your backlink profile. This audit finds the problems that are quietly holding you back and the opportunities that can bring the fastest, safest improvement first.
 </p>
 
 </div>
@@ -2964,8 +3010,7 @@ SEO Strategy
 </h3>
 
 <p>
-Create a prioritized roadmap around your goals, market,
-competition and budget.
+From the audit, a clear and prioritized roadmap is created around your business goals, your market, your competition and your budget. You see exactly what will be done and in which order, instead of a long list of random tasks with no plan behind them.
 </p>
 
 </div>
@@ -2980,8 +3025,7 @@ Implementation
 </h3>
 
 <p>
-Apply SEO fixes, publish content and build relevant
-authority signals.
+Then the plan is put into practice: technical fixes are applied, pages are improved and new content is published, and relevant authority signals are built through honest outreach and citations. Everything is done with white-hat methods that keep your website safe with Google.
 </p>
 
 </div>
@@ -2996,8 +3040,7 @@ Reporting & Growth
 </h3>
 
 <p>
-Track rankings, traffic and leads, then refine the
-strategy from real performance.
+Progress is tracked with real data: rankings, Search Console performance, organic traffic, calls and enquiries. Reports are simple and honest, and the strategy is refined from what the numbers show, so the work keeps improving month after month instead of standing still.
 </p>
 
 </div>
@@ -3099,7 +3142,7 @@ useful traffic, enquiries and customers.
 viewBox="0 0 760 430">
 
 <rect width="760" height="430" rx="25"
-fill="#eef6ff"/>
+fill="#fff1e4"/>
 
 <circle cx="650" cy="70" r="90"
 fill="#dcecff"/>
@@ -3108,13 +3151,13 @@ fill="#dcecff"/>
 width="650" height="340"
 rx="20"
 fill="#fff"
-stroke="#cfe0f5"
+stroke="#f3d9bd"
 stroke-width="2"/>
 
 <rect x="55" y="45"
 width="650" height="58"
 rx="20"
-fill="#071b45"/>
+fill="#141417"/>
 
 <text x="85" y="82"
 font-family="Arial"
@@ -3134,7 +3177,7 @@ Search performance overview
 <rect x="85" y="160"
 width="170" height="68"
 rx="12"
-fill="#f7fbff"/>
+fill="#fdf9f4"/>
 
 <text x="105" y="188"
 font-family="Arial"
@@ -3147,14 +3190,14 @@ CLICKS
 font-family="Arial"
 font-size="22"
 font-weight="700"
-fill="#071b45">
+fill="#141417">
 +32%
 </text>
 
 <rect x="275" y="160"
 width="170" height="68"
 rx="12"
-fill="#f7fbff"/>
+fill="#fdf9f4"/>
 
 <text x="295" y="188"
 font-family="Arial"
@@ -3167,14 +3210,14 @@ IMPRESSIONS
 font-family="Arial"
 font-size="22"
 font-weight="700"
-fill="#071b45">
+fill="#141417">
 1,284
 </text>
 
 <rect x="465" y="160"
 width="170" height="68"
 rx="12"
-fill="#f7fbff"/>
+fill="#fdf9f4"/>
 
 <text x="485" y="188"
 font-family="Arial"
@@ -3187,29 +3230,29 @@ AVG. POSITION
 font-family="Arial"
 font-size="22"
 font-weight="700"
-fill="#071b45">
+fill="#141417">
 +18%
 </text>
 
 <rect x="120" y="330"
 width="42" height="55"
 rx="6"
-fill="#1769e0"/>
+fill="#ff6a00"/>
 
 <rect x="185" y="285"
 width="42" height="100"
 rx="6"
-fill="#1769e0"/>
+fill="#ff6a00"/>
 
 <rect x="250" y="245"
 width="42" height="140"
 rx="6"
-fill="#1769e0"/>
+fill="#ff6a00"/>
 
 <rect x="315" y="205"
 width="42" height="180"
 rx="6"
-fill="#1769e0"/>
+fill="#ff6a00"/>
 
 </svg>
 
@@ -3243,7 +3286,7 @@ viewBox="0 0 760 430">
 
 <rect width="760" height="430"
 rx="25"
-fill="#eef6ff"/>
+fill="#fff1e4"/>
 
 <circle cx="650" cy="70" r="90"
 fill="#dcecff"/>
@@ -3252,13 +3295,13 @@ fill="#dcecff"/>
 width="650" height="340"
 rx="20"
 fill="#fff"
-stroke="#cfe0f5"
+stroke="#f3d9bd"
 stroke-width="2"/>
 
 <rect x="55" y="45"
 width="650" height="58"
 rx="20"
-fill="#071b45"/>
+fill="#141417"/>
 
 <text x="85" y="82"
 font-family="Arial"
@@ -3278,7 +3321,7 @@ Organic traffic and conversion overview
 <rect x="85" y="160"
 width="170" height="68"
 rx="12"
-fill="#f7fbff"/>
+fill="#fdf9f4"/>
 
 <text x="105" y="188"
 font-family="Arial"
@@ -3291,14 +3334,14 @@ USERS
 font-family="Arial"
 font-size="22"
 font-weight="700"
-fill="#071b45">
+fill="#141417">
 +32%
 </text>
 
 <rect x="275" y="160"
 width="170" height="68"
 rx="12"
-fill="#f7fbff"/>
+fill="#fdf9f4"/>
 
 <text x="295" y="188"
 font-family="Arial"
@@ -3311,14 +3354,14 @@ SESSIONS
 font-family="Arial"
 font-size="22"
 font-weight="700"
-fill="#071b45">
+fill="#141417">
 1,284
 </text>
 
 <rect x="465" y="160"
 width="170" height="68"
 rx="12"
-fill="#f7fbff"/>
+fill="#fdf9f4"/>
 
 <text x="485" y="188"
 font-family="Arial"
@@ -3331,13 +3374,13 @@ CONVERSIONS
 font-family="Arial"
 font-size="22"
 font-weight="700"
-fill="#071b45">
+fill="#141417">
 +18%
 </text>
 
 <path d="M105 365 L165 330 L220 345 L285 275 L350 300 L410 215"
 fill="none"
-stroke="#1769e0"
+stroke="#ff6a00"
 stroke-width="9"
 stroke-linecap="round"
 stroke-linejoin="round"/>
@@ -3374,7 +3417,7 @@ viewBox="0 0 760 430">
 
 <rect width="760" height="430"
 rx="25"
-fill="#eef6ff"/>
+fill="#fff1e4"/>
 
 <circle cx="650" cy="70" r="90"
 fill="#dcecff"/>
@@ -3383,13 +3426,13 @@ fill="#dcecff"/>
 width="650" height="340"
 rx="20"
 fill="#fff"
-stroke="#cfe0f5"
+stroke="#f3d9bd"
 stroke-width="2"/>
 
 <rect x="55" y="45"
 width="650" height="58"
 rx="20"
-fill="#071b45"/>
+fill="#141417"/>
 
 <text x="85" y="82"
 font-family="Arial"
@@ -3409,7 +3452,7 @@ Local customer action overview
 <rect x="85" y="160"
 width="170" height="68"
 rx="12"
-fill="#f7fbff"/>
+fill="#fdf9f4"/>
 
 <text x="105" y="188"
 font-family="Arial"
@@ -3422,14 +3465,14 @@ CALLS
 font-family="Arial"
 font-size="22"
 font-weight="700"
-fill="#071b45">
+fill="#141417">
 +32%
 </text>
 
 <rect x="275" y="160"
 width="170" height="68"
 rx="12"
-fill="#f7fbff"/>
+fill="#fdf9f4"/>
 
 <text x="295" y="188"
 font-family="Arial"
@@ -3442,14 +3485,14 @@ WEBSITE CLICKS
 font-family="Arial"
 font-size="22"
 font-weight="700"
-fill="#071b45">
+fill="#141417">
 1,284
 </text>
 
 <rect x="465" y="160"
 width="170" height="68"
 rx="12"
-fill="#f7fbff"/>
+fill="#fdf9f4"/>
 
 <text x="485" y="188"
 font-family="Arial"
@@ -3462,18 +3505,18 @@ DIRECTIONS
 font-family="Arial"
 font-size="22"
 font-weight="700"
-fill="#071b45">
+fill="#141417">
 +18%
 </text>
 
 <circle cx="190" cy="310"
 r="70"
-fill="#eef6ff"
-stroke="#1769e0"
+fill="#fff1e4"
+stroke="#ff6a00"
 stroke-width="6"/>
 
 <path d="M190 270v80M150 310h80"
-stroke="#1769e0"
+stroke="#ff6a00"
 stroke-width="9"
 stroke-linecap="round"/>
 
@@ -3725,6 +3768,50 @@ Lucas Jasper, Aonabbas Khan and M Waseem also rated us 5 stars on Google.
 
 
 
+
+<!-- WHY SEO -->
+<section id="why-seo">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow">
+Why SEO Matters
+</span>
+<h2>
+Your customers are searching on Google right now.
+</h2>
+<p>
+Almost every buying decision now starts with a search. When someone needs a shop, a service or a professional, they open Google, type what they need, and contact one of the businesses they find first. If your business is not visible in those results, and not present on Google Maps with a complete profile, that customer simply never learns that you exist.
+</p>
+</div>
+<div style="max-width:840px;margin:auto">
+<p style="margin-bottom:18px">
+This is exactly the gap SEO closes. Good SEO work makes your website and your Google Business Profile easy for Google to understand and easy for customers to trust. Your pages are matched to the words people actually search for, technical problems that hide your site are fixed, your local profile is completed with your real services, photos and reviews, and helpful content is published that answers customer questions before they even call you. None of this is trickery: it is clear information, presented properly, in the places Google and your customers look.
+</p>
+<p style="margin-bottom:26px">
+Unlike paid advertising, which stops the moment you stop paying, SEO builds an asset that keeps working. A well-optimized page or profile can keep bringing you calls, visits and enquiries month after month. For local businesses in Layyah and the surrounding areas, that means steady visibility in the searches that matter most, the near me searches and service searches made by people who are ready to buy. Zaheer Seo Expert handles this whole process for you, from the first free audit to monthly reporting, so you can focus on running your business while your Google presence grows.
+</p>
+<div class="about-points">
+<div class="about-point">
+<span>✓</span>
+Be Found on Google Search and Maps
+</div>
+<div class="about-point">
+<span>✓</span>
+More Calls, Visits and Enquiries
+</div>
+<div class="about-point">
+<span>✓</span>
+Trust Built Through Reviews and Content
+</div>
+<div class="about-point">
+<span>✓</span>
+Growth That Keeps Working Over Time
+</div>
+</div>
+</div>
+</div>
+</section>
+
 <!-- FAQ -->
 
 <section id="faq">
@@ -3836,6 +3923,52 @@ and you can receive an initial review of major SEO opportunities.
 
 </details>
 
+<details>
+<summary>
+Do you guarantee first position rankings on Google?
+</summary>
+<p>
+No honest SEO expert can guarantee a specific position, because Google controls its own results and rankings change with competition and updates. What you can expect here is careful, white-hat work, clear reporting and steady improvement in your visibility, traffic and enquiries over time.
+</p>
+</details>
+
+<details>
+<summary>
+What does the free SEO audit include?
+</summary>
+<p>
+The free audit reviews your website and your Google Business Profile: technical problems, page content, keywords, local visibility and obvious issues that may be holding you back. You receive a clear summary of what was found and the most important fixes, with no obligation to buy anything.
+</p>
+</details>
+
+<details>
+<summary>
+Can you help businesses outside Layyah?
+</summary>
+<p>
+Yes. Zaheer Seo Expert is based in Layyah and serves Chobara, Mianwali, Chowk Azam, Jaman Shah, Dera Ghazi Khan and Karor Lal Eason locally, and also works remotely with businesses anywhere in Pakistan and beyond. Most SEO work, reporting and communication is handled online.
+</p>
+</details>
+
+<details>
+<summary>
+Which types of businesses do you work with?
+</summary>
+<p>
+Local shops, clinics, academies, professionals, service providers, and online stores of all sizes. If your customers search on Google for what you offer, SEO can help you, whether you need local visibility in one town or organic growth for a full website.
+</p>
+</details>
+
+<details>
+<summary>
+How much does SEO cost?
+</summary>
+<p>
+The cost depends on your website, your market and how much work is needed, so it is quoted after a free audit of your business rather than from a fixed price list. That way you only pay for the work your situation actually requires, and you know the plan before anything starts.
+</p>
+</details>
+
+
 
 </div>
 
@@ -3888,6 +4021,71 @@ businesses anywhere in Pakistan and beyond.
 
 </div>
 
+<div class="card-grid" style="margin-top:34px">
+<a href="locations/seo-services-layyah.html" class="card">
+<h3>SEO Services in Layyah</h3>
+<p>
+Layyah is home. Zaheer Seo Expert is based here at Rajan Shah Road, Rana Nagar, Chak 116 TDA, and helps Layyah shops, clinics, academies and service businesses get found on Google search and Maps by the customers searching around them every day.
+</p>
+<span class="learn">
+Learn more →
+</span>
+</a>
+<a href="locations/seo-services-chobara.html" class="card">
+<h3>SEO Services in Chobara</h3>
+<p>
+Businesses in Chobara are served from the Layyah base, with the same complete SEO service: Google Business Profile optimization, local keywords and website improvements that help Chobara customers find you first when they search.
+</p>
+<span class="learn">
+Learn more →
+</span>
+</a>
+<a href="locations/seo-services-mianwali.html" class="card">
+<h3>SEO Services in Mianwali</h3>
+<p>
+For Mianwali businesses, SEO work is handled remotely from Layyah with clear communication throughout. Local search optimization helps your shop or service appear in front of Mianwali customers who are ready to call, visit or buy.
+</p>
+<span class="learn">
+Learn more →
+</span>
+</a>
+<a href="locations/seo-services-chowk-azam.html" class="card">
+<h3>SEO Services in Chowk Azam</h3>
+<p>
+Chowk Azam businesses are supported from the Layyah office with practical local SEO: a stronger Google profile, better website pages and content written around the searches your Chowk Azam customers actually make.
+</p>
+<span class="learn">
+Learn more →
+</span>
+</a>
+<a href="locations/seo-services-jaman-shah.html" class="card">
+<h3>SEO Services in Jaman Shah</h3>
+<p>
+From Layyah, Zaheer Seo Expert helps Jaman Shah businesses grow on Google with honest local SEO: complete profiles, local citations and helpful website content that puts your services in front of nearby customers.
+</p>
+<span class="learn">
+Learn more →
+</span>
+</a>
+<a href="locations/seo-services-dera-ghazi-khan.html" class="card">
+<h3>SEO Services in Dera Ghazi Khan</h3>
+<p>
+Dera Ghazi Khan is a bigger, more competitive market, which makes good SEO even more valuable. Businesses there are served from Layyah with full local and website SEO aimed at the searches that bring real enquiries.
+</p>
+<span class="learn">
+Learn more →
+</span>
+</a>
+<a href="locations/seo-services-karor-lal-eason.html" class="card">
+<h3>SEO Services in Karor Lal Eason</h3>
+<p>
+Karor Lal Eason businesses get the same careful SEO service from the Layyah base: Google Business Profile work, local keywords and website content that help customers in and around Karor Lal Eason find you on Google.
+</p>
+<span class="learn">
+Learn more →
+</span>
+</a>
+</div>
 </div>
 
 </section>
